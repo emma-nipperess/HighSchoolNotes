@@ -1,0 +1,3106 @@
+<html>
+<head>
+<title> Chemistry Content </title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../notescss.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+  <div id="nav-placeholder">
+
+  </div>
+
+      <script>
+      $(function(){
+        $("#nav-placeholder").load("../nav.html");
+      });
+      </script>
+
+
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+ 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+// Function to change webpage background color
+    function changeTopNavBg(color){
+	    document.getElementById("myTopnav").style.background = color;
+
+	}
+
+   /* // Function to change heading background color
+   function changeTopNavHoover(color){
+        document.getElementByClass("dropdown").getAttribute("hover").style.background = color;
+    }*/
+
+	function changeStruBg(color){
+        document.getElementById("structure").style.background = color;
+    }
+
+    function changeTableBg(color){
+          document.tHead.style.background = color;
+      }
+
+
+	function changeCogverb(color) {
+    var elements = document.getElementsByClassName("cogverb");
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.background = color;
+		}
+}
+
+function changeBox(color) {
+    var elements = document.getElementsByClassName("box");
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.background = color;
+		}
+}
+
+function changeText(color) {
+    var elements = document.getElementsByClassName("box");
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style = color;
+		}
+}
+
+function changeShade(color) {
+    var elements = document.getElementsByClassName("dropbtn");
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.background = color;
+		}
+}
+
+	/*
+	function changTopNavHoover(color){
+	document.getElementById("dropbtn").addEventListener("mouseover", mouseOver);
+   document.getElementById("dropbtn").addEventListener("mouseout", mouseOut);
+	}
+
+   function mouseOver() {
+   document.getElementById("dropbtn").style.color = "red";
+   }
+
+   function mouseOut() {
+    document.getElementById("dropbtn").style.color = "black";
+    }*/
+</script>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("myTopnav").style.top = "0";
+  } else {
+    document.getElementById("myTopnav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<script>
+
+var articles = document.getElementsByTagName('')
+for (var i = 0; i < articles.length; i ++) {
+    articles[i].parentNode.insertBefore(document.createElement('hr'), articles[i].nextSibling)
+}
+</script>
+
+<form>
+	<input type="button" class="back" value=" " onclick="history.back()">
+   </form> 
+
+
+<div class="structure" id="structure">
+<div class="everythink">
+
+
+
+
+  	<div id="mySidebar" class="sidebar">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  		<a href="snr_chemitry_19_formula_data_book.pdf" target="_blank">Formula and Data Booklet</a>
+  		<a href=#unit3 >Unit 3</a>
+  		<a href=#unit4>Unit 4</a>
+  		<a href="#"></a>
+  	</div>
+
+
+
+  	<script>
+  	function openNav() {
+  		document.getElementById("mySidebar").style.width = "150px";
+  		document.getElementById("main").style.marginLeft = "300px";
+  		document.getElementById("main").style.display = "none";
+  	}
+
+  	function closeNav() {
+  		document.getElementById("mySidebar").style.width = "0";
+  		document.getElementById("main").style.marginLeft= "0";
+  			document.getElementById("main").style.display = "block";
+  	}
+  	</script>
+
+
+  	<div id="main">
+   	<button id="opensesame" class="openbtn" onclick="openNav()">&rsaquo;</button>
+   </div>
+
+   
+
+
+<div id="unit3" class="topic">
+	</div>
+		<div class="sub-topic">
+		</div>
+		<div class="topic">
+	<h1> Topic 1: Chemical Equilibrium </h1>
+		</div>
+		<div class="sub-topic">
+		<h2> Chemical Equilibrium </h2>
+		</div>
+
+			<div class="content">
+			<div class="super-sub-topic">
+				<h4 > Reversible Reactions </h4>
+				<ul>
+				<li> Some reaction occur in both the forward and reverse directions </li>
+				<li> Some reactions appear to reach a point where they stop where the concentration of the reaction and products remain constant </li>
+				<li> These reaction actually proceed </li>
+				<li> At atomic scale, reactants are rapidly forming products and vice versa </li>
+				</ul>
+
+		<strong class="cogverb" id="3.1.1A" onclick="changeCogvBg('#B0D7FF');"> Recognise<span class="tooltiptext"> 3.1.1A: Recognise that chemical systems may be open (allowing matter and energy to be exchanged with the surroundings) or closed (allow energy, but not matter, to be exchanged with the surroundings)
+</span></strong>
+			<h4> Open and closed systems </h4>
+			<p> Chemical reactions are regarded as a system, with everything around it being the surroundings. Equilibrium is NOT achieved in an open system. </p>
+		</div> <!--div for nothing-->
+
+
+		<h3> &#10132; Reversible Reactions </h3>
+		<div class="super-sub-topic">
+		<strong class="cogverb" id="3.1.1B"> Understand<span class="tooltiptext"> 3.1.1B: Understand that physical changes are usually reversible, whereas only some chemical reactions are reversible
+</span></strong>
+<strong class="cogverb" id="3.1.1C"> Appreciate<span class="tooltiptext"> 3.1.1C: Appreciate that observable changes in chemical reactions and physical changes can be described and explained at an atomic and molecule level
+</span></strong>
+		<ul>
+		<li> Some reactions are reversible &rarr; baking a cake </li>
+		<li> The burning of methane forms carbon dioxide and water. These products do not react with each other under normal conditions. </li>
+		<li> In reversible reactions, the products can re-form the reactants </li>
+		<li> This reaction will eventually reach a situation where the rate of the forward reaction and the rate of the reverse reaction are equal, and equilibrium has been reached</li>
+		<li> <strong class="cogverb" id="3.1.1D"> Symbolise<span class="tooltiptext">3.1.1.D:  Symbolise equilibrium equations by using ⇌ in balanced chemical equations
+</span></strong>A double arrow (⇌ ) indicates a reversible reaction </li>
+		</ul>
+
+		<img src="che photos/reversiblereactions.png"  width=70%>
+	</div>
+		<h3> &#10132; Equilibrium </h3>
+		<div class="super-sub-topic">
+		<strong class="cogverb" id="3.1.1E"> Understand<span class="tooltiptext"> 3.1.1E: Understand that, over time, physical changes and reversible chemical reactions reach a state of dynamic equilibrium in a closed system, with the relative concentrations of products and reactants defining the position of equilibrium
+</span></strong>
+
+<ul>
+		<li> In general, reversible reactions in a closed system eventually reach a situation where the rates of the forward and reverse reactions are equal. The system is described as reaching a state of equilibrium </li>
+<li>At equilibrium, there still may be significant amounts of reactants in the system </li>
+<li>*Equilibrium does not mean you have the same concentration of reactants and products  common mistake </li>
+</ul>
+	<h4> Activation Energies </h4>
+
+			<strong class="cogverb" id="3.1.1F"> Explain<span class="tooltiptext"> 3.1.1F: Explain the reversibility of chemical reactions by considering the activation energies of the forward and reverse reactions
+
+</span></strong>
+
+<img src="che photos/activation.png" width=40%>
+<img src="che photos/endo.endo.png" width=50%  >
+<p>The reason as to why reverse reactions can occur, can be understood by referring to energy profile diagrams
+When particles collide, the energy associated with collisions can break bonds in reactant particles, allowing them to rearrange to form new products. The energy required to break reactant bonds in order for the reaction to occur  activation energy
+Is the forward reaction endothermic or exothermic? What about the reverse reaction?
+Provided that the reaction has enough energy to overcome the activation energy for both the forward and reverse reactions, the reaction proceeds until equilibrium is maintained. </p>
+<h4> Dynamic Equilibrium </h4>
+<ul>
+ <li> Chemical equilibrium can be described as being in a dynamic state because the forward and reverse reactions have not stopped </li>
+<li>During dynamic equilibrium:</li>
+<ul><li>Reaction is ‘incomplete’, and all substances are present in the system</li>
+<li>At the molecular level, bonds are constantly being broken and new bonds are being formed as the reactants and products continue to convert into one another</li>
+<li>The rate of the forward and reverse reactions become equal</li>
+</ul>
+</ul>
+<strong class="cogverb" id="3.1.1G"> Analyse <span class="tooltiptext"> 3.1.1G: analyse experimental data, including constructing and using appropriate
+graphical representations of relative changes in the concentration of
+reactants and product against time, to identify the position of equilibrium
+</span></strong>
+
+	<h4> Concentration vs Time </h4>
+	<p>In a closed system, at constant temperature and pressure, no further change will take place
+Equilibrium is established when there is no longer any change in any of the concentrations </p>
+<img src="che photos/concentration.png" width=46%> <img src="che photos/convtime.png" width=51% >
+
+
+
+
+
+		<!--div below for super subtopic equilibrium-->
+		</div>
+
+		</div>
+
+		<div class="sub-topic">
+		<h2> Factors that affect Equilibrium </h2>
+		</div>
+		<div class="content">
+			<img src="che photos/factors.q10.png" width=40%>
+			<h3> &#10132; Le Chatelier's Definition </h3>
+			<div class="super-sub-topic">
+				<p> If a closed system at equilibrium is disturbed, then the system adjusts itself so as to minimise the disturbance.</p>
+
+			 <strong class="cogverb" id="3.1.2C">Apply <span class="tooltiptext"> 3.1.2C: apply Le Chatelier’s principle to predict the effect changes of temperature,
+concentration of chemicals, pressure and the addition of a catalyst have on
+the position of equilibrium and on the value of the equilibrium constant.
+</span></strong><h5>Factors disturbing equilibrium </h5>
+				<ul>
+					<li> Temperature </li>
+					<li> Concentration </li>
+					<li> Pressure acting upon a reaction that involves gases </li>
+					<li> Catalyst </li>
+				</ul>
+				<div class="box">
+					<h4> Temperature </h4>
+					<strong class="cogverb" id="3.1.2A"> Explain and Predict<span class="tooltiptext"> 3.1.2A: explain and predict the effect of temperature change on chemical systems at
+equilibrium by considering the enthalpy change for the forward and
+reverse reactions
+</span></strong>
+					<p> You will need to know whether an endo or exo to determine the shift. </p>
+					<img src="che photos/n2(g).png">
+					<ul> <li>
+					The reaction in exothermic (heat is product)
+					</li><li>
+					Meaning as reaction proceeds from left to right when heat is liberated and removed from the system</li>
+					<li> If we increase the temp, the equilibrium shifts to the left to make more reactants, because that is the direction that absorbs heat and so tends to counter act the temperature increase </li>
+					<li> At higher temps, the rates of both the forward and reverse reactions increases </li>
+						<li> Forward reaction is exothermic; reverse reaction is endothermic </li>
+						<li>There will be a greater proportion of molecules with the necessary energy to overcome the activation  energy barrier for the endothermic reaction. This will increase it’s rate of the reverse reaction more than the forward reaction.</li>
+					</ul>
+					<img src="che photos/temperature.png" width=60%>
+					</div>
+				<div class="box">
+					<h4> <strong class="cogverb" id="3.1.2B"> Explain <span class="tooltiptext"> 3.1.2B: explain the effect of changes of concentration and pressure on chemical
+systems at equilibrium by applying collision theory to the forward and
+reverse reactions
+
+</span></strong><h4 id="concentration">Concentration </h4>
+					<img src="che photos/n2(g).png" >
+					<p>if the concentration of N2 is increased
+						N2 reacts with H2 to produce NH3
+						the equilibrium shifts to the right.
+						</p>
+						<p> another way to shift equilibrium to the right is to decrease concentration of NH3</p>
+						<img src="che photos/concentrationeq.png" width=40%>
+						<img src="che photos/concentrationeq2.png" width=40%>
+						</div>
+					<div class="box">
+					<h4 id="pressure"> Total gas pressure  </h4>
+					<img src="che photos/n2(g).png">
+					<p> When pressure is increased, Equilibrium moves in direction that reduces pressure </p>
+					<p> There are 4 moles of molecules on left and 2 moles on right </p>
+					<p> when gas pressure increased equilibrium shifts to the side with least number of moles, thus equilibrium shifts to the right in this reaction if the pressure is increased </p>
+					<img src="che photos/pressure.png" width=50%>
+					</div>
+					<div class="box">
+					<h4> Catalyst </h4>
+					<img src="che photos/catalyst.png" width=80%>
+					</div>
+		<!--div below for super subtopic factors affecting equilibrium-->
+		</div>
+
+
+
+		<div class="sub-topic">
+		<h2> Equilibrium Constants</h2>
+		</div>
+
+			<img src="che photos/factors.q10.png" width=40%>
+			<h3> &#10132; Equilibrium Law </h3>
+				<div class="super-sub-topic">
+				<strong class="cogverb" id="3.1.3B"> Deduce <span class="tooltiptext"> 3.1.3B: deduce the equilibrium law expression from the equation for a homogeneous reaction and use equilibrium constants (Kc), to predict qualitatively, the relative amounts of reactants and products (equilibrium position)
+
+ </span></strong>
+ <strong class="cogverb" id="3.1.3A"> Understand <span class="tooltiptext"> 3.1.3A: understand that equilibrium law expressions can be written for homogeneous and heterogeneous systems and that the equilibrium constant (Kc), at any given temperature, indicates the relationship between product and reactant concentrations at equilibrium
+ </span></strong>	<img src="che photos/eqexp.png"  class="left" width=25%>
+ <h4> EQUILLBRIUM expression </h4>
+			<p> The equilibrium law expression &#10132;<br>
+
+
+				<br> NOTE: anything in square represents concentration: equation is simply just the concentration of the chemical to the power of its equation coefficient
+				<BR>
+				<br> <b>NOTE: SOLIDS AND LIQUIDS DO NOT HAVE A CONCENTRATION SO DO NOT APPEAR IN EQUILLBRIUM LAW EXPRESSION</b>
+        <br> <br> Equilibrium expression is NOT the computational value; it is ONLY the 'formula' or expression.
+				</p>
+				<h4> Equilibrium Constant </h4>
+
+				<p> When equilibrium law expression is taken at equilibrium it is called <b> equilibrium constant (K<sub>c</sup>)</b>
+				<img src="che photos/detkc.png" width=50% class="left">
+				</p>
+				<p>At equilibrium:
+					<ul>
+						<li> Different chemical reaction have different Kc values </li>
+						<li> The size of Kc indicates the proportions of reactant and products in equilibrium mixture </li>
+						<li> Kc is constant for equilibrium mixtures at a fixed temperature: if you change pressure Kc remains the same(Kc changes with temperature) </li>
+					</ul></p>
+					<p> Kc only changes with temperature: </p>
+
+          <br> <br>
+					<h5> Kc Changes for Exothermic Reactions </h5>
+					<img src="che photos/kctable.png" width=70%>
+					<h5> Kc changes for Endothermic Reactions </h5>
+					<img src="che photos/kcendo.png" width=70%>
+
+<strong class="cogverb" id="3.1.3C"> Deduce <span class="tooltiptext"> 3.1.3C: deduce the extent of a reaction from the magnitude of the equilibrium constant
+ </span></strong>
+					<h4> Reaction Quotient </h4>
+					<p>(when equilibrium law is taken not at equilibrium) A similar expression can be written as the equilibrium constant called the <b>reaction quotient, Qc </b>. Can be calculated at anytime during reaction. Basically, same as Kc (equilibrium constant just anytime during the reaction). </p>
+					<p> To figure the next out just think of fractions and what they mean comparatively </p>
+						<ul>
+							<li> If reaction quotient, Qc is less than Kc equilibrium shifts to right</li>
+							<li> If reaction quotient, Qc is equal to Kc then equilibrium is met</li>
+							<li> If reaction quotient, Qc is more than Kc equilibrium shifts to left</li>
+					</ul>
+				</div>
+				<strong class="cogverb" id="3.1.3D"> Solve <span class="tooltiptext"> 3.1.3D: use appropriate mathematical representation to solve problems, including calculating equilibrium constants and the concentration of reactants and products.
+ </span></strong>
+
+								<button onclick="myFuncion()" id="yeet">Sample Question for This</button>
+					<div id="myDIV">
+					<img src="che photos/Kcprob1.png">
+					<br>
+					<br>
+					<br>
+					<img src="che photos/Kcprob2.png">
+										</div>
+					<script> function myFuncion() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} </script>
+</div> <!--div for end of first continent-->
+
+
+
+			<div class="sub-topic">
+		<h2> Properties of Acids and Bases </h2>
+		</div>
+		<DIV class="content">
+			<h3> &#10132; Bronsted-Lowry Acid and Base </h3>
+				<div class="super-sub-topic">
+				<strong class="cogverb" id="3.1.4A"> Understand<span class="tooltiptext"> 3.1.4A: understand that acids are substances that can act as proton (hydrogen ion)
+donors and can be classified as monoprotic or polyprotic depending on the
+number of protons donated by each molecule of the acid
+</span></strong>
+					<p> An acid is a proton (H+) donor. It can be written in chemical equation as </p>
+					<img src="che photos/aciddef.png">
+					<p> A bass is proton acceptor. </p>
+					<h4> Monoprotic </h4>
+						<p> A single H+ is donated. HCl &rarr; H+ + Cl- </p>
+					<h4> Diprotic </h4>
+						<p> Two H+ are donated. H<sub>2</sub>SO<sub>4</sub>&rarr; H+ + HSO<sub>4</sub> </p>
+					<h4> Amphiprotic </h4>
+					<p> A substance that can donate or accept protons. e.g., water can be an acid or base </p>
+
+					When an acid reacts with water it dissociates (ionises)
+					<strong class="cogverb" id="3.1.4B"> Understand<span class="tooltiptext"> 3.1.4B: distinguish between strong and weak acids and bases in terms of the extent
+of dissociation, reaction with water and electrical conductivity and distinguish
+between the terms strong and concentrated for acids and bases.
+</span></strong>
+					<h4> Strong Acid </h4>
+					<p> Strong acids such as hydrochloric acid, sulphuric acid and nitric acid (HNO3) dissociate completely </p>
+					<p> Strong acids have a higher electrical conductivity than weak acids on the same concentration. They also have a higher ionisation so produce more ions that are able to move through the water</p>
+
+
+					<h4> Weak Acid </h4>
+					<p> Weak acids such as ethanoic acid and carbonic acid dissociate only partially </p>
+
+					<h4> Strong Base </h4>
+					<p> Strong Bases such as sodium hydroxide, ionise completely in aqueous solutions </p>
+
+					<h4> Weak Base </h4>
+					<p> Weak bases such ammonia only partially ionises in aqueous solutions </p>
+
+					<h4> Concentration vs Strength </h4>
+						<p> Concentration deals with how much solute is dissolves, Strengths deals with the degree of ionisation </p>
+						<img src="che photos/svsc.png">
+					</div>
+
+					</div>
+
+		<div class="sub-topic">
+		<h2> pH Scale  </h2>
+			</div>
+		<div class="content">
+      <div class="super-sub-topic">
+		<strong class="cogverb" id="3.1.5B"> Understand<span class="tooltiptext"> 3.1.5B: understand that the pH scale is a logarithmic scale and the pH of a solution can be calculated from the concentration of hydrogen ions using the relationship  pH = –log10 [H+]
+</span></strong>Key terms </h3>
+			<p> Water is self-ionising (to a very small extent): H<sub>2</sub>O + H<sub>2</sub>O &rarr; &rarr; H<sub>3</sub>O+ + OH-
+			</p>
+			<h4> pH scale </h4>
+			<p>
+			The pH scale can be used to indicate whether a solution is acidic (pH > 7), neutral (pH = 7) or basic (pH > 7). </P>
+			<p> At 25&deg;C the Kc (equilibrium constant) of water is 1 x 10<sup> -14</sup>
+			<br><br>
+			<strong class="cogverb" id="3.1.5A"> Understand<span class="tooltiptext"> 3.1.5A: understand that water is a weak electrolyte, and the self-ionisation of water is represented by Kw = [H+][OH–]; Kw can be used to calculate the concentration of hydrogen ions from the concentration of hydroxide ions in a solution
+
+</span></strong>
+			<p> Refresher:
+				<br> Kc is equilibrium constant. When referring to water, Kw is used to represent self-ionisation of water. Calculated as:
+				<b> K <sub>w</sub> = [H<sup>+</sup>] [OH<sup>-</sup>]</b>
+				</p>
+			<strong class="cogverb" id="3.1.5C"> Solve<span class="tooltiptext"> 3.1.5C:
+</span></strong>
+<h4> Calculations around pH </h4>
+			<div class="box">
+         <p>
+			Example: H<sub>2</sub>O + H<sub>2</sub>O &rarr; &rarr; H<sub>3</sub>O<sup>+</sup> + OH<sup>- </sup>
+    </p> 	<table class="column">
+				<tr> <td>
+				<ol>
+					<li> State Equilibrium Constant
+						<dd> Kc= [H<sub>3</sub>O<sup>+</sup>] [OH<sup>- </sup>] </dd>
+					</li>
+					<li> Determine variable for [H<sub>3</sub>O<sup>+</sup>]
+						<dd> Let [H<sub>3</sub>O<sup>+</sup>] be x </dd>
+					</li>
+					</oL>
+					</td>
+					<td><ol start="3">
+					<li> Sub and solve
+            <dd> </dd>
+						<img src="che photos/pHKc.png" width="50%" class="right" >
+						</li>
+					</ol></td>
+					</table>
+					 <a href="che docs\3.1.5 a-c pH Scale.pptx"><button> PowerPoint </button> </a>
+
+					</div>
+
+  <h4> Calculating pH when given K<sub>a</sub> value and molarity </h4>
+  <div class="box">
+
+            <P> Calculate the pH of 0.1M acetic acid solution given K<sub>a</sub> = 1.8 &times; 10<sup>-5</sup> </P>
+
+<h5> Finding [H<sup>+</sup>] concentration </h5>
+          $$ Ka = {[H^+][A^{-1}]\over [HA}$$
+
+        $$ { 1.8 \times 10^{-5} \times 0.1 = [H^+]} $$
+          $${[H^+] = 0.00134}$$
+
+      <h5> Finding pH </h5>
+      $$ pH = -log_{10}[H^+]  $$
+      $$ pH = -log_{10}[0.00136] $$
+      $$ pH = 2.87 $$
+
+      </div>
+
+
+					<p> pH is a measure of the concentration of H+ ions in a solution. The concentration of H+ ions can be stated in mol L-1.
+					<br> <br> <b> pH = -log<sub>10</sub>[H<sup>+</sup>] </b>
+					<br>
+					<br>
+
+					pH is the negative log to base 10 of hydrogen ion concentration in an aqueous solution. There are several examples but literally there doesn't even need to be a formula because pH is just the magnitude of the exponent for the concentration (only when there is a one out the front)
+					</p>
+					<br> <br> <b> [H<sup>+</sup>] = 10<sup>-pH</sup></b>
+					<br>
+					<br>
+			</div>
+</div>
+
+
+
+					<div class="sub-topic">
+		<h2> Bronsted Lowry Model  </h2>
+		</div>
+		<div class="content">
+			<h3> &#10132; Conjugate base-acid Pairs </h3>
+			<div class="super-sub-topic">
+			<strong class="cogverb" id="3.1.6A"> Recognise<span class="tooltiptext"> 3.1.6A: recognise that the relationship between acids and bases in equilibrium
+systems can be explained using the Brønsted-Lowry model and represented
+using chemical equations that illustrate the transfer of hydrogen ions
+(protons) between conjugate acid-base pairs
+and bases
+</span></strong>
+			<h4> Conjugate Acid </h4>
+			<p> When an acid donates one proton the species produced is called the conjugate base. </p><img src="che photos/conjbase.png">.
+			NOTE: Acid base is the differing of a PROTON. There should be a missing H somewhere. </p>
+		<h4> Conjugate Base </h4>
+		 <p> When a base accepts a Proton the species produced is the conjugate acid </p><img src="che photos/conjacid.png">. <p>When dealing with acid-base pairs, should be same chemical just missing a H+>
+		 </p>
+
+		 Strong acids make very weak conjugate bases. the weaker the acid the stronger its conjugate bases
+		<h4> Amphiprotic</h4>
+		<p> <strong class="cogverb" id="3.1.6B"> Recognise <span class="tooltiptext"> 3.1.6B: recognise that amphiprotic species can act as Brønsted-Lowry acids
+and bases
+</span></strong>Species that can act as either an acid or bases. Water is an example. water can accept or donate protons.
+
+<strong class="cogverb" id="3.1.6C"> Explain<span class="tooltiptext"> 3.1.6C: identify and deduce the formula of the conjugate acid (or base) of any
+Brønsted-Lowry base (or acid)
+</span></strong>
+
+<h4> Conjugate Base acid pair </h4>
+<p> When a base accepts <b>one</b> proton (H<sup> +</sup> ) the species produced is called a conjugate acid.
+  <img src="che photos/conjugateacid.png" width=40%></p>
+
+<p> When an acid donates one proton (H<sup>+</sup>) the species produced is called a conjugate base.
+</p><img src="che photos/conjugatebase.png">
+
+<div class="box">
+  <p> 1. Which is a Bronsted Lowry acid-base pair? </p>
+  <ol type=a>
+    <li> H<sub>2</sub>O and O<sup>-2</sup> </li>
+    <li> CH<sub>3</sub>COOH and CH<sub>3</sub>COOH<sup>-</sup> </li>
+    <li> NH<sub>4</sub><sup>+</sup> and NH<sub>2</sub> <sup>-</sup></li>
+    <li> H<sub>2</sub>SO<sub>4</sub> and SO<sub>4</sub><sup>-2</sup> </li>
+  </ol>
+
+  <div class="answer">
+    ANSWER: b)
+  </div>
+</div>
+
+
+		<h4> Buffers </h4>
+		<strong class="cogverb" id="3.1.6D">Appreciate<span class="tooltiptext"> 3.1.6D: appreciate that buffers are solutions that are conjugate in nature and resist a
+change in pH when a small amount of an acid or base is added;
+Le Chatelier’s principle can be applied to predict how buffer solutions
+respond to the addition of hydrogen ions and hydroxide ions.
+and bases
+</span></strong>
+		<P> A buffer solution are conjugate (acid /base pair) and resist changes in pH when small quantities of an acid or base are added to it.
+Acidic buffer solutions are commonly made from a weak acid and one of its salts. We will use our Acetate buffer (ethanoic acid) to show how a buffer works using Le Chatelier’s principle.
+	<br><BR><BR><img src="che photos/buff1.png">
+	<br><br>When you add ACID into the solution you will be increasing the number (concentration) of H+ ions. If more H+ is added to this solution it shifts equilibrium to the left, absorbing H+ so the H+ remains unchanged.
+	</p><P> When you add a BASE to solution it contain hydroxide ions. They react with H+ decreasing its concentration. If you decrease the hydrogen ion concentration (H+) the equilibrium shifts to the right to compensate for loss of H+ and decrease in ph. </p>
+	<p> Consider the previous example: If too much H+ is added, the equilibrium is shifted all the way to the left, and there is no longer more CH3COO to "absorb" H+> At that point the solution no longer resists change in pH; it is useless as a buffer. </p>
+	<p> Buffer solutions are commonly made from a weak base and one of tis sals. </p>
+	<img src="che photos/buff2.png">
+
+
+
+
+		</div>
+		</div>
+
+
+    <div class="sub-topic">
+    <h2> Dissociation Constants  </h2>
+    </div>
+    <div class="content">
+      <div class="super-sub-topic">
+      <strong class="cogverb" id="3.1.7A"> Recognise <span class="tooltiptext"> 3.1.7A: recognise that the strength of acids is explained by the degree of ionisation at equilibrium in aqueous solution, which can be represented with chemical equations and equilibrium constants (Ka)
+      </span></strong>
+
+        <h4> Dissociation Expressions </h4>
+      <h5> Acid Dissociation Constant </h5>
+      <p> A weak acid only partially dissociates and can be represented by HA in the following expression </p>
+      <p> HA &#x21CC; H<sup>+</sup> + A<sup>-</sup>
+      <br> Acid dissociation constant:
+      <p> The Ka is similar to Kc; it is just specific the dissociation of an acid equation. It indicates the extent of the dissociation </p>
+      <div class="formula">
+        $$ K_a = {{[H_3 O^+][A^-]}\over{[HA]}} $$
+      </div>
+
+
+
+        <h5 id="base"> Base Dissociation Constant </h5>
+        <p> A weak base only partially dissociates, we will use NH3 in the following equilibrium expression.
+        </p>
+        <p> NH3 (aq)  + H2O (l) ⇌  NH4+ (aq) + OH- (aq)  </p>
+
+        <div class="formula">
+          $$ K_b = {{[NH_4 ^+][OH^-]}\over{[NH_3]}} $$
+        </div>
+        <p> Constant indicates extent of base dissociation </p>
+
+
+
+
+              <p> If the Ka value (or Kb value) is large, the concentration of the products of the dissociation equation are high and therefore favoured making it a strong acid.
+      <br> <br>
+      If the Ka value (or Kb value) is small, then the acid / base does not readily dissociate making it a weak acid.
+
+    </p><br><br>
+
+<h4> Creating equations </h4>
+
+      <strong class="cogverb" id="3.1.7B"> Determine <span class="tooltiptext"> 3.1.7B: determine the expression for the dissociation constant for weak acids (Ka) and weak bases (Kb) from balanced chemical equations
+      </span></strong>
+
+      <p> Ethanoic acid, CH3COOH, is a weak acid that only partially dissociates in water. It's acid dissociation constant, Ka.
+      </p> <img src="che photos/ethka.png">
+
+
+        <p> Hydrochloric acid, HCl, is a strong acid that only completely dissociates in water. It's acid dissociation constant, Ka.
+</p>
+      <img src="che photos/hyka.png">
+      <br><BR><BR>
+      <h4> Ka for Polyprotic acids </h4>
+      <p> Polyprotic acids donate their protons in stages. </p>
+      <img src="che photos/polyka.png" width=60%>
+      <p> Stage 1 occurs to greater extent than second, with second being more so than third. </p>
+      <p> In general, it becomes increasingly harder for + charged proton (H+) to be lost as acid species becomes increasingly negative; thus, Ka values decreases. </p>
+
+
+<br><BR><BR>
+        <h4> pKa and pKb </h4>
+      <strong class="cogverb" id="3.1.7D"> Use <span class="tooltiptext"> 3.1.7D: use appropriate mathematical representation to solve problems, including calculating dissociation constants (Ka and Kb) and the concentration of reactants and products.
+      </span></strong>
+      $$ pH = -log_{10}K_a $$
+      $$ pOH = -log_{10}K_b $$
+    <div class="formula">
+    </div>
+      <p> Above formula can be used to determine pKa when given Ka or vice versa.</p>
+
+<br><BR><BR>
+
+                 <h4> Ka and Kb Relationship </h4>
+                 <p> For conjugate acid base pairs, the acid dissociation constant and conjugate base constant are related by the following equations</p>
+                 $$ K_w = K_b \times K_a $$
+                 $$ K_w = 1 \times 10^{-14} $$
+
+                 $$ pK_a + pK_b = 14 $$
+
+<h4 id="ph-calculations"> Examples</h4>
+      <div class="example">
+        <h5> Determining Percentage Ionisation </h5>
+        <p> Nitrous acid, HNO<sub>2</sub> is a weak acid that will partially dissociate when reacted with water. The K<sub>a</sub> values for this reaction is 4.0 &times; 10<sup>-4</sup>
+        </p>
+        <p>a) Recall balanced equation </p>
+        <div class="answer">
+          $$ HNO_2 + H_2O = H_3O^+ + NO_2^+ $$
+        </div>
+
+        <p>b) Determine the percentage ionisation of HNO<sub>2</sub> in a 0.15M HNO<sub>2</sub> solution that was found to have a pH of 2.3
+        </p>
+        <div class="answer">
+          <h6> Find the concentration of H<sup>+</sup> ions using the given pH </h6>
+          $$ [H^+] = 10^{-pH} $$
+          $$ [H^+] = 5.0119 \times 10^{-3} $$
+
+          <h6> Determining percentage ionisation based on that </h6>
+          $$ percent \, ionisation = {{[H^+]}\over {[HA]}} $$
+          $$ = {{5.0199 \times 10^{-3}}\over {0.15}} $$
+
+          $$  = 0.0334 = 33.4% $$
+        </div>
+      </div>
+
+      <div class="example">
+        <h5> Determining pH </h5>
+        <p>The K<sub>a</sub> of oxalic acid H<sub>2</sub>C<sub>2</sub>O<sub>4</sub> is known to be 5.9 &times; 10<sup>-2</sup>
+        </p>
+        <p> The equation below is the dissociation of potassium oxalate
+          $$HC_2O_4 ^- + H_2 O = H_2C_2O_4 + OH^- $$
+
+          Calculate the pH of a 0.6 mol/L solution of potassium oxalate </p>
+
+
+        <div class="answer">
+        <p> If potassium oxalate was a strong base, then the concentration of OH ions could be assumed as the same as the chemical. HOWEVER, because it is a weak base, the Kb must be used to figure out how much of the base dissociated
+        </p>
+          <h6> Find Kb</h6>
+          $$ K_w = K_b \times K_a $$
+          $$ K_w = K_b \times 5.9 \times 10^{-2} $$
+          $$ K_b = 1.69 \times 10^{-3} $$
+
+          <h6> Use the Kb expression </h6>
+
+          $$ K_b = {{[H_2C_2O_4][OH^-]}\over {HC_2O_4^-}} $$
+          $$ 1.69 \times 10^{-13} = {{[H_2C_2O_4][OH^-]}\over {0.6}} $$
+          $$ 1.69 \times 10^{-13} \times 0.6 = x^2 $$
+          $$ x = $$
+
+
+          <h6> Find the pOH first, then pH </h6>
+          <p> Need to calculate the pOH first because OH<sup>-</sup> is basic and K<sub>b</sub> expression was used
+          </p>
+          $$ pOH = -log_{10}x $$
+
+          <p> find the pH values </p>
+          <div class="answer">
+          $$ pH + pOH = 14 $$
+          $$ pH = 14- pOH $$
+          $$ pH = 7.50 $$
+
+        </div>
+        </div>
+      </div>
+
+      <div class="example">
+        <h5> Determining the pKa/ pKb </h5>
+
+        <p> Calculate the pKa for ethanoic acid with a Ka value of 1.8 &times; 10<sup>-5</sup>
+        </p>
+        <div class="answer">
+
+        $$ pK_a = log_{10} K_a $$
+        $$ pK_a = log_{10}1.8 \times 10^{-5} $$
+        $$ pK_a = 4.74 $$
+      </div>
+      </div>
+
+
+<br><BR>
+       <strong class="cogverb see"> See example <span class="tooltiptext"> <img src="che photos/pkaexa.png" > </span></strong>
+
+      </sup> <strong class="cogverb see"> See example <span class="tooltiptext"> <img src="che photos/pkaexa2.png"> </span></strong>
+
+
+           <strong class="cogverb see" > See Example  <span class="tooltiptext"> <img src="che photos/pkaexa3.png"> </span></strong>
+           <br> <br>
+
+
+
+                 <strong class="cogverb" id="3.1.7C">Analyse <span class="tooltiptext"> 3.1.7C: analyse experimental data to determine and compare the relative strengths of acids and bases
+                 </strong> </span>
+
+
+                 <img src="che photos/analyse.png" width=40%>
+                 <strong class="cogverb see" style="display:block"> Questions <span class="tooltiptext"> <img src="che photos/exampleq.png"> </span></strong>
+
+
+</div>
+</div>
+
+
+
+
+
+		<h2> Acid-Base Indicators  </h2>
+
+		<div class="content">
+      <div class="super-sub-topic">
+			<strong class="cogverb" id="3.1.8A"> Understand<span class="tooltiptext"> 3.1.8A: Understand that an acid-base indicator is a weak acid or a weak base where the component, so the conjugate acid-base pairs have different colours to the basic form.
+</span></strong>
+			<p> Indicators have a different colour in acidic and basic solutions. Use to distinguish acids and bases. They can also be used to determine pH.
+			Indicators are typically weak acids or weak bases. </p>
+      <p> A chemical that changes colour as the concentration of hydrogen ions in a solution changes</p>
+			<h4> Weak Acid indicators </h4>
+
+			<p>In a solution the acid form of the indicators is in equilibrium with its conjugate base. When add H+ ions from an acid, the equilibrium shifts to the left using up the increased H+ ions. Thus, the colour fades from green and goes to blue in this example.
+			</p>
+      <div class="formula">
+        $${{HIn^-_{(aq)}}<=>{H^+ _{(aq)} + In^- _{(aq)}}} $$
+        $$\text{Color A} \,\,\,\,\,\,\,\, \text{Color B}        $$
+
+
+      </div>
+
+			<h4> Weak Base indicators </h4>
+
+			<p>In a solution the base form of the indicators is in equilibrium with its conjugate acid. When you add H+ ions from an acid, they bind with OH+ to produce water. This decrease the concentration of OH and shifts the equilibrium to the right. Thus, the colour fades from red and goes to purple in this example:
+			</p>
+      <div class="formula">
+        $${{BIn^-_{(aq)}}<=>{B^+ _{(aq)} + OH^- _{(aq)}}} $$
+        $$\text{Color A} \,\,\,\,\,\,\,\, \text{Color B}        $$
+
+
+      </div>
+
+<h4> pH range and pKa </h4>
+			<strong class="cogverb" id="3.1.8B"> Explain<span class="tooltiptext"> 3.1.8B: explain the relationship between the pH range of an acid-base indicator and its pKa value
+</span></strong>
+			There are acid base indicators on page 14 of formula book. For the above weak acid indicator: Determine the Ka Expression
+			Ka=[h+]. Now assume at colour change HIn=In-.
+			<br><BR>
+			At the colour transition Ka=[H+]. We can use pKa value from our table and match it to the equivalence point we want.
+			<h4> Using the pKa table </h4>
+			<p> you want to match the <b> END POINT</B> of the indicator to <B> Equivalence point </b> to allow correct amount of acid or base to be used in the neutralisation. Equivalence point is the moment during a neutralisation reaction when the amount of acid and base are equal in their stochiometric ratios represented by reaction equation. </p>
+			<p> pK<sub>a</sub>=Log(K<sub>a</suB>) </p>
+
+			<P> EXAM TIP: Talk in terms of
+			<br> &rarr; end point of indicator
+			<br> &rarr; equivalence point of reaction
+				</p>
+			<strong class="cogverb" id="3.1.8C"> Recognise<span class="tooltiptext"> 3.1.8C: recognise that indicators change colour when the pH = pKa and identify an
+appropriate indicator for a titration, given equivalence point of the titration and
+pH range of the indicator
+</span></strong>
+
+		</div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+			<div class="sub-topic">
+		<h2> Volumetric Analysis  </h2>
+			</div>
+		<div class="content">
+      <div class="super-sub-topic">
+		<strong class="cogverb" id="3.1.9A"> Distinguish<span class="tooltiptext"> 3.1.9A: distinguish between the terms end point and equivalence point
+</span></strong>Key terms
+
+
+
+			<ul>
+				<li> <B> Equivalence Point </b> The point in a titration at which the reacts have reacted in their correct molar ratios. Example:</li>
+        </ul> 	<img src="che photos/equpoint.png" width=25% class="block mini" > <ul>
+				<li> <B> End Point </b> A point in a titration at which indicator changes colour, usually marking the completion of the reaction. </li>
+</ul><img src="che photos/endpoint.png" width=25% class="block mini" > <ul >
+				<li> <B> Half-Equivalence Point </b> half the volume of the base used to reach the equivalence point in this case it would be 12.5 mL of NaOH.</li>
+
+			</ul>
+      <img src="che photos/equ2point.png" width=25% class="block mini">
+</div>
+		<h3> &#10132; Titration Curves </h3>
+<div class="super-sub-topic">
+  <strong class="cogverb" id="3.1.9C">Sketch<span class="tooltiptext"> 3.1.9C: Understand that physical changes are usually reversible, whereas only some chemical reactions are reversible
+</span></strong>
+			<p> <b>There are four different acid-base reactions.</b> </p>
+				<img src="che photos/3curve.png" width=70%>
+        <strong class="cogverb" id="3.1.9B"> Explain<span class="tooltiptext"> 3.1.9B: recognise that acid-base titrations rely on the identification of an equivalence point by measuring the associated change in pH, using chemical indicators or pH meters, to reveal an observable end point
+          </span></strong>
+          <p>   <img src="che photos/pHcurve.png" width=40% class="left" >A titration curve is the plot of the pH of the analyte solution vs the volume of the titrant added as the titration progresses </p>
+          <p> It is important to determine the equivalence point as it is the end of the reaction between ACID and Base. </p>
+          <p> This can be done using:
+            <ol type=a>
+              <li> Titration curve </li>
+              <li> Indicator </li>
+            </ol>
+            <p> Note: titrations rely on indicators to show the equivalence point </p>
+
+
+
+
+<h4 id="curve-properties"> Curve Properties </h4>
+    <div class="box">
+	<img src="che photos/sasb.png" width=30% class="left">
+		<h4> Strong Acid-Strong Base Curve</h4>
+
+    <p>
+      <h6>Intercept with pH axis </h6>
+      <ul>
+        <li> Intercept indicates start pH of the analyte </li>
+      </ul>
+      <h6> Equivalence Point </h6>
+      <ul> <li> pH = 7 </li>
+          <li> where $$[H^+] = [OH^-]$$ </li>
+          </ul>
+
+          <h6> Buffer Region </h6>
+          <ul> <li> No buffer region as completely dissociates </li>
+
+          </ul>
+        </div>
+          <div class="box">
+		<h4> Weak Acid-Strong Base Curve</h4>
+		<img src="che photos/wasb.png" width=30% class="left">
+    <h6>Intercept with pH axis </h6>
+    <ul>
+      <li> Intercept indicates start pH of the analyte- should be a higher pH (3) </li>
+      <li> This is due to partial dissociation </li>
+
+    </ul>
+    <h6> Equivalence Point </h6>
+    <ul> <li> around 8-10 </li>
+        <li> weak acid so higher pH than neutral </li>
+        <li> where $$ [H^+] = [OH^-] $$ </li>
+        </ul>
+
+        <h6> Buffer Region </h6>
+        <ul> <li> Half-equivalence point pH=pK<sub>a</sub> of acid </li>
+          <li> Weak acid dissociating </li>
+          <li> </li>
+        </ul>
+      </div>
+
+        <div class="box">
+		<h4> Strong Acid-Weak Base Curve</h4>
+		<img src="che photos/sawb.png" class="left" width=40%>
+    <h6>Intercept with pH axis </h6>
+    <ul>
+      <li> Intercept of weak base is higher pH 10, due to partial dissociation  </li>
+    </ul>
+    <h6> Equivalence Point </h6>
+    <ul> <li> pH = 5.30 </li>
+        <li> Weak base so pH lower than neutral </li>
+        <li> where $$ [H^+] = [OH^-] $$ </li>
+        </ul>
+
+        <h6> Buffer Region </h6>
+        <ul> <li> Half-equivalence point pH=pK<sub>a</sub> of base </li>
+          <li> pK<sub>b</sub> of base = 14 - pK<sub>a</sub>
+          </li> <li> Weak base dissociation releases OH<sup>-</sup> ions </li>
+
+        </ul>
+      </div>
+
+
+    </div>
+
+    <h3 id="titration-calculations"> Calculations </h5>
+    <div class="super-sub-topic">
+    <strong class="cogverb" id="3.1.9D">Use<span class="tooltiptext"> 3.1.9D: use appropriate mathematical representations and analyse experimental data and titration curves to solve problems and make predictions, including using the mole concept to calculate moles, mass, volume and concentration from volumetric analysis data.</span></strong>
+    <button> <a href="che docs/3.1.8-3.1.9 Exit Ticket.docx"> Exit ticket </a> </button>
+<br> <br>
+<h4> Titration of weak acid w/ strong base ..................Titration of strong acid w/ strong base </h4>
+  <video  width=45% controls class="lefty">
+      <source src="che docs\Titration of a weak acid with a strong base _ Chemistry _ Khan Academy.mp4" type="video/mp4">
+    </video>
+
+
+    <video  width=45% controls class="left">
+        <source src="che docs\Titration of a strong acid with a strong base _ Chemistry _ Khan Academy.mp4" type="video/mp4">
+      </video>
+
+<div class="example">
+  <h5> Calculating pH of acid/based on titration curve </h5>
+
+    <img src="che photos/tit.png" class="left" width=40%>
+  <P>   The titration curve was produced when 20.0 mL of hydrochloric acid was titrated with
+sodium hydroxide solution. </p>
+<p> 1. Find the Concentration of NaOH </p>
+<DIV CLASS="ANSWER">
+ <P> Equivalence Point at pH=8 and pOH = 6 </p>
+ <div id="pushr"><p> From the graph $$ [HCl] =  10^{-1} = 0.1M $$ and 20ml of NaOH needed to neutralise </p>
+<p>
+$$ [H^+] \times volume = [OH^-] \times volume $$
+$$ [0.1] \times 0.02 = [OH^-] \times 0.04 $$
+$$ [OH^-] = 0.05M $$</p>
+</DIV></div>
+  </div>
+
+  </div>
+</div>
+
+
+<!-- split between topic, this is just a nicccccccce divider
+go for absolute gold here mateee -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="topic">
+	<h1> Topic 2: Redox Reactions </h1>
+		</div>
+		<div class="sub-topic">
+		<h2> Redox Reactions </h2>
+		</div>
+			<div class="content">
+			<h3 id="redox"> Reduction and Oxidation </h3>
+			 <div class="super-sub-topic">
+				<div>
+          <a href="https://quizizz.com/admin/quiz/5d7efd7e0b49a5001c093921/redox-lesson-1-and-2-review"> Quizziz for Redox </a>
+			<p> Redox is an abbreviation for a pair of reactions in which electrons are exchanged between the reactants. </P>
+			<p> <b>Reduction</b> is the <b> GAIN </b> of electrons.
+
+				OIL RIG
+
+			</p><p> <b> Oxidisation </b> is the <b> LOSS </b> of electrons.
+			</p>
+				</div>
+			<br>
+      <strong class="cogverb" id="3.2.1A">Recognise<span class="tooltiptext"> 3.2.1A:recognise that a range of reactions, including displacement reactions of metals, combustion, corrosion and electrochemical processes, can be modelled as redox reactions involving oxidation of one substance and reduction of another substance
+      </span></strong>
+			<p> Each reaction occurs simultaneously &rarr; oxidation + reduction (cannot occur without the other)
+			</p>
+      <p> Redox reaction are common in :
+        <ul>
+          <li> displacement reactions of metals </li>
+          <li> combustion </li>
+          <li> corrosion </li>
+          <li> Electrochemical processes </li>
+        </ul>
+
+			<div class="example">
+				<p> Na<sub>(s)</sub> + O<sub>2 (g)</sub> &rarr; </p>
+				<div class="solution">
+					<ul>
+						<li> Sodium will not lose its electrons unless oxygen is able to accept (both affect each other). </li>
+						<li> Na is being oxidised &rarr; reducing agent</li>
+						<li> O<sub>2</sub> is being reduced &rarr; oxidising agent </li>
+					</ul>
+				</div>
+				</div>
+
+        <strong class="cogverb" id="3.2.1B">Understand<span class="tooltiptext"> 3.2.1B:understand that the ability of an atom to gain or lose electrons can be predicted from the atom’s position in the periodic table, and explained with reference to valence electrons, consideration of energy and the overall stability of the atom
+        </span></strong>
+        <P> Ability of an atom to gain or lose electrons in based on its electronegativity and placement on periodic table (left side loses electrons easily; right side gains electrons easily)
+			</div>
+
+				<h3 id="oxidation-numbers"> &#10132; Oxidation Numbers </h3>
+				<div class="super-sub-topic">
+					<p> Oxidation numbers (oxidation state) helps determine whether e<sup>-</sup> have been lost or gained:
+						<ul>
+							<li> Indicates the no. of e lost or gained by atom. </li>
+							<li> Atoms gains e &rarr; oxidation number increases </li>
+							<li> Atom loses e &rarr; oxidation number increases</li>
+						</ul>
+					</p>
+				<h4 id="species"> Oxidizing and Reducing species/agents </h4>
+				<p>
+					<strong class="cogverb" id="3.2.1C"> Identify <span class="tooltiptext"> 3.2.1C: identify the species oxidised and reduced, and the oxidising agent and
+reducing agent, in redox reactions </span></strong>
+					</p>
+					<ul>
+						<li> A molecule being oxidised (Think OIL RIG: therefore, a molecule losing electrons &rarr; oxidation number increases) is referred to as the reducing agent </li>
+						<li> A molecule being reduced (THINK: is being reduced therefore number becomes more negative &rarr; gain of electrons) is the oxidising agent </li>
+					</ul>
+
+				<h4> Rules for assigning Oxidation Numbers </h4>
+					<p> There are specific rules needed to <strong class="cogverb" id="3.2.1E"> deduce <span class="tooltiptext"> 3.2.1E: deduce the oxidation state of an atom in an ion or compound and name transitional metal compounds from a given formula by applying oxidation numbers represented as roman numerals </span></strong>oxidation numbers to an atom</p>
+					<ol>
+						<li> Elements have oxidation number of 0 (Fe=0 O<sub>2</sub>=0) </li>
+						<li>Certain elements when present in compounds have common oxidation numbers.
+							<ul>
+								<li> Group 1 metals always 1+. </li>
+								<li> Group 2 always 2+. </li>
+								<li> Hydrogen in 1+ </li>
+								<li> Oxygen is always 2+ (except peroxide h202 -1) </li>
+							</ul>
+						</li>
+						<li> Monatomic ions, the oxidation number is given by charge on ion. (Cu<sup>2+</sup>&rarr; 2+) </li>
+						<li> Polyatomic ions, sum of oxidation number equal charge of ion </li>
+						<li> In neutral compound, sum of oxidation numbers is 0 (e.g., HCl) </li>
+						<li> The most electronegative (e<sup>-</sup>) has a negative oxidation number (N is neutral; O<sub>2</sub> is more e- than N. Therefore, has negative oxidation number) </li>
+
+						<h5> Oxidation numbers for Transition Metals </h5>
+						<p> Transition metals have multiple oxidation states </p>
+						<p> If one of the rules is not applicable, use other atoms in compounds </p>
+            	<h6> Example: </h6>
+              <div class="example">
+
+									<p> (MnO<sub>4</sub>)<sup>-1</sup> &rarr; oxidation number? </p>
+									<div class="solution">
+									<p> Known:
+										<ul>
+											<li> charge of -1 </li>
+											<li> oxidation no. of O is +2 </li>
+										</ul>
+									</P>
+									<p> make this into an algebra equation:
+									<br> -1 = MnO<sub>4</sub>
+									<br> -1 = <i>x</i> + (4x2)
+									<br> +7 = <i>x</i>
+									</p>
+								</div>
+							</div>
+						</div>
+
+			<h3> &#10132; Balancing Half equations for Overall redox reaction </h3>
+				<div class="super-sub-topic">
+					<strong class="cogverb" id="3.2.1D"> Understand <span class="tooltiptext"> 3.2.1D: understand that oxidation can be modelled as the loss of electrons from a chemical species, and reduction can be modelled as the gain of electrons by a chemical species; these processes can be represented using balanced half-equations and redox equations (acidic conditions only) </span></strong>
+
+            <p> The oxidation half equation demonstrates an atom losing electrons, reduction half-equations demonstrate gain of e-</p>
+          </p>
+
+          <strong class="cogverb" id="3.2.1F">Use<span class="tooltiptext"> 3.2.1F: use appropriate representations, including half-equations and oxidation numbers, to communicate conceptual understanding, solve problems and make predictions.
+           </span></strong>
+
+					<p> NOTE: when writing half equations, they must be:
+						<ol>
+							<li> BALENCED &rarr; atoms </li>
+							<li> BALENCED &rarr; charge (not net overall charge) </li>
+							<li> Written with states present </li>
+						</ol>
+          </p>
+				<h4> Creating half-equations </h4>
+					<div class="example">
+					<p style="margin-left:50px"> CuSO<sub>4 (aq)</sub> + Zn<sub>(s)</sub> = Cu<sub>(s)</sub> + ZnSO<sub>4 (aq)</sub> </p>
+						<ol>
+							<li>  <b> Assign oxidation numbers to determine oxidising and reducing agents</b>
+								<dd> (Cu)<sup>2+</sup>(SO<sub>4</sub>)<sup>-2</sup><sub>(aq)</sub> + Zn<sup>0</sup><sub>(s)</sub> = Cu<sup>0</sup><sub>(s)</sub> + (Zn)<sup>2+</sup>(SO<sub>4</sub>)<sup>-2</sup><sub>(aq)</sub> </dd>
+							</li>
+							<li> <b> Determine Spectator ions (oxidation no. does not change) </b>
+								<dd> CuSO<sub>4 (aq)</sub> does not change in oxidation state &rarr; not included in half equations </dd>
+							</li>
+							<li> <b> Determine reduction and Oxidation equations </b>
+								<dd> <UL>
+									<li>Cu oxidation number goes from 2+ to 0 &rarr; REDUCTION </li>
+									<li>Zn oxidation number goes from 0 to 2+ &rarr; OXIDATION </li>
+									</UL>
+									<dd> (Cu)<sup>2+</sup> + 2e- &#10132; Cu<sub>(s)</sub></dd>
+									<dd> (Zn)<sup>(s)</sup> &#10132; (Zn)<sup>2+</sup> + 2e-</dd>
+								</dd>
+								</li>
+							<li> <b> Overall equation NOTE: IF E DONT CANCEL OUT THEN MISTAKE HAS BEEN MADE </b>
+								<DD> (Cu)<sup>2+</sup> + (Zn)<suB>(s)</suB> &#10132; (Zn)<sup>2+</sup> + Cu<sub>(s)</sub></dd>
+							</li>
+				</div>
+				</div>
+			<h3> &#10132; Balancing redox reactions in Acidic conditions</h3>
+				<div class="super-sub-topic">
+				<p> Sometime the solution that redox reaction takes place in is not neutral. Solvent may be acidic or basic, therefore H<sup>+</sup> and OH<sup>-</sup> ions may be present must be taken into account. </p>
+
+				<h4 id="acidic-conditions"> Rules for Balancing in Acidic Conditions </h4>
+
+					<ul>
+						<li> Balance all except oxygen and hydrogen (like regular chemistry) </li>
+						<li> Balance Oxygen by adding H<sub>2</sub> O molecules to one side of half-equation, </li>
+						<li> Balance hydrogen by adding H<sup>+</sup> ions </li>
+						<li> Balance charge on both sides of 1/2 equation by adding electrons to side with + charge </li>
+						<li> Combine and cancel out e- and also necessary water and hydrogen ions (scalar multiply to get even number of electrons on both sides </li>
+					</ul>
+				<div class="example">
+
+					<button onclick="myFuncton()" id="yeet">Example of Balancing in Acidic Conditions</button>
+
+					<div id="myDV">
+					<img src="che photos/acid1.png">
+					<img src="che photos/acid2.png">
+					<img src="che photos/acid3.png">
+					</div>
+					<script>
+					function myFuncton() {
+  var x = document.getElementById("myDV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}		</script>
+				</DIV>
+				</div>
+				<div class="sub-topic">
+				<h2> Electrochemical Cells </h2>
+				</div>
+
+          <div class="super-sub-topic">
+				<strong class="cogverb" id="3.2.2A"> Understand <span class="tooltiptext"> 3.2.2A:
+					<br> understand that electrochemical cells, including galvanic and electrolytic
+					cells, consist of oxidation and reduction half-reactions connected via an
+					external circuit that allows electrons to move from the anode (oxidation
+					reaction) to the cathode (reduction reaction).			</span></strong>
+				<p> The term electrochemical cells encompasses both galvanic and electrolytic cells. Which consist of redox reactions connect via an external circuit that allows electrons to move from the anode to cathode. ALWAYS ANODE TO CATHODE </p>
+			</div>
+
+			<div class="sub-topic">
+			<h2> Galvanic Cells </h2>
+			</div>
+
+        <div class="super-sub-topic">
+				<P> Galvanic cells use chemical reaction to create electricity </p>.
+          <strong class="cogverb" id="3.2.3C">Describe <span class="tooltiptext"> 3.2.3C: describe, using a diagram, the essential components of a galvanic cell;
+including the oxidation and reduction half-cells, the positive and negative
+electrodes and their solutions of their ions, the flow of electrons and the
+movement of ions, and the salt bridge. </span></strong>		<img src="che photos/galvanic.png" class="left">
+					<ul>
+						<li> Anode is negative (think anion) </li>
+						<li> Electron flow is from negative to positive (anode to cathode) </li>
+						<li> e<sup>-</sup> are lost from the metal at the anode to form positive ion in aqueous solution </li>
+					</ul>
+          <strong class="cogverb" id="3.2.3A"> Understand <span class="tooltiptext"> 3.2.3A: understand that galvanic cells, including fuel cells, generate an electrical
+  potential difference from a spontaneous redox reaction which can be
+  represented as cell diagrams including anode and cathode half-equations </span></strong>
+				<p> Galvanic cells generate electricity (high electrical potential to low e.p) from potential difference generated from spontaneous redox reaction</p>
+        <strong class="cogverb" id="3.2.3B"> Recognise <span class="tooltiptext"> 3.2.3B: recognise that oxidation occurs at the negative electrode (anode) and
+reduction occurs at the positive electrode (cathode) and explain how two half cells can be connected by a salt bridge to create a voltaic cell (examples of
+half-cells are Mg, Zn, Fe and Cu and their solutions of ions) </span></strong>
+        <p> AN OX RED CAT
+				<br>&rarr; Oxidation at anode (Zn is losing its electrons and therefore making negative)
+				<br>&rarr; reduction at cathode(Cu is gain electrons therefore reduced) </p>
+				<p> In diagram above solid zinc turned into aqueous 2+ and aqueous copper turned solid) </p>
+				<p> anode loses solid; cathode gains mass;</p>
+			</div>
+			<div class="sub-topic">
+			<h2> Standard Electrode Potential </h2>
+			</div>
+
+			<strong class="cogverb" id="3.2.4A"> Determine <span class="tooltiptext"> 3.2.4A: determine the relative strength of oxidising and reducing agents by
+comparing standard electrode potentials </span></strong>
+			<p> more negative of a E&deg; or V, the better at oxidising or strongest reducing agent </p>
+			<h3> &#10132; Cell Potential </h3>
+			<div class="super-sub-topic">
+			<p>The cell potential is the sum of the 1/2 reactions (found in data booklet). Higher E&deg; value, greater current</p>
+			<p> Used to predict the direction of electrochemical reaction, different between two potentials </p>
+			</div>
+
+			<h3 id="table"> &#10132; Standard Electrode Table </h3>
+			<div class="super-sub-topic">
+				<ul>
+					<li> Current flows in a galvanic cell because one half-cell has a greater tendency to push electrons into external circuit that the other </li>
+					<li> There is a potential difference between two half cells measured in Volts (V) under standard conditions </li>
+					<li> Standard half-cells potentials assigned to each half-cell (hydrogen as reference point e=0) </li>
+					<li> S.E.P is a measure of the tendency of the half cell to reduce </li>
+			</div>
+				<button onclick="myFunctio()" id="yeet">Click for Notes on Standard Electrical Potential Table</button>
+
+					<div id="myDI">
+					<img src="che photos/sepnotes.png">
+					</div>
+				<script>
+
+function myFunctio() {
+  var x = document.getElementById("myDI");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+			<h3> &#10132;Predicting Cell reactions </h3>
+			<div class="super-sub-topic">
+			<strong class="cogverb" id="3.2.4B"> Recognise <span class="tooltiptext"> 3.2.4B: recognise that cell potentials at standard conditions can be calculated from
+standard electrode potentials; these values can be used to compare cells
+constructed from different materials</span></strong>
+			<p> a reduction reaction will occur in the half cell with higher E&deg; value, oxidation will occur in the half cell with the lower E&deg; value (+ more likely to reduce, - more likely to oxidise)
+			</p>
+
+			<h5> Determine + and - electrodes:</h5>
+			<p> more (-) E&deg; value means:
+				<ul>
+					<li> Stronger reducing agent, weaker oxidising </li>
+					<li> Bad at reducing, good at oxidising </li>
+					<li> More likely the anode </li>
+				</ul>
+			</p>
+			<div class="example"> Example:
+			<br> <p> Cell made from Ag+/Ag and Fe2+/Fe. Predict cell reaction, the anode, cathode and e- flow,</p>
+				<UL>
+					<LI> Ag is reducing </li>
+					<li> Fe is oxidising as E&deg; value was more negative </li>
+				</ul>
+			<p> RED: 2Ag<sup>+</sup> + 2e<sup>-</sup> &rarr; 2Ag<br>
+			OX: Fe &rarr; 2e<sup>-</sup> + Fe<sup>2+</sup>
+			</p>
+			<p> Overall: 2Ag<sup>+</sup> + Fe &rarr; 2Ag + Fe<sup>2+</sup> </p>
+			<p>  CATHODE                     ANODE </p>
+			</div>
+
+    <h5> Limitations of SEP </h5>
+      <strong class="cogverb" id="3.2.4C"> Recognise <span class="tooltiptext"> 3.2.4C: recognise the limitation associated with standard reduction potentials</span></strong>
+        <ul>
+          <li> SEP applies to a reaction under standard conditions. For non-standard, the potential cannot be used reliably to make predictions </li>
+              <li> Allows a prediction of a likelihood but not rate of reaction </li>
+            </ul>
+
+			</div>
+			<h3> &#10132;Calculating Cell Voltage </h3>
+			<div class="super-sub-topic"> <strong class="cogverb" id="3.2.4D"> Use and Solve: <span class="tooltiptext"> 3.2.4D: use appropriate mathematical representation to solve problems and make
+predictions about spontaneous reactions, including calculating cell potentials
+under standard condition </span></strong>
+			<p> E&deg; = E&deg;<sub>red</sub>-E&deg;<sub>ox</sub> </p>
+			</div>
+			<h3> &#10132;Activy Series </h3>
+			<div class="super-sub-topic">
+			<ul>
+				<li> Can predict direction of redox reactions </li>
+				<li> Metals that are higher up on the reactivity series have greater tendency to lose electrons </li>
+				</li>
+			</div>
+</div>
+
+
+			<div class="sub-topic">
+			<h2> Electrolytic Cells </h2>
+			</div>
+			<div class="content">
+        <div class="super-sub-topic">
+			<strong class="cogverb" id="3.2.5A"> Understand <span class="tooltiptext"> 3.2.5A: understand that electrolytic cells use an external electrical potential difference
+to provide the energy to allow a non-spontaneous redox reaction to occur,
+and appreciate that these can be used in small-scale and industrial
+situations, including metal plating and the purification of copper </span></strong>
+<P> <B> AN OX RED CAT </B></p>
+		<p> Electrolytic Cells – Electricity is provided to drive a non-spontaneous redox reaction
+</p>
+		<h4> Uses </h4>
+			<ul>
+				<li> plate metals on other metals </li>
+				<li> Obtain a pure metal from it's compounds (such as the purification of copper) </li>
+			</ul>
+
+		<table>
+			<tr>
+				<th> Galvanic </th>
+				<th> Electrolytic </th>
+			</tr>
+			<tr>
+				<td>
+					<ul>
+						<li> No power source required </li>
+						<li> Produces electricity </li>
+						<li> Anode is negative/ Cathode is positive </li>
+						<li> Separate liquids </li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li> Power source required </li>
+						<li> Don’t produce electricity </li>
+						<li> Anode is positive/cathode is negative </li>
+						<li> One solution in conducting liquid </li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+  </div>
+<div class="super-sub-topic">
+  <h4 id="electroplating"> &#10132; Electroplating </h4>
+
+<img src="che photos/electroplating.png" class="float-right mini" height=200px >
+<p>
+  <ul>
+    <li> The deposition of a layer of metal on the surface of another metal </li>
+    <li> Can be used to make an object more decorative or can be used to improve the resistance of metals to corrosion </li>
+    <li> The object immersed in a n electrolyte solution which contains the ions of the metal to be plated </li>
+    <li> Electrons are withdrawn from the tin electrode, causing oxidation to occur. Tin metal becomes Sn2+ and replaces the ions in the solution that have been consumed in reaction </li>
+  </ul>
+</P>
+
+  <h4 id="electrorefining"> &#10132;Electrorefining </h4>
+
+<img src="che photos/electrorefining.png"  class="right" width=15%>
+<ul>
+<li>impure copper can be purified using electrolysis </li>
+<li> Pure copper is used as cathode </li>
+<li> At the anode electrons are drawn away </li>
+<li> Impurities less reactive than copper, do not oxidise and fall from the anode, collecting at bottom of tank. </li>
+<li> Copper metal is deposited onto the cathode </li>
+</ul>
+</div>
+
+		 <h3> &#10132; Principles of Electrolysis </h3>
+			<div class="super-sub-topic">
+        <strong class="cogverb" id="3.2.5C"> Describe<span class="tooltiptext"> 3.2.5C: describe, using a diagram, the essential components of an electrolytic cell; including source of electric current and conductors, positive and negative electrodes, and the electrolyte</span></strong>
+<img src="che photos/electrolysis.png"class="left" width=40%>
+				<ul>
+					<li> Chemical reactions occur when an electric current from DC power source passes through a conducting liquid </li>
+					<li> The two electrodes in the cell act as conductors of electricity and are connected to the power source </li>
+					<li> Electrode at the positive terminal of the power supply will be the positive electrode and vice versa</li>
+					<li> Reactions occur at the surface of both electrodes</li>
+					<li>Power supply is a type of ‘electron pump’, withdrawing electrons from the external circuit from the positive electrode and pushing them onto the negative electrode</li>
+					<li>Oxidation &rarr; anode</li>
+					<li>Reduction &rarr; cathode</li>
+					<li>Conducting liquid in an electrolytic cell can be a molten ionic salt or a solution of an ionic solid. Ions in the electrolyte move towards electrodes to balance out charges like a salt bridge in a galvanic cell </li>
+					<li>One container is fine because it is a non-spontaneous reaction no need to separate. However, a porous divider is sometimes used to separate products. </li>
+				</ul>
+			</div>
+
+       <h3> &#10132; Molten Salt </h3>
+       <div class="super-sub-topic">
+         <strong class="cogverb" id="3.2.5B"> Predict <span class="tooltiptext"> 3.2.5B: predict and explain the products of the electrolysis of a molten salt and aqueous solutions of sodium chloride and copper sulphate. Explanations should refer to Eø values, the nature of the electrolyte and the concentration of the electrolyte
+          </span></strong>
+			<div class="box">
+
+
+			<img src="che photos/moltensalt.png" width=40% class="left">
+				<ul>
+					<li>Inert electrodes used
+</li>
+					<li> Molten sodium chloride acts as an electrolyte because it is a conducting liquid  Na+ and Cl-
+</li>
+					<li>Process occurs at high temperatures. No water is present.
+</li>
+</ul>
+    <h4>At the cathode:</h4>
+				<ul>
+					<li> Power supply pushes electrodes onto negative electrode. Na+ ions are attracted to this  accept electrons
+</li>
+</ul>
+			<h4>	At the Anode:</h4>
+				<ul>
+					<li> Chloride ions migrate towards the positive electrode to give up electrons and form chlorine atoms. These atoms quickly form molecules of Cl2.</li>
+					<li> These electrons move through anode to the power supply
+</li>
+					<li> We do not use Eo values here since this is the electrolysis of molten ions, not aqueous!
+</li>
+</ul>
+	<h4> Application </h4>
+	<p> Down cells - used to produce sodium and chlorine </p>
+		</div>
+	</div>
+  <h3 id="Aqueous"> &#10132; Electrolysis in Aqueous Solutions </h3>
+    <div class="super-sub-topic">
+
+
+				<img src="che photos/elec.aq.png" width=55%>
+
+			</div>
+      	<h3 id="nacl">&#10132; Electrolysis of Sodium Chloride </h4>
+          <div class="super-sub-topic">
+			<div class="box">
+
+
+				<br><img src="che photos/elec.nacl.png" width=30% class="left">
+				<h4> At the cathode:</h4><p> REDUCTION &rarr; The power supply pushes electrons towards negative electrode and Na+ ions are attracted. Two species can act as oxidising agents and react at this electrode. They are:
+							</p><img src="che photos/elec.nacl2.png" width=50%>
+
+				<p> Given the E&deg; of half equations, water will reduce because its value is more positive (placement of water is lower on the SEP than Na). Hydrogen gas will form. (Sodium act as spectator ion)
+			</p>
+
+				<h4> At the Anode: </h4><p>  OXIDATION &rarr; Electrons move away from anode (negatively charged), moving towards positive terminal. Two possibilities for reducing agents (species to be oxidised).
+				</p> <img src="che photos/elec.nacl4.png" width=50%>
+
+				<p> Water will also be oxidised at cathode as its E&deg; value is more negative than chlorine (will act as spectator ion). Oxygen gas will form.
+				</p>
+
+				<img src="che photos/nacloverall.png" width=80%>
+
+				<br>
+      </div>
+				</div>
+
+        	<h3 id="CuSO4"> &#10132;Electrolyis in Copper Sulphate Solution </h3>
+          <div class="super-sub-topic">
+				<div class="box">
+
+				<img src="che photos/eleccusulfate.png" class="float-right" width=40%>
+					<p> In this scenario (1M solution) of copper sulphate, with water. Cu2+ present and copper electrodes, the following species may react
+						<ul>
+							<li> H<sub>2</sub>O could be oxidised of reduced </li>
+							<li> Cu<sup>2+</sup> ions could be reduced </li>
+							<li> Cu metal in the electrodes could be oxidised </li>
+						</ul>
+					</p>
+					<ul>
+					</ul>
+					<img src="che photos/eleccucathode.png" height=160px>
+
+					<img src="che photos/eleccuanode.png" height=160px
+					</div>
+        </div>
+
+</div>
+
+
+
+<!--this is just a spacer to not confuse dives -->
+
+			<h1 class="unit" id="unit4"> Unit 4 Chemical Synthesis and Design </h1>
+
+
+		<div class="topic">
+	<h1> Topic 1: Properties and Structure of Organic Materials </h1>
+		</div>
+
+		<div class="sub-topic">
+		<h2> Structure of Organic Materials</h2>
+		</div>
+
+			<div class="content">
+			<h3> &#10132; Functional Groups </h3>
+						<div class="super-sub-topic">
+						<strong class="cogverb" id="4.1.1A"> Appreciate <span class="tooltiptext"> 4.1.1A: recognise that organic molecules have a hydrocarbon skeleton and can contain functional groups, including alkenes, alcohols, aldehydes, ketones, carboxylic acids, haloalkanes, esters, nitriles, amines, amides and that structural formulas (condensed and extended) can be used to show the arrangement of atoms and bonding in organic molecules </span> </strong>
+            <strong class="cogverb" id="4.1.1B"> Deduce <span class="tooltiptext"> 4.1.1B: deduce the structural formulas and apply IUPAC rules in the nomenclature of organic compounds (parent chain up to 10 carbon atoms) with simple branching for alkanes, alkenes, alkynes, alcohols, aldehydes, ketones, carboxylic acids, haloalkanes, esters, nitriles, amines and amides </span> </strong>
+				<p> the most used functional groups are hydroxyl (OH), carbonyl (double bonded oxygen carbon) and carboxyl (carbonyl and hydroxyl groups attached to same end carbon).
+				</p>
+				<table class="bigtable">
+					<tr>
+						<th width=24%> Name </th>
+						<th> Shape </th>
+						<th> Description </th>
+					</tr>
+					<tr>
+						<td> Alkane "ane"</td>
+						<td><img src="che photos/alkane.png">
+						</td>
+						<td>Just a regular carbon chain with only single bonds present between the carbons (saturated)
+						</td>
+					</tr>
+					<tr>
+						<td> Alkene "ene"</td>
+						<td><img src="che photos/alkene.png">
+						</td>
+						<td> A carbon chain with a double bonded carbon to carbon connection
+						</td>
+					</tr>
+					<tr>
+						<td> Alkyne "yne" </td>
+						<td> <img src="che photos/alkyne.png">
+						</td>
+						<td> A carbon chain with a triple bonded carbon to carbon connection
+						</td>
+					</tr>
+					<tr>
+						<td> Alcohols "ol"</td>
+						<td> <img src="che photos/alcohol.png">
+						</td>
+						<td> Has a hydroxyl group (OH) of main group. Primary if OH is on end carbon. Secondary if OH is on middle carbon. Tertiary if OH is on middle carbon also attached to another carbon group.
+						</td>
+					</tr>
+					<tr>
+						<td> Aldehyde "al"</td>
+						<td><img src="che photos/aldehyde.png">
+						</td>
+						<td> Has a carbonyl group attached to end carbon. The same as ketone except only for middle carbons.
+						</td>
+					</tr>
+					<tr>
+						<td> Ketone "one" </td>
+						<td> <img src="che photos/ketone.png">
+						</td>
+						<td> Has a carbonyl group attached to middle carbon. Start naming from end closest to carbonyl group, so in this is named 2-butanone.
+						</td>
+					</tr>
+					<tr>
+						<td> Carboxylic Acids "oic" </td>
+						<td> <img src="che photos/carbox.png">
+						</td>
+						<td> Has a carboxyl group attached to the end carbon. Starts naming closest towards the carboxyl group.
+						</td>
+					</tr>
+					<tr>
+						<td> Esters "oate" </td>
+						<td> <img src="che photos/ester.png">
+						</td>
+						<td> Contains a carboxyl group attached to an oxygen linked to another carbon chain. The carbonyl group is carbon 1. The chain attached to oxygen contains only one carbon, so the ester substituent is methyl. The name of molecule is methyl butanoate.
+						</td>
+
+					</tr>
+					<tr>
+						<td> Amines "amine"</td>
+						<td><img src="che photos/amine.png">
+						</td>
+						<td> Derived from Ammonia (NH3) whereby one or more hydrogen atoms is replaced be an alkyl group (triple bonded carbon). TO name, identify and name each alkyl group, place each group in alpha order and add suffix amine to end.
+						</td>
+					</tr>
+					<tr>
+						<td> Amides "amides" </td>
+						<td> <img src="che photos/amide.png">
+						</td>
+						<td> Is an amide with a connection carbon being attached to a double bonded oxygen. The carboxylic acid component is ethanoic acid, becoming ethanamide. The alkyl group attached on other side of the nitrogen also has two carbon atoms and will have the locant 'N'. The name of the molecule is N-ethyl ethanamide.
+						</td>
+					</tr>
+					<tr>
+						<td> Nitrile </td>
+						<td> <img src="che photos/nitrile.png"
+						</td>
+						<td> Consists of a functional group of carbon triple bonded to nitrogen.
+						</td>
+					</tr>
+					<tr>
+						<td> Haloalkane </td>
+						<td><img src="che photos/haloalkane.jpg"
+						</td>
+						<td> A functional group consisting of a halogen such as fluorine (fluro), bromine (bromo) and iodine (iodo).
+						</td>
+					</tr>
+
+					</table>
+
+					<h4 id="naming-priority"> Order of Priority for naming </h4>
+					<p> If a chemical has two of groups in table below, then the group higher up on the table is used for the suffix and then the other groups are used for pre-fixes </p>
+					<img class="no-border" src="che photos/priority.png" width=60%>
+					</div> <!-- div for functional groups super subtopic -->
+
+
+          <h3> &#10132; Isomers </h3>
+          <div class="super-sub-topic">
+            <strong class="cogverb" id="4.1.1C"> Identify <span class="tooltiptext"> 4.1.1C: identify structural isomers as compounds with the same molecular formula but different arrangement of atoms; deduce the structural formulas and apply IUPAC rules in the nomenclature for isomers of the non-cyclic alkanes up to C6</span> </strong>
+
+
+            <p> Isomers have same molecular formula but different structures </p>
+            <table>
+              <tr>
+                <th> </th> <th> types </th> <th> examples </th>
+              </tr>
+              <tr>
+                <th> Constitutional </th> <td> differ in the order of attachment of atoms</td> <td> <img src="che photos/cons.png" width=40%></td>
+              </tr>
+              <tr>
+                <th rowspan="2"> stereoisomers <br> stereo: em and dtc </th> <td> <b>enantiomers:</b> mirror images of each other </td> <td> </td>
+              </tr>
+              <tr>
+                <td><b> diastereomers:</b> cis and trans differences </td> <td><img src="che photos/dia.png" width=40%> </td>
+              </tr >
+            </table>
+            <br>
+            <strong class="cogverb" id="4.1.1D"> Identify <span class="tooltiptext"> 4.1.1D: identify stereoisomers as compounds with the same structural formula but with different arrangement of atoms in space; describe and explain geometrical (cis and trans) isomerism in non-cyclic alkenes. </span> </strong>
+
+<dl> <img src="che photos/cis.png" width=40% class="left">
+  <dt> Cis </dt>
+<dd>  Functional groups are on same side of plane</dd>
+
+<dt> Trans </dt>
+<dd> Functional groups are on alternating sides of plane</dd>
+</dl>
+<br> <br>
+<h4> Practice questions </h4>
+<img src="che photos/pracq.png" width=50%>
+            <p> </p>
+        </div> <!--for isomers -->
+					</div> <!-- div for chemical equilibrium topic -->
+
+
+		<div class="sub-topic">
+		<h2> Physical Properties and Trends </h2>
+		</div>
+			<div class="content">
+        <div class="super-sub-topic">
+          <h4> Refresher </h4>
+          <dl>
+            <dt> London (dispersion) forces </dt>
+              <dd> All compounds and molecules experience this force, gets greater with longer chains </dd>
+            <dt> Dipole-dipole </dt>
+              <dd> when partial negative sides attract partial positive sides of adjacent molecule </dd>
+              <dt> Hydrogen bonding </dt>
+                <dd> When hydrogen has a dipole-dipole attraction to highly electronegative atom such as oxygen, nitrogen and fluorine</dd>
+            </dl>
+
+        <h4> Effects of Functional groups </h4>
+        <strong class="cogverb" id="4.1.2A"> Recognise  <span class="tooltiptext"> 4.1.2A: recognise that organic compounds display characteristic physical properties, including melting point, boiling point and solubility in water and organic solvents that can be explained in terms of intermolecular forces (dispersion forces, dipole-dipole interactions and hydrogen bonds), which are influenced by the nature of the functional groups</span> </strong>
+        <p> members of different homologous series (alkanes, alcohols, carboxylic acids etc.) contain different functional groups which yield different intermolecular forces. As a result, display different Physical properties.
+        </p>
+        <table>
+          <tr>
+            <td> ethane
+              <ul>
+                <li> non-polar </li>
+                <li> London forces </li>
+                <li> BP 89&deg;C </li>
+              </ul>
+            </td>
+            <td> Ethanol
+              <ul>
+                <li> Polar hydroxyl functional group </li>
+                <li> London forces and hydrogen bonding (type of dipole-dipole; intermolecular attraction between H and O or N or F) </li>
+                <li> BP 78&deg;C </li>
+              </ul>
+            </td>
+            <td> Ethanoic Acid
+              <ul>
+                <li>  polar carboxyl functional group </li>
+                <li> London forces and hydrogen bonding </li>
+                <li> BP 118&deg;C</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+        <h5> Alcohols </h5>
+        <p> The polar -OH in alcohol molecules means that Hydrogen bonding occurs causing higher MP and BP than alkanes of same parent. </P>
+          <p> since the degree of branching increase with degree of alcohol, primary has the highest MP and BP and tertiary has the lowest MP and BP. </p>
+
+        <h5> Aldehydes, Ketones and Esters </h5>
+        <p> Aldehydes and ketones contain carbonyl (C=O) group. C=O bond is polar and dipole-dipole forces exist between them, making aldehydes and ketones to have <b> Higher </b> BP and MP than alkanes of same parent chain </p>
+        <p> Esters contain a carboxylate (R-C=O,-O-R).</p>
+
+        <h5> Carboxylic acids, amines and amides </h5>
+        <p> Each of the carboxyl (carboxylic acid), amino (amine) and carboxamide (amide) allow for hydrogen bonding, causing these homologous series to have higher melting and boiling points than alkanes of the same parent. </p>
+
+        <h5> Haloalkanes </h5>
+        <p> Presence of the halogen group means that the molecules are polar, and dipole-dipole occur between molecules, causing higher BP and MP than alkane of same parent chain. </p>
+
+
+        <h4> Trends in Melting and Boiling Point </h4>
+        <strong class="cogverb" id="4.1.2B"> Predict<span class="tooltiptext"> 4.1.2B:predict and explain the trends in melting and boiling point for members of a homologous series </span> </strong>
+        <p> As carbon number (of hydrocarbon) increase, the molar mass also increases. The chain length gets greater and hence the London (dispersion) forces between molecules increases. More energy required to break intermolecular forces and hence high boiling point.
+        </p> <p> Straight chain alkanes are able to fit together more closely resulting in more content with adjacent molecules, and hence more London forces and higher boiling point than branch chain isomers. <b> Straight chains are strong. High BP </b> </p>
+
+        <h4>Solubility </h4>
+            <strong class="cogverb" id="4.1.2C"> Discuss <span class="tooltiptext"> 4.1.2C: discuss the volatility and solubility in water of alcohols, aldehydes, ketones, carboxylic acids and halides.</span> </strong>
+              <p> Generally, a solute will dissolve in a solvent that has similar intermolecular forces. </p>
+              <p> Organic compounds are more likely to dissolve if their functional groups are able to form similar hydrogen bonds with water molecules. </p>
+              <h5> Functional Groups Present </h5>
+              <dl>
+                <dt> haloalkane</dt>
+                <dd> low solubility in water even with dipole-dipole interaction with the water and halogen </dd>
+                <dt> Aldehydes + Ketones </dt>
+                <dd> The polar C=O group can form hydrogen bonds with water making the smaller molecules soluble in water </dd>
+                <dt> Alcohols</dt>
+                <dd> hydrogen bonding can occur between water and the polar of group making them more soluble than halides, aldehydes and ketones. </dd>
+                <dt> Carboxylic acid </dt>
+                <dd> Hydrogen bonding can occur between water and the polar c=O group and the polar -OH group making these molecules more soluble than alcohols </dd>
+              </dl>
+            <h5> Length of carbon chain </h5>
+             <p> As the length increase, the non-polar region gets larger. As this non-polar tail increases it reduced the amount of hydrogen bonding that can occur between molecules and the water; thus, becoming less soluble .
+             </p>
+
+             <h4> Volatility </h4>
+             <p> Describes the ease with which a liquid can evaporate </p>
+             <ul>
+                <li> Liquids that are highly volatile  have weak intermolecular forces holding molecules together. </li>
+                <li> BP of an organic compound and volatility are directly related </li>
+                <li> compounds with low BP contain weak intermolecular forces and are therefore more volatile than compounds with higher BP (strong intermolecular forces)
+      </div> <!--for isomers -->
+			</DIV> <!-- DIV FOR Physical properties and trends-->
+
+			<div class="sub-topic">
+		<h2> Organic Pathways </h2>
+		</div>
+			<div class="content">
+
+          <h3> Alkenes vs Alkanes </h3>
+            <div class="super-sub-topic">
+          <strong class="cogverb" id="4.1.3B"> Understand <span class="tooltiptext"> 4.1.3B: understand that saturated compounds contain single bonds only and
+undergo substitution reactions, and that unsaturated compounds contain
+double or triple bonds and undergo addition reactions </span> </strong>
+          <p> Alkanes are saturated as they have the maximum number of H attached, Alkenes and alkynes are unsaturated because double bonded carbons have less H than single bond C. </p>
+          <p> <b> Addition reactions </b> (adding H<sub>2</sub>)therefore make sense to happen to unsaturated hydrocarbons (alkenes and alkynes) because they can break C-C bonds to <i> add </i> more hydrogens to compound. </p>
+            <p> NOTE: for reaction pathways stuff, alkynes are not mentioned </p>
+        </div><!-- div for alkanes vs alkanes -->
+        <h3> Pathways summary </h3>
+          <div class="super-sub-topic">
+            <strong class="cogverb" id="4.1.3A"> Appreciate <span class="tooltiptext"> 4.1.3A: appreciate that each class of organic compound displays characteristic chemical properties and undergoes specific reactions based on the functional group present; these reactions, including acid-base and oxidation reactions, can be used to identify the class of the organic compound </span> </strong>
+            <strong class="cogverb" id="4.1.3J">Understand <span class="tooltiptext">4.1.3j: understand that the synthesis of organic compounds often involves constructing reaction pathways that may include more than one chemical reaction  </span> </strong>
+            <strong class="cogverb" id="4.1.3k">Deduce<span class="tooltiptext">4.1.3K: deduce reaction pathways, including reagents, condition and chemical equations, given the starting materials and the product. </span> </strong>
+              <br>
+          <table class="bigtable" width="100%">
+           <tr class="thic">
+            <th>Reaction Type</th>
+            <th width=29%>General </th>
+            <th width=38% >Chemical Equations</th>
+           </tr>
+
+           <tr class="thic">
+            <td  rowspan="5"><h3>Addition</h3>
+            <strong class="cogverb" id="4.1.3D"> describe <span class="tooltiptext"> 4.1.3D: describe, using equations:<UL><LI>
+oxidation reactions of alcohols and the complete combustion of alkanes and alcohols</li> <li>
+substitution reactions of alkanes with halogens</li> <li>
+substitution reactions of haloalkanes with halogens, sodium hydroxide, ammonia and potassium cyanide</li> <li>
+addition reactions of alkenes with water, halogens and hydrogen halides</li> <li>
+addition reactions of alkenes to form poly(alkenes) </li> </uL> </span> </strong>
+
+
+Addition reactions have alkene as a reactant. The main types of addition reactions are:
+                <ul>
+                  <li> Alkenes with hydrogen</li>
+                  <li> alkenes with water </li>
+                  <li> alkenes with halogens </li>
+                  <li> alkenes with hydrogen halides </li>
+                  <li> Addition of alkenes to form polyalkanes</li>
+                </ul>
+                <strong class="cogverb" > describe <span class="tooltiptext"> 4.1.3I: understand that organic reactions can be identified using characteristic observations and recall tests to distinguish between:
+<li> alkanes and alkenes using bromine water</li> <li>
+primary, secondary and tertiary alcohols using acidified potassium</li> <li>
+dichromate (VI) and potassium manganate (VII) </li> </ul>  </span> </strong>
+          </td>
+            <td> alkene + h2 = alkane <ul> <li> Catalyst &#10132; Ni </li> <li> Heat </li> </ul> </td><td>  <img src="che photos/addwhy.png"</td>
+           </tr>
+
+           <tr>
+            <td>alkene + h20 = alcohol <ul> <li> Heat = 300&deg;C </li> <li> Catalyst: like phosphoric acid H<sub>3</sub>PO<sub>4</sub>. </li> </ul> <b> Markovnikov's rule </b> </td><td><img src="che photos/addwh2o.png"></td>
+            </tr>
+
+           <tr>
+            <td>alkene + halogen (CL2) = Haloalkane <ul> <li> Room temperature </li> <li> No catalyst </li> </ul> </td><td> <img src="che photos/addwhal.png"></td>
+           </tr>
+
+           <tr>
+            <td>alkene + HCl = Hydrogen Halide <ul> <li> Room temperature </li> <li> No catalyst </li> </ul> <B> Markovnikov's rule: </b> lose H will attach to C (within double bond) with most H attachments</td><td><img src="che photos/addwhcl.png"></td>
+           </tr>
+
+           <tr>
+            <td>alkene x 3 = polyakene <ul> <Li> heat </li>
+            <li> presence of catalyst (unspecified) </li> </ul> </td><td><img src="che photos/addwalk.png"></td>
+           </tr>
+
+
+
+           <tr class="thic">
+            <td rowspan="5"><h3> Substitution </h3>
+            Substitution reactions have alkanes/haloalkanes as reactants. Occurs in saturated only.
+            The main types of substitution reactions are:
+            <uL>
+              <li> alkanes with halogens </li>
+              <li> Haloalkanes with halogens </li>
+              <li> Haloalkanes with sodium hydroxide </li>
+              <li> haloalkanes with ammonia </li>
+              <li> Haloalkanes with potassium cyanide</li>
+            </uL>
+          </td>
+            <td> alkane + halogen (Cl<sub>2</sub>) = haloalkane + HCl<br> <ul> <li> UV Light </li> </td><td>  <img src="che photos/subwcl.png"</td>
+           </tr>
+
+           <tr>
+            <td > haloalkane + halogen = dihaloalkane + HCl <br> <ul> <li> UV light </li> </ul> </td><td><img src="che photos/subwhal.png"></td>
+            </tr>
+
+            <tr>
+             <td > haloalkane + ammonia = amine + hydrogen halide (HCl) <ul> <li> Heat </li> </ul> </td><td><img src="che photos/subwamm.png"></td>
+             </tr>
+
+             <tr>
+              <td > haloalkane + potassium cyanide = nitrile + KCl (Br/Fl) <ul> <li> heat </li> </ul> </td><td><img src="che photos/subwpot.png"></td>
+              </tr>
+
+              <tr>
+               <td > haloalkane + sodium hydroxide = alcohol + salt <ul> <li> Heat </li> </ul>  </td><td><img src="che photos/subwsh.png"></td>
+               </tr>
+
+
+
+               <tr class="thic">
+                <td  rowspan="4"><h3> Oxidation reactions </h3>
+                  Oxidation reactions can be loss of electrons, loss of hydrogen atoms or gain of oxygen atoms. OXI/RED reactions. Main types of oxidation reactions:
+                  <ul>
+                    <li> Oxidation of Primary alcohols </li>
+                    <li> Oxidation of secondary alcohols </li>
+                    <li> Oxidation of tertiary alcohols </li>
+                  </ul>
+                  <strong class="cogverb" id="4.1.3I"> describe <span class="tooltiptext"> 4.1.3I: understand that organic reactions can be identified using characteristic observations and recall tests to distinguish between:
+<li> alkanes and alkenes using bromine water</li> <li>
+primary, secondary and tertiary alcohols using acidified potassium</li> <li>
+dichromate (VI) and potassium manganate (VII) </li> </ul>  </span> </strong>
+                  potassium dichromate and potassium manganate are both used as testers for what type of alcohol something is. Natural potassium dichromate and potassium manganate have brown and purple colours but turn green and colourless (respectively) as oxidation occurs.
+
+
+              </td>
+                <td> primary alcohol + catalyst = aldehyde <ul> <li> Catalyst: acidified potassium dichromate </li> <li> Mild Heat </li> </ul>
+                  This is partial oxidation as aldehydes can be further oxidised to carboxylic acid. </td><td>  <img src="che photos/oxiwpa.png"</td>
+               </tr>
+
+               <tr>
+                <td > aldehyde + catalyst = carboxylic acid <ul> <li> Catalyst: acidified potassium dichromate/ potassium manganate </li> <li> Strong heat </li> </ul> </td><td><img src="che photos/oxiwald.png"></td>
+                </tr>
+
+                <tr>
+                 <td > secondary alcohol + catalyst = ketone <ul> <li> Catalyst: Potassium dichromate/ potassium manganate</li> <li> Mild heat </li> </ul> No further oxidation can occur with ketones
+                 </td><td><img src="che photos/oxiwsa.png"></td>
+                 </tr>
+
+                 <tr>
+                  <td > Tertiary alcohols do not undergo oxidation </td><td><img src="che photos/tertiaryalc.png"></td>
+                  </tr>
+
+
+
+
+
+
+                   <tr class="thic">
+                    <td rowspan="2"><h3>Reduction </h3>
+                      Reduction reaction is gain of electrons (An OX red CAT). Oxidation and reduction reactions occur together, meaning the reagent used will be oxidised during the reaction. The main reactions are:
+                      <ul> <li> reduction of Alkenes </li>
+                        <li> Reduction of nitrile </li>
+                      </ul>
+                      <strong class="cogverb" id="4.1.3G"> Appreciate <span class="tooltiptext"> 4.1.3G: recognise reduction reactions and explain, using equations, the reaction of nitriles to form amines and alkenes to form alkanes. </span> </strong>
+                   </td>
+                    <td> alkyne + h2 = alkene <br>
+                      alkene + h2 = alkane  <ul> <li> heat (300&deg;C)</li> <li> metal catalyst (Ni/Pt/Pd) </li> </ul>
+                    These reactions are also addition reactions </td><td>  <img src="che photos/redwah.png"></td>
+                   </tr>
+
+                   <tr>
+                    <td > Nitrile + hydrogen = amine <ul> <li> Heat </li> <li> Catalyst: Nickel </li> </ul> </td><td><img src="che photos/redwnh.png"></td>
+                    </tr>
+
+
+
+
+
+
+                   <tr class="thic">
+                    <td rowspan="3"><h3>Condensation</h3>
+                      <strong class="cogverb" > Appreciate <span class="tooltiptext"> 4.1.3H: recognise and explain, using equations, that: <ul> <LI>
+  esters and amides are formed by condensation reactions</li> <li>
+  elimination reactions can produce unsaturated molecule and explain,</li> <li>
+  using equations, the reaction of haloalkanes to form alkenes</li> </ul>  </span> </strong>
+  <br> Reactions that involve the combination of two reactant and the <b>removal</B> of a water molecule (small molecule). Main types are: <ul> <li> ester formation </li> <li> amide formation (primary and secondary) </li> </ul>
+                <br>
+                <strong class="cogverb" id="4.1.3E"> Recall and Explain <span class="tooltiptext"> 4.1.3E: recall the acid-base properties of carboxylic acids and explain, using equations, that esterification is a reversible reaction between an alcohol and a carboxylic acid </span> </strong>
+                <br><b> Esterification </b> is the formation of esters from carboxylic acid and alcohol. Esterification is a reversible reaction as shown in the first reaction in hydrolysis.
+                  <br> <strong class="cogverb" id="4.1.3F"> Recognise <span class="tooltiptext"> 4.1.3F: recognise the acid-base properties of amines and explain, using equations, the reaction with carboxylic acids to form amides </span> </strong> </td> <td> carboxylic acid + alcohol = water + ester <ul> <li> Heat </li> <li> Catalyst: concentrated H<sub>2</sub>SO<sub>4</sub></li> </ul>
+                      The carboxylic acid will have suffix name and alcohol will have prefix name. THINK the H in the hydroxyl group is switched for the C=O in the carboxylic acid molecule.
+                    </td><td>  <img src="che photos/conwaca.png" ></td>
+                   </tr>
+
+                   <tr>
+                    <td > carboxylic acid + ammonia = water + 1&deg; amide <ul> <li> Heat </li> </ul> </td><td><img src="che photos/conwcaa.png"></td>
+                    </tr>
+
+                    <tr>
+                     <td > carboxylic acid + amine = water + 2&deg; amide <ul> <li> Heat </li> </ul> </td><td><img src="che photos/conwcasa.png"></td>
+                     </tr>
+
+
+
+                     <tr class="thic">
+                      <td rowspan="3"><h3>Hydrolysis</h3>
+                        Hydrolysis and condensation are the reverse of each other. <b> addition of a water molecule </li>
+                    </td>
+                      <td> Ester + water = carboxylic acid + alcohol <ul> <li> catalyst: dilute acid </li> <li> heat </li> </ul>
+                      </td><td>  <img src="che photos/hydwew.png"</td>
+                     </tr>
+
+                     <tr>
+                      <td > amide + water + acid = carboxylic acid + amide <ul> <li> No specific conditions </li> </ul> break up of ester into alcohol and carboxylic acid </td><td><img src="che photos/hydawh.png"></td>
+                      </tr>
+
+                      <tr>
+                       <td > amide + base = sodium acetate (ethanoic acid) + ammonia <ul> <li> No specified conditions </li> </ul>  </td><td><img src="che photos/hydab.png"></td>
+                       </tr>
+
+
+
+                       <tr class="thic">
+                        <td rowspan="1"><h3>Elimination </h3>
+                        <strong class="cogverb" id="4.1.3H"> Appreciate <span class="tooltiptext"> 4.1.3H: recognise and explain, using equations, that: <ul> <LI>
+esters and amides are formed by condensation reactions</li> <li>
+elimination reactions can produce unsaturated molecule and explain,</li> <li>
+using equations, the reaction of haloalkanes to form alkenes</li> </ul>  </span> </strong>  Elimination reactions involves removal of substitutes from two adjacent carbon atoms in a haloalkane forming a double bond.
+                      </td>
+                        <td> haloalkane + sodium hydroxide = alkene + water + Salt (NaCl) <ul> <li> High heat </li> <li> Strong base needed (NaOH) to make haloalkane lose H</td><td>  <img src="che photos/eliwhsh.png"</td>
+                       </tr>
+
+
+
+          </table>
+          </div>
+
+      </div><!--div for content-->
+			 <!-- DIV FOR -->
+
+		<div class="sub-topic">
+		<h2> Organic Materials </h2>
+		</div>
+			<div class="content">
+				<h3> &#10132; Carbohydrates </h3>
+				<div class="super-sub-topic">
+				<strong class="cogverb" id="4.1.4A"> Appreciate <span class="tooltiptext"> 4.1.4A:  appreciate that organic materials including proteins, carbohydrates, lipids
+and synthetic polymers display properties including strength, density and
+biodegradability that can be explained by considering the primary, secondary
+and tertiary structures of the materials </span> </strong>
+			<h4> Monosaccharides </h4>
+			<strong class="cogverb" id="4.1.4D"> Recognise <span class="tooltiptext"> 4.1.4D:recognise that monosaccharides contain either an aldehyde group (aldose) or a ketone group (ketose) and several -OH groups, and have the empirical formula CH2O </span> </strong>
+				<ul>
+					<li> Carbon, hydrogen and oxygen ( empirical formula Ch20)</li>
+					<li> Cellulose and Starch are carbohydrates </li>
+				</ul>
+
+
+				<p> Smallest type of carbohydrates &#10132; <b> monosaccharides: </b>
+				<ul>
+					<li> Galactose </li>
+					<li> Fructose </li>
+					<li> Glucose </li>
+				</ul>
+			<p> All monosaccharides have similar structures however; the position of the hydroxyl group is different. (have the same chemical formula) </p >
+
+			<img src="che photos/sugar.png" width=60%>
+
+			<p> Although the atoms are connected in the same way, the arrangement around the chiral carbon means they behave differently. </p>
+
+			<h5> Different Ways to draw </h5>
+				<img src="che photos/projections.png" width=30% class="right">
+
+			<p> &#10132; In their straight chain, monosaccharides are classified as either aldose or ketoses &#10132; depending on their carbonyl group </p>
+				<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br> 	<br>
+
+
+			<h4> Alpha &alpha; vs Beta &beta; Glucose </h4>
+				<p><strong class="cogverb" id="4.1.4E"> Distinguish <span class="tooltiptext"> 4.1.4E:distinguish between α-glucose and β-glucose, and compare and explain the structural properties of starch (amylose and amylopectin) and cellulose </span> </strong>
+
+				 Glucose can exist in 2 ring formations &#10132; alpha and beta </p>
+				<p> alpha has hydroxyl group on carbon 1 below, beta has hydroxyl group above </P>
+				<img src="che photos/beta.png">
+				<h5> Properties </h5>
+					<table>
+						<tr>
+							<th> Beta </th>
+							<th> Alpha </th>
+						</tr>
+						<tr>
+							<td> B-glucose is more stable and less crowded </td>
+							<td> Alpha has more crowed because OH are close together </td>
+						</tr>
+						<tr>
+							<td> Melting point is lower 146 </td>
+							<td> Melting point is higher 150 </td>
+						</tr>
+					</table>
+
+				<h4> Disaccharides </h4>
+					<ul>
+						<li> 2 monosaccharides in a condensation polymerisation reaction </li>
+						<li> Example is sucrose and maltose (2x Alpha glucose )</li>
+					</uL>
+				<p> <b> Glycosidic linkage </b> (condensation reaction) is a and that connect sugar monomers (monosaccharides) together.
+
+
+				<h4> Polysaccharides </h4>
+					<P> Long chains of monosaccharides linked by glycosidic bonds. Three important ones :
+						<uL>
+							<li> Starch </li>
+							<li> Cellulose </li>
+							<li> Glycogen </li>
+						</uL>
+					Properties are very different however; they are all polymers of the same monomers. </li>
+
+
+					</p>
+
+					<h4> Starch </h4>
+						<ul>
+							<li> Plants can produce and polymerise (condensation reaction H<sub> 2 </sub> O by-product; glycosidic bonds). *Structure of glucose. Alpha-glucose molecules to form starch </li>
+
+							<li> Plants store starch so it can be metabolised to produce energy </li>
+							<li> Foods such as potato have high starch content </li>
+						</ul>
+
+						<p> <b> &#10132; Amylose:</b> starch forms a linear polymer. <br>
+						<img src="che photos/amylose.png"> </p>
+
+						<p> <b> &#10132; Amylopectin:</b> forms when &alpha; glucose molecules undergo condensation reaction between hydroxyl groups at different positions. This causes branching. <br>
+						<img src="che photos/amylopectin.png">
+						</p>
+
+					<h4> Cellulose </h4>
+						<ul>
+							<li> Main structural component in plants </li>
+							<li> large, straight-chain polymer formed from the polymerisation of Beta (&beta;)-glucose. </li>
+							<li> Alternating nature of the -Ch2OH group in cellulose allows for good alignment of hydroxyl groups between neighbouring cellulose molecules: hydrogen bonding= strong</li>
+						</ul>
+						<img src="che photos/cellulose.png">
+
+
+					<p> You must be able to
+						<ul>
+							<li> Distinguish between &alpha;-glucose and &beta;-glucose </li>
+							<li> Compare and explain the structural properties (amylose and amylopectin) Starch and cellulose.
+							</li>
+						</ul>
+
+					</p>
+						<img src="che photos/sum.png" width=55%>
+
+
+				</div> <!--div for carbohydrates -->
+
+				<h3> &#10132; Lipids</h3>
+				<div class="super-sub-topic">
+				<strong class="cogverb" id="4.1.4F"> Recognise <span class="tooltiptext"> 4.1.4F:recognise that triglycerides (lipids) are esters and describe the difference in structure between saturated and unsaturated fatty acids</span> </strong>
+
+				<p> Lipids are used for
+					<ul>
+						<li> Energy storage </li>
+						<li> Protection </li>
+						<li> Insulation </li>
+						<li> Lubrication </li>
+					</ul>
+
+				<p> There are four main types of lipids are: triglycerides, phospholipids, steroids and waxes. They all are <b> insoluble </b> in water. This is because lipids are non-polar and water is a polar molecule, making lipids hydrophobic.
+				</p>
+
+					<h4> Triglycerides </h4>
+						<ul>
+						<li> Fats and oils are triglycerides </li>
+						<li> Made up of two types of subunit molecules: Glycerol and fatty acids. A glycerol reacting with 3 fatty acids </li>
+						<li> Are esters </li>
+					</ul>
+				<img src="che photos/tri.png">
+				<p> These fatty acids can be saturated or unsaturated. Saturated fatty acids only contain a single bonds. Whereas un-saturated fatty acids contain one to several double bonds, these bonds result in kinks in the chain which affects MP of these molecules. Saturated fats are solid at room temperature, whereas oils are liquid at room temperature. </P>
+				<p> Triglycerides are produced from the reaction between a glycerol molecules and three fatty acids. This is called dehydration synthesis and consequently three water molecules are produced.
+				</p>
+				<img src="che photos/sat.png">
+
+				<strong class="cogverb" id="4.1.4G"> Describe and Explain: <span class="tooltiptext"> 4.1.4G:describe, using equations, the base hydrolysis (saponification) of fats (triglycerides) to produce glycerol and its long chain fatty acid salt (soap), and explain how their cleaning action and solubility in hard water is related to their chemical structure </span> </strong>
+				<h4> Saponification: </h4>
+
+					<P> Saponification (=base hydrolysis) of triglycerides involves boiling the animal fate or plant oil with excess sodium hydroxide to break the three ester linkages.
+					<br> <br> this produces glycerol and three fatty acids (aka soap). Soap is produced by a <b> base hydrolysis </b> reaction between a triglyceride and <b> sodium hydroxide </b> </p>
+					<P> The cleaning action of soap is based on it's chemical structure, and leads to the formation of micelle: (NOTE: THIS IS A DIRECT OBJECTIVE)
+					<br> Fats have hydrophilic head, with hydrophobic tail </br>
+
+				<h5> Micelle </h5>
+					<p> When the triglyceride molecules have their hydrophilic heads out to water and fatty tails attached to dirt, they arrange in a circle called micelle. Because lipids are amphipathic, this allows them to be good cleaners because they interact with both water and dirt. Micelle allows soap to
+					<img src="che photos/soap.png">
+					<P> Soap molecules consist of two parts: a hydrophobic ‘tail’ consisting of fatty acids; and a hydrophilic, charged ‘head’. The grease on dirty clothes will attract the hydrophobic tails which will embed themselves in the grease particle. The hydrophilic heads will be attracted to the water and will lift the grease off the clothes and suspend it in the water as shown in the diagram.</P>
+					<img src="che photos/sapo.png">
+
+				<h5> Hard Water </h5>
+				<dl>
+					<dt> Soft water </dt>
+						<dd> water which produces a good lather of soap is called soft water. When water falls as rain, it is naturally soft. Washing with soap is easy in soft water. </dd>
+					<dt> Hard Water </dt>
+						<dd> Water which does not produce good lather with soap is called hard water. It is difficult to wash soap in hard water. Water seeping through the group becomes hard water. Not useful for laundry and lab purposes. </dd>
+					</dl>
+
+				<p> Hardness of water is due to the presence of sulphates, chlorides or bicarbonate salts of metal ion Ca<sup>2+</sup> and Mg<sup>2+</sup> </p>
+				<p>	This precipitate comes out in the form of 'scum' that adheres to the pipes, clothes and insides of kettles and washing machines. Soaps are sodium or potassium salts of long chain fatty acids. When soap is added to hard water the metal ions react with soap: the sodium salt present in salt are converted to corresponding calcium and magnesium salts which are precipitated as scum. This insoluble scum stick on clothes and so the cleaning capacity of soap is reduced. </p>
+
+
+				<video width=500 controls class="lefty">
+  <source src="che photos\IMG_0033.mp4" type="video/mp4">
+</video>
+				</div> <!-- div for lipids-->
+
+				<h3 id="proteins" > &#10132; Proteins </h3>
+				<div class="super-sub-topic">
+				<button> <a href="che docs\4.1.4 Proteins and Enzymes (1).pptx">  PowerPoint of Proteins and Enzymes</a>  </button>
+
+
+
+
+				<p> Building Block of proteins are amino acids. There are 20 in total. Every amino acid has an amino group (NH<sub>2</sub>) and a carboxyl group COOH. Proteins are long chain molecules (polymers) composed of amino acids (monomers)
+Amino acids are covalently joined via peptide bonds
+</p>
+
+				<img src="che photos/aminoa.png">
+				Different amino acids have different side chains (R) on the second carbon. This is why they are called 2-amino acids or &alpha;-amino acid as the side group is attached to the second carbon.
+				</p>
+				<p> Common amino acids are in formula and data booklet. 2-amino acids act differently in acidic and basic conditions.
+				<table>
+					<tr>
+						<th> Highly acidic </th>
+						<th> pH Neutral </th>
+						<th> Highly Basic </th>
+					</tr>
+					<tr>
+						<td> Amino group acts as base and accepts proton. causes a cation. </td>
+						<td> Amino group acts as a base and accepts proton while the carboxyl group acts as an acid, releasing a hydrogen ion. causes Zwitterion or dipolar ion.
+						</td> <td> Carboxyl groups act as an acid and donates a proton. </td>
+						</tr>
+				</table>
+
+					<p> The isoelectric point of an amino acid is shown in formula and data book. Below the pH of IEP, amino acid will be a base and accept H+ to become a cation, above this pH it will be an acid and release a H+ to become an anion. Aspartic acid has a lower isoelectric point that alanine due to the carboxyl group on the side chain.
+					</p>
+
+				<h5> Formation of Proteins </h5>
+					<p> Proteins are formed from amino acids. As an amino acid approaches another they meet up with a double bond O and OH for left amino, and 2 H available. In a <b> dehydration </b> reaction the double bond O (carbonyl group of the carboxylic acid) and the upper hydrogen, covalently bond, leaving the hydroxyl group and spare hydrogen to form water.
+					</p>
+					<img src="che photos/poly.png">
+
+					<p> different patterns and chains formed from the polypeptide shape is due to the charge and polarity of the r chains of each amino, where some are hydrophilic and other are hydrophobic </p>
+					</p>
+
+					<h4> The four levels of Protein structure </h4>
+						<p> There are four different levels of structure, primary secondary which includes alpha and beta, tertiary and quaternary.
+						</p>
+						<strong class="cogverb" id="4.1.4B"> Describe and Explain  <span class="tooltiptext"> 4.1.4B: describe and explain the primary, secondary (α-helix and β-pleated sheets), tertiary and quaternary structure of proteins</span> </strong>
+						<h5> Primary structure </h5>
+							<p>
+				The order of the amino acid sequence is called the primary structure and determines the way the chain will fold. It is the sequencing of the aminos </p>
+		<p> Only covalent bonds are responsible for joining the monomers together in the polymer. Linked together by -CONH<sup>-</sup> groups known as peptide links.
+		</P>
+						<h5> Secondary structure </h5>
+							<p> <img src="che photos/secondary.png" class="left" width=20%>The secondary structure of a protein refers to the folding of the polypeptide chain as a result of hydrogen bonding forming between non-adjacent amino (-NH2) and carboxyl groups (-COOH)
+						</p>
+
+
+							<p> The secondary structure of a protein refers to the folding of the polypeptide chain as a result of hydrogen bonding forming between non-adjacent amino (-NH2) and carboxyl groups (-COOH)</p>
+							<p> There are two types of folding:
+							<br><dl><dt> <b> Alpha (&alpha;) Helices: </b></dt> <dd>occur when the amino acid sequence folds into a coil/ spiral arrangement. &alpha;-helices are <b> elastic </b> meaning the H-bonds are easily broken and allows the molecules to stretch.
+							</dd><dt> <b> Beta (&beta;) pleated sheets </b> </dt><dd>occur when the amino acid sequence adopts a directionally orientated. &beta;-pleated sheets are <b> inelastic </b> which mean inter-chain H-bonding created cross links, which are stronger than intra-chain bonds and not easily broken.
+							</dd></dl></p>
+
+
+						<h5> Tertiary Structure </h5>
+							<p>
+								<ul>
+									<li> The overall three-dimensional configuration of the protein is referred to as the tertiary structure of the protein.
+									</li> <li> The tertiary structure of a polypeptide chain will be determined by the interactions between the variable side chains
+									</li> <li> These interactions may include hydrogen bonds, disulphide bridges, ionic interactions, London (dispersion) force.
+									</li>
+								</ul>
+
+								<b>Note: </b>the order of amino acid sequence (primary structure) determines all subsequent levels of protein folding. </p>
+							<p>
+								<ul>
+									<li> Hydrophobic sidechains tend to fold inwards to the interior of the protein molecule where they are shielded from the aqueous medium and can interact with each other.
+
+									</li> <li>The formation of disulphide bridges is an important aspect of the stabilisation of protein tertiary structure, allowing different parts of the protein chain to be held together covalently.
+
+									</li> <li>Hydrogen bonds may form between different side-chain groups and can bring together two parts of a chain that are some distance away in terms of sequence of amino acids.
+
+									</li> <li>Electrostatic forces between positively and negatively charged sites on amino acid sidechains also help to stabilise the tertiary structure of a protein.
+									</li> </ul>
+
+						<h5> Quaternary Structure </h5>
+							<p> Quaternary structures are found in proteins that consist of more than one polypeptide chain linked together
+							</p>
+							<img src="che photos/quat.png" width=50%>
+
+				</div> <!-- div for proteins.-->
+
+				<h3> &#10132; Enzymes </h3>
+				<div class="super-sub-topic">
+				<p> <strong class="cogverb" id="4.1.4C"> Recognise <span class="tooltiptext"> 4.1.4C: recognise that enzymes are proteins and describe the characteristics of biological catalysts (enzymes) including that activity depends on the structure and the specificity of the enzyme action </span> </strong>Enzymes are proteins that function as biological catalysts
+They form an enzyme–substrate complex that lowers the activation energy by providing an alternative pathway for the reaction of substrate to product.
+</p>
+				<ul>
+					<li> Enzymes increase the rate of reaction by lowering the activation energy providing alternative pathway
+					</li> <li> Enzymes are not used up or altered in the reaction and therefore can be used again
+					</li> <li>The catalytic action of enzymes is specific for a single reaction or type of reaction.
+					</li> <li>The action of the enzyme depends on its specific 3D structure.
+					</li> <li>Enzymes are sensitive to reaction conditions, pH and temperature if denatured or shape altered they are rendered ineffective.
+					</li>
+				</ul>
+
+
+
+				</div> <!-- div for enzymes -->
+
+				<h3 id="synthetic-polymers"> &#10132; Synthetic Polymers </h3>
+				<div class="super-sub-topic">
+
+<P> PowerPoint on <a href="che docs\4.1.4 h Plastic Polymers(1).pptx"> plastic polymers </a> for look back into power point </p>
+<dl>
+	<dt> Polymers </dt>
+		<dd> Macromolecules formed by the covalent attachment of a set of small molecules termed monomers. </dd>
+		</dl>
+
+		Polymers are classified as:
+			<ol>
+				<li> Man-made or synthetic polymers that are synthesized in a lab </li>
+				<li> Biological polymer that are found in nature </li>
+			</ol>
+
+		<p> <b>Synthetic polymers:</b> nylon, polyethylene, polystyrene.
+		<br><b> Biological polymers:</b> DNA, proteins, carbohydrates </p>
+
+				<h4> Methods for Making Polymers </h4>
+				<p> Addition polymerization and condensation polymerization. </p>
+				<p> <b> Addition Polymerisation:</b> monomers react to form a polymer without net loss of atoms. Most common form: free radical chain reaction of ethylene.
+				</p>
+
+				<table>
+					<tr>
+						<th> </th>
+						<th> Monomer </th>
+						<th> Polymer (plastics) </th>
+					</tr>
+					<tr>
+						<td> Ethene </td>
+						<td> <img src="che photos/ethene.png" width=70%> </td>
+						<td> Polyethene- commonly known as polyethylene </td>
+					</tr>
+					<tr>
+						<td> Propene </td>
+						<td> <img src="che photos/tef.png" width=70%> </td>
+						<td> Polypropene </td>
+					</tr>
+					<tr>
+						<td> Tetrafluoroethene </td>
+						<td>  <img src="che photos/f.png" width=70%> </td>
+						<td> Polytetrafluoroethylene, commonly known as Teflon </td>
+					</tr>
+				</table>
+
+				<h5> Factors that affect the properties of a polymer </h5>
+					<dl> <dt> Chain length </dt> <dd> <ul> <li>
+						Increase in chain length increases the number of intermolecular forces </li> <li>
+						Increases the melting and boiling points. </li> </ul> </dd> <dt>
+						Functional groups </dt> <dd> <ul> <li>
+						Changing the functional groups changes the intermolecular forces.</li> <li>
+						weakest London (dispersion), dipole-dipole, hydrogen bonding strongest </li> </ul> </dd> <dt>
+						Degree of branching </dt> <dd> <ul> <li>
+						Increasing the branching lowers the intermolecular forces.</li> <li>
+						This decreases the melting and boiling points.</li> </ul> </dd> <dt>
+						Alignment </dt> <dd> <ul> <li>
+						Packing the molecules closer together allows for more intermolecular force interactions.
+					</li> </ul> </dd> </dl>
+
+					<strong class="cogverb" id="4.1.4H"> Explain <span class="tooltiptext"> 4.1.4H: explain how the properties of polymers depends on their structural features including; the degree of branching in polyethene (LDPE and HDPE), the position of the methyl group in polypropene (syntactic, isotactic and atactic) and polytetrafluoroethylene.
+</span> </strong>
+<p> See <a href=#4.2.3A> here </a>  for more on the linkage
+					<h5> Properties of Polyethene </h5>
+					Think:
+						<uL>
+							<li> High Density= High strength and hardly any branches</li>
+							<li> Low density= low strength and lots of branches</li>
+						</ul >
+					<img src="che photos/LHDPE.png">
+
+					<h5> Properties of Polypropene </h5>
+					Think:
+					<b>I S</b>aw <B>A</B>cidic <B>R</B>ats <b>S</b>ing <B>A</B>ccapella.
+						<uL>
+							<li> Isotactic: methyl groups all <b>S</b>ame side</li>
+							<li> Acitactic: <B>R</B>andom orientation </li>
+							<li> Syndiotactic: <B>A</B>lternating methyl orientation </li>
+						</ul>
+					<img src="che photos/polypropene.png">
+
+					<h5> Properties of Polytetrafluoroethylene </h5>
+					Think:
+						<uL>
+							<li> T is low in alphabet, so it has LOW branching </li>
+							</ul>
+					<img src="che photos/polyTetrafluoroethene.png">
+
+
+
+
+				</div> <!-- div for synthetic polymers -->
+
+			</div> <!-- div for content of organic materials -->
+
+
+		<div class="sub-topic">
+		<h2> Analytical Techniques </h2>
+		</div>
+
+			<div class="content">
+				<button> <a target="_blank" href="https://quizizz.com/admin/quiz/5eaa56dbe908f3001c301a6b/analytical-techniques"> Quizziz for Analytical Techniques </a> </button>
+				<button> <a target="_blank" href="https://elearn.eq.edu.au/webapps/blackboard/content/listContent.jsp?course_id=_141984_1&content_id=_24833900_1"> eLearn for Analytical Techniques </a> </button>
+
+			<h3> &#10132; Chromatography </h3>
+			<div class="super-sub-topic">
+			<strong class="cogverb" id="4.1.5A"> Explain <span class="tooltiptext"> 4.1.5A: explain how proteins can be analysed by chromatography and
+electrophoresis </span> </strong>
+			<p> Chromatography us technique used to sperate the substance present in a mixture. Used to determine identity of substance. All methods of chromatography have a stationary phase and mobile phase. AS ink components are swept forward over the stationary phase by the solvent they under ... Rate of movement depends on:
+			</p>
+			<ul>
+				<li> How strongly it absorbs onto the stationary phase </li>
+				<li> How readily it dissolves in the mobile phase </li>
+			</ul>
+
+		<h4> Mobile Phase </h4>
+		The liquid that transports the substance through the absorbing material travels along the stationary phase and carries substance with components in it.
+
+		<h4> Stationary Phase </h4>
+		the solid material that absorbs the mixture flowing through it.
+
+		<dl>
+			<dt> Affinity </dt>
+				<dd> Components of a sample are attracted by intermolecular forces, to the mobile or stationary phase High affinity means that the component interacts strongly with the mobile or stationary phase.
+				</dd>
+			<dt> Absorption </dt>
+				<dd> Components of the sample adsorb onto the stationary phase from the mobile phase if they are attracted to, or have an affinity for, the stationary phase.
+				</dd>
+			<dt> Desorption </dt>
+				<dd> Components of the sample desorb off the stationary phase into the mobile phase if they are attracted to or have an affinity with the mobile phase.
+				</dd>
+		</dl>
+
+		<h4> Rf Factor </h4>
+		<p>	<img src="che photos/rf.png" class="left mini" width=15%>
+		Rf = <sup> distance travelled by component </sup> &frasl; <sub> distance ravelled by solvent </sub> </p>
+		<p> Rf = <sup> a </sup> &frasl; <sub> b </sub>
+		</p>
+			<p> Larger Rf values means that compound travelled faster and further because it was more attracted to the mobile phase. Less polar solvent compared to the more polar property of silica gel. No affinity to stationary phase, less polar.
+		</p>
+
+
+
+
+		<h4> Polarity </h4>
+		<p> Water is a polar molecule, but more polar than paper. Therefore, any component of sample that has whole or partial charges, such as ionic or polar substances will have a higher affinity, or attraction, for the water mobile phase. These components move further from origin. Any component of the sample that experiences dispersion forces has a higher affinity for the stationary phase and will not move as far from the origin.
+		</p>
+
+
+		<h4> Size Exclusion Chromatography </h4>
+
+		<p> Basic steps
+			<ol>
+				<Li> A solution that contains proteins is loaded onto the top of the column, which contains resin or gel. </li>
+				<li> A bugger solution is added, and the proteins are washed through the column in different volumes of the resulting solution. </li>
+				<li> Eluted solution is collected in small portions ( fractions). The presence of a protein in a fraction can be detected by UV spectrometer because amide and aromatic groups absorb UV light. </li>
+				<li> NOTE: Larger proteins are too large to fit in pores of resin, so they elute first, the smallest would elute last. </li>
+			</ol>
+  	</div> <!-- div for chromatography -->
+
+		<h3 id="electrophoresis"> &#10132; Electrophoresis </h3>
+		<div class="super-sub-topic">
+		<p> the movement of charged particles in a fluid or gel under the influence of an electric field. laboratory method used to separate mixtures of DNA, RNA, or proteins according to molecular size.
+In gel electrophoresis, the molecules to be separated are pushed by an electrical field through a gel that contains small pores.
+</b>
+
+		<h4> Isoelectric Point </h4>
+		<p> Point at which an amino acid exists in a neutral charge (net charge = 0) 'iso' means equal.
+
+		<img src="che photos/amino.png" width=55%>
+		<p> 	<img src="che photos/zwit.png" class="left mini" width="25%">
+		<B> Zwitterion </b> both + and - charge present, but cancel out for 0 net charge
+		<br>
+		<br>
+		H<sub>3</sub>N CHR C<b>O</b>O
+		</p>
+
+
+		<p> pH < isoelectric pH
+		<br> Then cation (+)
+		<br><BR>
+		pH = isoelectric ph
+		<br> Then zwitterion <br>
+		<Br>
+		pH > isoelectric pH <br>
+		Then Anion (-)
+		<br>
+
+		</div> <!-- div for electrophoresis -->
+
+
+    <h3> &#10132; Infrared spec</h3>
+          <div class="super-sub-topic">
+            <strong class="cogverb" id="4.1.5B"> Select and Use <span class="tooltiptext"> 4.1.5B: select and use data from analytical techniques, including mass spectrometry,
+  x-ray crystallography and infrared spectroscopy, to determine the structure of
+  organic molecules
+  ]</span> </strong>
+
+              <p>When organic molecules absorb energy in the infrared region of the EMS, it causes bonds between atoms to vibrate </p>
+              <p> The frequency of IR radiation that is absorbed is measured as the number of waves per centimetre (wavenumber per cm) </p>
+              <img src="che photos/infrared.png" width=30% class="left mini">
+
+              <h5> Absorption Bands </h5><img src="che photos/band.png" width=30% class="left mini" >
+
+              <p> Absorption bands can be either
+                <ul>
+                  <li> strong </li>
+                  <li> medium </li>
+                  <li> weak </li>
+                </ul>
+
+                They will then also be either
+                <ul>
+                  <li> Narrow </li>
+                  <li> Broad </li>
+                </ul>
+              </p>
+<p> <B> NOTE </b> the fingerprint region is anything less than 1500 and isn't worth trying to decipher </p>
+
+              <strong class="cogverb" id="4.1.5C"> Analyse <span class="tooltiptext"> 4.1.5C: analyse data from spectra, including mass spectrometry and infrared
+    spectroscopy, to communicate conceptual understanding, solve problems
+    and make predictions. </span> </strong>
+          <br>
+              <table>
+                <tr>
+                  <th> Bond </th>
+                  <th> Groups </th>
+                  <th> Graph </th>
+                </tr>
+                <tr>
+                  <td> <p> O-H  Hydroxyl group <p>
+                Hydroxyl groups show <b> broad </b> absorption between 3200 and 3600 </p> </td>
+                  <td> <ul>
+                          <li> alcohols </li>
+                          <li> carboxylic acid </li>
+
+                        </ul>
+                  </td>
+                  <td> <img src="che photos/oh.png" width=100%></td>
+                </tr>
+                <tr>
+                  <td> C-H alkane <br> <p> Absorption around 2850-3090</p>  </td>
+                  <td> <ul>
+                          <li> alkane </li>
+                          <li> </li>
+                          <li> </li>
+                        </ul>
+                  </td>
+                  <td> <img src="che photos/ch.png" width=100%></td>
+                </tr>
+                <tr>
+                  <td> C=O  Carbonyl <br>
+                  <p> Carbonyl compounds show a <b> narrow, strong </b> absorption between 1700 and 1790 </p ></td>
+                  <td> <ul>
+                          <li> Carboxylic acids </li>
+                          <li> Esters </li>
+                          <li> Ketone</li>
+                          <li> Aldehydes </li>
+                        </ul>
+                  </td>
+                  <td> <img src="che photos/c=o.png" width=100%></td>
+                </tr>
+                </table>
+          </div><!--div for mass spec -->
+
+          <h3 id="mass-spec"> &#10132; Mass spec</h3>
+                <div class="super-sub-topic">
+
+                    <p><img src="che photos/massspec.png" width=50% class="left">
+                      <ul>
+                        <li> In Mass spec, organic compounds are bombarded with high energy electrons to produce positive ions.
+                        </li>
+                        <li> Passed through a mass spectrometer and separated according to mass (mass (M) : charge ratio (Z)) and detected
+                        </li>
+                        <li> The ion produced when just one electron is removed from a molecule is called the molecular ion, M+
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <li> The molecular ion has the highest m/z value </li>
+                        <li> fragmentation patterns- lots of peaks arise from a molecule breaks apart when bombarded with electrons </li>
+                        <li> Only positive ions give peaks in a mass spectrum </li>
+                      </ul>
+                    </p>
+
+                      <br><BR><BR><BR>
+
+                </div> <!--div for mass spec -->
+
+
+
+
+		</div> <!-- div for analytical process -->
+
+
+		<div class="topic">
+	<h1> Topic 3: Chemical Synthesis and Design </h1>
+		</div>
+
+
+		<div class="sub-topic">
+		<h2>Chemical Synthesis</h2>
+		</div>
+
+			<div class="content">
+			<h3> &#10132;Haber Process </h3>
+						<div class="super-sub-topic">
+              <strong class="cogverb" id="4.2.1A"> Understand <span class="tooltiptext"> 4.2.1A: appreciate that chemical synthesis involves the selection of particular reagents to form a product with specific properties </span> </strong>
+						<strong class="cogverb" id="4.2.1B"> Understand <span class="tooltiptext"> 4.2.1B: understand that reagents and reaction conditions are chosen to optimise the yield and rate for chemical synthesis processes, including the production of ammonia (Haber process), sulfuric acid (contact process) and biodiesel (base-catalysed and lipase-catalysed methods) </span> </strong>
+						<p> Production of ammonia (most commonly produced industrial chemicals)</p>
+						<p> N <sub> 2 (g) </sub> + 3H<sub> 2 (g) </sub> == 2NH<sub>3 (g)</sub> &delta; H=-92-kj mol <sup>-1</sup></p>
+						<p> Think about Le Chatelier’s principle and how conditions of a reaction can shift equilibrium </p>
+						<dl> <dt>  Changing Pressure </dt>
+						<dd> 4 gaseous molecules on the left, 2 gaseous molecules on the right. Yield of Ammonia can be increased by increasing pressure in the system.
+						</dd>
+						<dt> Changing Temperature </dt>
+							<dd> Reaction is exothermic. Decrease in temperature will shift equilibrium to the right </dd>
+						<dt> Catalyst </dt>
+							<dd> Most common catalyst is ground magnetite (Fe<sub>3</sub>O<sub>4</sub> &#10132; allows the gaseous molecules to rapidly absorb and react. Increases reaction rate meaning that the reaction can proceed at a viable rate at a lower temperature which increases yield.  </dd>
+						</dl>
+					<p> <b> OTHER CONSIDERATIONS: </B>
+					<UL> <LI>
+						</div> <!-- div for Haber process -->
+			<h3 id='contact-process'> &#10132; Contact Process </h3>
+						<div class="super-sub-topic">
+						<p> Production of Sulphuric Acid </p>
+						<p> 2SO<sub>2 (g)</sub> + O<sub> 2</sub> &#x21CC; 2SO<sub>3 (g)</sub></p>
+						<p> <b>3 step Process:</b>
+							<ol>
+								<li> Production of sulphur dioxide (combustion reaction with air) <br> O <sub> 2 (g) </suB> &#x21CC; SO<sub>2</sub> </li>
+								<li> 2SO<sub>2(g) </sub> + O<sub> 2 (g)</sub> &#x21CC; 2SO<sub>3</sub> &Delta; H=-196 kj mol <sup>-1</sup></p> </li>
+								<li> SO<sub>3(g) </sub> + H<sub> 2 </sub> SO<sub>4(g) </sub>&#x21CC;  H<sub> 2 </sub> S<sub>2</sub>O<sub>7(g)</sub></li>
+								<li>  H<sub> 2 </sub> S<sub>2</sub>O<sub>7(g)</sub> +  H<sub> 2 </sub>O<sub>2(l)</sub> &#x21CC;  2H<sub> 2 </sub> SO<sub>4(l)</sub></li>
+							</ol>
+							<table>
+								<tr>
+									<th>
+									Condition </th>
+									<th> Actual Conditions </th>
+								</tr>
+								<tr>
+									<td> Catalyst </td>
+									<td> Vanadium Pentoxide </td>
+								</tr>
+								<tr>
+									<td> Temperature </td>
+									<td> 400-450 &degree; C </td>
+								</tr>
+								<tr>
+									<td> Pressure </td>
+									<td> 1-2 atm </td>
+								</tr>
+								<tr>
+									<td> Increase to oxygen concentration </td >
+									<td> 1;1 </td>
+								</tr>
+							</table>
+
+
+
+						</div> <!-- div for contact process -->
+
+
+						<h3> &#10132; Production of Bio Diesel </h3>
+						<div class="super-sub-topic">
+						<strong class="cogverb" id="4.2.1C"> Explain <span class="tooltiptext"> 4.2.1C: understand that fuels, including biodiesel, ethanol and hydrogen, can be synthesised from a range of chemical reactions including, addition, oxidation and esterification</span> </strong>
+            <strong class="cogverb" id="4.2.1F">Describe <span class="tooltiptext"> 4.2.1F: describe, using equations, the transesterification of triglycerides to produce biodiesel </span> </strong>
+            <button> <a href="https://quizizz.com/admin/quiz/5ee202588edfad001b69a6eb"> Press for Quizziz </a> </button>
+						<ul>
+							<li> Fuel derived from vegetable oil and fats </li>
+							<Li> Biodegradable and non-toxic </li>
+							<li> <b> Transesterification </b> &#10132; converts oil to biodiesel </li>
+							<li> Biodiesel is a mixture of esters. Produced by transesterification  of triglycerides contained in vegetable oil or animal fats and oils with a short chain alcohols, typically ethanol (low cost but methanol has a higher yield .)
+							</li>
+						</ul>
+
+						<p> 3 hydrocarbon chains attached to glycerol via esters. </p>
+
+						<p> <b> BASE-CATALYSED </b>: catalysed which deprontates alcohol increases rate of transesterification. <img src="che photos/bas.png" width=70%> </p>
+
+            <strong class="cogverb" id="4.2.1D"> Understand <span class="tooltiptext"> 4.2.1D: understand that enzymes can be used on an industrial scale for chemical synthesis to achieve an economically viable rate, including fermentation to produce ethanol and lipase-catalysed transesterification to produce biodiesel</span> </strong>
+
+            <p> <b> ENZYME-CATALYSED </b>:A more cost-effective process is enzyme catalysed transfection both produce same product (enzyme is lipase). </p>
+						<img src="che photos/enz.png" width=70%>
+
+
+            <h3> Production of Ethanol </h3>
+            <strong class="cogverb" id="4.2.1E">Describe <span class="tooltiptext"> 4.2.1E: describe, using equations, the production of ethanol from fermentation and the hydration of ethene </span> </strong>
+						<p> Renewable and nonrenewable processes:
+						<dl>
+							<dt> NON-RENEWABLE &#10132; Addition reaction (hydration of ethene) </dt>
+								<dd><img src="che photos/add.png" width=60%> <uL>
+										<li> 60-70 atm</li>
+										<li> 300&deg; </li>
+										<li> H<sub>3</sub>PO<sub>4</sub> </li>
+										<li> Slightly exothermic &Delta; H=-45 kjmol<sup>-1</sup> </li>
+
+									</ul>
+								</dd>
+							<dt> RENEWABLE &#10132; Fermentation (production of ethanol)</dt>
+								<dd> <img src="che photos/fer.png" width=60%> </dd> <dd>
+								Glucose produced ethanol and carbon dioxide when catalysed with yeast </dd>
+						</dl>
+						</div> <!-- div for biodiesel-->
+
+            <h3> &#10132; Hydrogen Fuel cells </h3>
+            <div class="super-sub-topic">
+            <strong class="cogverb" id="4.2.1G"> Discuss <span class="tooltiptext"> 4.2.1G: discuss, using diagrams and relevant half-equations, the operation of a hydrogen fuel cell under acidic and alkaline conditions.</span> </strong>
+              <table>
+                <tr>
+                  <th> </th>
+                  <th> Process </th>
+                  <th> Diagrams </th>
+                </tr>
+                <tr>
+                  <th> Under Acidic Conditions </th>
+                  <td> Hydrogen enters from the H<sub>2</sub> inlet and the atoms are ionised to form H<sup>+ </sup> ions in OXIDATION reaction at the Anode
+                  <br> <br><b>ANODE: </B>2H<sub>2 (g)</sub> &#10132; 4H<sup>+</sup><sub>(aq)</sub> + 4e-
+                  <br> <br> The electrons travel through wire, providing e- at cathode whilst the 4H<sup>+</sup> ions travels through electrolyte to cathode
+                  <br><BR> Oxygen enters and is reduced from e- and combine with hydrogen ions to form water
+                    <br><br><b> CATHODE: </b> 4H<sup>+</sup><sub>(aq)</sub> + O<sub>2 (g)</sub>  &#10132; 2H<sub>2</sub>O<sub>(l)</sub>
+                  <br><br> <b>OVERALL: </b> 2H<sub>2</sub><sub>(g)</sub> + O<sub>2 (g)</sub>  &#10132; 2H<sub>2</sub>O<sub>(l)</sub> </td>
+                  <td> <img src="che photos/hyacid.png" > </td>
+                </tr>
+                <tr>
+                  <th>Under Basic Conditions </th>
+                  <td> Hydrogen enters from the H<sub>2</sub> inlet and the atoms are oxidised by reacting with OH<sup>- </sup> ions in electrolyte.
+                      <br> <br><b>ANODE: </B>2H<sub>2 (g)</sub> + 4OH<sup>-</sup><sub>(aq)</sub>  &#10132;  4H<sub>2</sub>O<sub>(l)</sub> + 4e-
+                      <br><br>The electrons travel through wire, providing e- at cathode. The oxygen enters at O<sub>2</sub> inlet and is reduced
+                      <br> <br><b> CATHODE: </b> 2H<sub>2</sub>O</suB> (l)</sub> + O<sub>2 (g)</sub>  &#10132; 4OH<sup>-</sup><sub>(aq)</sub>
+                      <BR><BR> <b>OVERALL: </b> H<sub>2</sub><sub>(g)</sub> + O<sub>2 (g)</sub> + 4e-  &#10132; 2H<sub>2</sub>O<sub>(l)</sub>
+                  </td>
+                  <td> <img src="che photos/hybasic.png" ></td>
+                </tr>
+              </table>
+
+              <h3> Some unrelated calculations </h3>
+
+              <strong class="cogverb" id="4.2.1H"> Calculate <span class="tooltiptext"> 4.2.1H: calculate the yield of chemical synthesis reactions by comparing stoichiometric quantities with actual quantities and by determining limiting reagents.
+
+              </span> </strong>
+
+              <dl>
+                <dt> Theoretical yield</dt>
+                <dd> The mass that is expected for a particular product in a chemical reaction based on the mass of the limiting reactant.
+                </dd>
+                <dt> Experimental yield</dt>
+                <dd> (Actual Yield) – The amount of product actually produced in the reaction.
+                </dd>
+                <dt> Percentage Yield </dt>
+                <dd> a measure of the quantity of a product obtained from a chemical process compared to the maximum amount possible in the reaction where complete, expressed as a percentage.
+                  <br><br> % yield= <sup> experimental </sup> &frasl; <sub> theoretical </sub> &times; 100
+              </dd>
+            </dl>
+
+            <h4> EXAMPLE </h4>
+            <div class="box">
+              <p> 1. Using the balanced chemical equation calculate the number of grams of aluminium chloride produced if we react 40.0g of Aluminium with 60.0g of HCl.
+              </p>
+              <p> 2. After running the experiment, the yield was 70.0 g. Calculate the percentage yield.
+</p>
+          <img src="che photos/st1.png">
+              <br><br>
+              <h5> Calculations </h5>
+              <table>
+                <tr>
+                  <td rowspan="2"> 1. </td>
+                  <td>  40g Al = 1.48mol Al </td>
+                  <td> 60g HCL = 1.645 mol HCl </td>
+                </tr>
+                <tr> <td colspan="2"> Therefore HCL is limiting.
+                  <br> 1.645 mol HCl &times; <sup>2</sup>&frasl;<sub>6</sub> = 0.5485 mol AlCl<sub>3</sub>
+                  <br> <br> 0.5485 mol = <b>73.1g <b> </td>
+                </tr>
+                <tr>
+                  <td rowspan="1"> 2. </td>
+                  <td colspan="2"> % yield= <sup> experimental </sup> &frasl; <sub> theoretical </sub> &times; 100<br>
+                    <br>% yield = <sup> 70 </sup> &frasl; <sub> 73.14 </sub> &times; 100
+                    <br><br><b>% yield =95.8%</b>
+                </table>
+                </div>
+
+
+
+
+						</div><!-- chemical synthesis -->
+          </div>
+						<div class="sub-topic">
+		<h2>Green Energy</h2>
+		</div>
+
+			<div class="content">
+			<h3> &#10132; Atom Economy </h3>
+			<div class="super-sub-topic">
+				<strong class="cogverb" id="4.2.2A"> Appreciate <span class="tooltiptext"> 4.2.2A: appreciate that green chemistry principles include the design of chemical synthesis processes that use renewable raw materials, limit the use of potentially harmful solvents and minimise the amount of unwanted products</span> </strong>
+
+						<strong class="cogverb" id="4.2.2B"> Outline <span class="tooltiptext"> 4.2.2B: outline the principles of green chemistry and recognise that the higher the atom economy, the ‘greener’ the process</span> </strong>
+
+			<h4 id="green-principles"> The 12 Green Principles for Chemical Synthesis </h4>
+
+			<ol>
+				<li> Prevent waste rather than treatment </li >
+				<li> Maximize atom economy (high economy means less waste products) </li>
+				<li> Design less hazardous chemical synthesis </li>
+				<li> Design safter chemicals and products that are less toxic </li>
+				<LI> Use safter solvents and reaction conditions that don't pose a threat to environment </li>
+				<li> Increase energy efficiency </li>
+				<LI> Use renewable raw material (biodiesel or ethanol) </li>
+				<li> Avoid chemical derivatives (chemicals made from other chemicals) </li>
+				<Li> Use catalyst </li>
+				<li> Design chemicals products that degrade after use. </li>
+				<li> Monitor and controlling hazardous substances during chemical processes. </li>
+				<li> Minimise the potential for chemical accidents </li>
+			</ol>
+
+<h4> Atom economy </h4>
+
+      <strong class="cogverb" id="4.2.2C"> Outline <span class="tooltiptext"> 4.2.2C: outline the principles of green chemistry and recognise that the higher the atom economy, the ‘greener’ the process
+      </span> </strong>
+      <p> Atom economy is a measure of how many of the atoms in the reactants end up in the desired products. </p>
+
+      	<img src="che photos/aemm.png" width=45%>	<h1>OR</h1><img src="che photos/aem.png"  width=45%>
+
+<div class="box">
+  <p> Calculate the atom economy in the production of ethanol from chloroethane. In this process, chloroethane is heated with a solution of sodium hydroxide.
+</p>
+<img src="che photos/aecal.png">
+<img src="che photos/aecal2.png">
+
+</div>
+      </div> <!-- dice for atom economy -->
+			</div> <!-- div for green energy -->
+
+			<div class="sub-topic">
+			<h2>Macromolecules: polymers, proteins and carbohydrates</h2>
+		</div>
+
+			<div class="content">
+			<h3> &#10132; Addition Polymerization of the Poly trio</h3>
+						<div class="super-sub-topic">
+				<strong class="cogverb" id="4.2.3A"> Describe <span class="tooltiptext"> 4.2.3A: describe, using equations, how addition polymers can be produced from their monomers including polyethene (LDPE and HDPE), polypropene and polytetrafluoroethylene
+				</span> </strong>
+
+				<p> any process in which relatively small repeating units, called monomers, combine chemically to produce a very large chainlike or network molecule, called a polymer. </p>
+				<p> In <b> addition polymerization, </b> monomers react to form a polymer without the formation of by-products.
+				</p>
+				<p> The monomer <B> NEEDS </b> to have a carbon-to-carbon double bond. They have to have this on the end of the chain, but not both chains double bonded </p>
+				<h5> Addition polymerization of Polyethene </h5>
+				<img src="che photos/addpol.png" width=70%>
+
+				<h6> Two types of Polyethene </h6>
+				<ol>
+					<li> Use of initiator molecules &#10132; makes LDPE </LI>
+					<LI> Use of catalytic surfaces &#10132; makes HDPE </li>
+				</ol>
+
+				<P> Review of the structural differences. See <a href=#4.1.4H> here </a> for further information.
+				</p>
+				<table>
+				<tr>
+				<th> HDPE </th>
+				<th> LDPE </th>
+				</tr>
+				<tr>
+				<td> <ul> <li> Low branching </li>
+				<li> High density (closely packed)</li>
+				<li> Lots of London dispersion forces </li>
+				<li> Hard </li>
+				<li> High melting point </li>
+				</ul>
+				</td>
+				<td> <ul> <li> High branching </li>
+				<li> Low density (loosely packed)</li>
+				<li> Low London (dispersion) forces </li>
+				<li> Soft </li>
+				<li> Low melting point </li>
+				</ul>
+				</td>
+				</tr>
+				</table>
+
+				<h5> Addition Polymerization of Polypropene </h5>
+				<img src="che photos/addpro.png" width=88%>
+				<br> <br> <br>
+				<table>
+				<tr>
+				<th> Isostatic </th>
+				<th> Atactic </th>
+				<th> Syndiotactic </th>
+				</tr>
+				<tr>
+				<td> <ul> <li> methyl groups on same side </li>
+				<li> crystalline regions form </li>
+				<li>increase IMF (intermolecular forces?) </li>
+				</ul>
+				</td>
+				<td> <ul> <li> Methyl groups on random sides </li>
+				<li> prevents stacking </li>
+				<li> decrease IMF </li>
+				</ul>
+				</td>
+				<td> <ul> <li> Methyl groups on alternating sides </li>
+				<li> allows packing</li>
+				<li> high crystalline </li>
+				<li> increased IMF </li>
+				</ul>
+				</td>
+				</tr>
+				</table>
+
+
+				<h5> Addition Polymerization of Polytetrafluoroethylene	</h5>
+				<img src="che photos/addtetra.png" width=70%>
+
+
+				</div> <!--div for polymerization-->
+							<strong class="cogverb" id="4.2.3B"> Describe <span class="tooltiptext"> 4.2.3B: describe, using equations, how condensation polymers, including polypeptides (proteins), polysaccharides (carbohydrates) and polyesters, can be produced from their monomers
+				</span> </strong>
+				<strong class="cogverb" id="4.2.3E"> Describe <span class="tooltiptext"> 4.2.3E: describe the condensation reaction of monosaccharides to form disaccharides (lactose, maltose and sucrose) and polysaccharides (starch, glycogen and cellulose), and understand that polysaccharides are formed when monosaccharides monomers are joined by glycosidic bonds.
+				</span> </strong>
+
+
+
+				<h3> &#10132; Esterification </h3>
+							<div class="super-sub-topic">
+				<p> Ester is a reversible reaction that occurs when a carboxylic acid and an alcohol are heated in the presence of a catalyst (normally concentrated sulfuric acid).
+					</p> <img src="che photos/esterfication.png">
+
+					<p> <b> Condensation Polymer to form Polyester </b>
+					<ul>
+					<li> The polymer grows from monomers by splitting off a small molecule such as water.
+					</li> <li> The monomers must contain a carboxyl section and a hydroxyl section
+					</li>
+					</ul>
+					<h5> Condensation to form a poly<b>ester</b> </h5>
+					<img src="che photos/polyester.png">
+					</div> <!--div for esterification -->
+
+<h3 id="condensation-of-monosaccharides"> &#10132; Condensation of Monosaccharides</h4>
+				<div class="super-sub-topic">
+				<button> <a href="che docs\4.2.3 Carbohydrates and Proteins.pptx"> PowerPoint for below </a> </button>
+<h5><a href=#4.1.4A >Monosaccharide Linkage</a> </h5>
+<p> Linking monosaccharides to form disaccharides. Two monosaccharides can join together to in a condensation reaction to form a glycosidic bond.
+lag fasaam </p>
+	<dl>
+		<dt> Formation of Sucrose </dt>
+		<dd> &alpha; glucose and fructose can join together in a condensation reaction to form a glycosidic bond to make sucrose and water.
+  <br>  <b>a</b>ll <b>f</b>igs <b>s</b>uck </dd>
+		<img src="che photos/ag+sw.png" width=65%>
+		<dt> Formation of Maltose </dt>
+		<dd> An &alpha;-glucose and &alpha;-glucose can join together in a <b> condensation</b> reaction to form a glycosidic bond and make maltose.
+  <br>    <b>a</b>ll <b>a</b>pes <b>m</b>ingle  </dd>
+		<img src="che photos/maltose.png" width=65%>
+		<dt> Formation of Lactose </dt>
+		<dd> A galactose and α-glucose can join  together to in a condensation reaction to form a glycosidic bond and make Lactose.
+    <br>  <b>g</b>ive <b>a</b> <b>l</b>olly	</dd>
+			<img src="che photos/lactose.png"  width=65%>
+	</dL>
+
+
+<h5 id="formation-of-cellulose-and-starch"> Polysaccharide Linkage </h5>
+	<p> Many monosaccharides can join together in condensation reactions to form a polysaccharide such as Starch.
+	(remember there are different types of starches </p>
+
+	<dl> <img src="che photos/amylo.png" class="left" height=200px width=400px>
+		<dt> Formation of Amylose </dt>
+			<dd>
+				<ul>
+					<li> made from &alpha;-glucose </li>
+					<li> 1-4 glycosidic bonds (remember 1-4 means 4th carbon will connect to carbon no. 1) </li>
+					<li> Helix coil </li>
+					<li> Allows close packing and strong intermolecular force </li>
+					<li> Less soluble in water </li>
+					<li> Slower digestion </li>
+				</ul>
+			</dd>
+
+
+		<dt>  Formation of Amylopectin </dt>
+			<dd> <img src="che photos/ampe.png" class="left" height=160px width=400px>
+				<ul>
+					<li> Made from &alpha;-glucose </li>
+					<li> 1-4 glycosidic and 1-6 linkages </li>
+					<li> Branched structure forming compact spirals </li>
+					<li> Not ridged due to branching </li>
+					<LI> Branching reduced intermolecular forces </li>
+					<li> More soluble in water </li>
+					<li> Faster digestion </li>
+				</ul>
+			</dd>
+
+
+		<dt> Formation of Glycogen </dt>
+			<dd>
+				<ul> <img src="che photos/glycogen.png" class="left" height=150px width=400px>
+					<li> Made from &alpha;-glucose </li>
+					<li> Highly branched structure </li>
+					<li> Not ridged due to branching </li>
+					<li> Branching reduces intermolecular</li>
+					<li> More soluble in water </li>
+					<li> Faster digestion </li>
+					<li> Animals use glycogen as storage </li>
+				</ul>
+			</dd>
+
+		<dt>  Formation of Cellulose </dt>
+			<dd> <img src="che photos/checell.png" class="left" height=170px width=400px>
+				<ul>
+					<li> Made from &beta;-glucose </li>
+					<li> 1-4 glycosidic linkages </li>
+					<li> Straight chain forming microfibrils </li>
+					<li> Alternating position of CH2OH and OH enables results in hydrogen bonds </li>
+					<li> Strong intermolecular forces </li>
+					<li> Not soluble in water </li>
+					<li> Humans cannot digest cellulose </li>
+				</ul>
+			</dd>
+
+
+
+
+				</div> <!--div for condensation -->
+
+				<div class="super-sub-topic">
+				<strong class="cogverb" id="4.2.3C"> Discuss <span class="tooltiptext"> 4.2.3C: Discuss the advantages and disadvantages of polymer use, including strength, density, lack of reactivity, use of natural resources and biodegradability
+				</span> </strong>
+
+				<p> The advantage and disadvantages of polymer use.
+				<img src="che photos/addi.png"> </p>
+
+				</div> <!-- for advantages -->
+
+
+					<h3> &#10132; Condensation of amino acids</h4>
+				<div class="super-sub-topic">
+					<strong class="cogverb" id="4.2.3D"> Describe <span class="tooltiptext"> 4.2.3D: describe the condensation reaction of 2-amino acids to form polypeptides (involving up to three amino acids), and understand that polypeptides (proteins) are formed when amino acid monomers are joined by peptide bonds
+				</span> </strong>
+				<p> <b> Amino-acid structure </b>
+				<br> <a href=#proteins>Click here section on AA </a>. There are 20 amino acids. Every amino acid has an amino group (NH<sub>2</sub>) and carboxyl group (COOH). Different amino acids have different side chains (R groups) on the second carbon. This is why they are called 2-amino acids or &alpha; amino acids as the side group is attached to the second carbon. </p>
+
+				<dl>
+					<dt> Dipeptide </dt>
+						<dd> The condensation reaction between the amino functional group in one 2-amino acid and the carboxyl function group in the other one 2-amino acid forms a peptide functional group.
+						</dd>
+						<img src="che photos/dipeptides.png">
+
+					<dt> Polypeptides </dt>
+						<dd> Polypeptides are formed when amino acids react in a condensation reaction. Polypeptides with more than 50 amino acids are called proteins and are represented using a three-letter code for each amino acid written in sequence.</dd>
+							<img src="che photos/peptide.png">
+							</dl>
+				</div > <!--div for condensation for amino acids -->
+
+				</div> <!-- div for macro mulches -->
+
+					<div class="sub-topic">
+			<h2>Molecular Manufacturing</h2>
+		</div>
+
+			<div class="content">
+
+						<div class="super-sub-topic">
+				<strong class="cogverb" id="4.2.4A"> Appreciate <span class="tooltiptext"> 4.2.4A: appreciate that molecular manufacturing processes involve the positioning of molecules to facilitate a specific chemical reaction; such methods have the potential to synthesise specialised products, including proteins, carbon nanotubes, nanorobots and chemical sensors used in medicine.
+				</span> </strong>
+
+				<p> Molecular Manufacturing uses the idea of building structures, devices and machines from the ‘bottom up’
+In the ‘bottom up’ approach the atoms or molecules in this procedure must assemble ITSELF using intrinsic forces – (intermolecular forces, covalent bonds, ionic bonds)
+These intrinsic forces are a result of the chemical and
+    physical properties of the atom.
+They are too small for humans to manipulate.</p>
+
+<h5> Orientation Effect </h5>
+	<p> The situation where the functional groups of molecules are aligned so that a particular association (intermolecular force) and or reaction is promoted.
+</p>
+<p> The forced association of the functional groups of two molecules allows a collision of sufficient energy and orientation to occur that will produce a chemical reaction.
+</p>
+
+<div class="example">
+<b> In molecular manufacturing, chemosynthesis (or the orientation effect) produces molecules with specific properties by:
+</b>
+<p> <ol type="a">
+			<li> adding or substituting specific atoms in a structure.</li> <li>
+		positioning desired functional groups so they align in molecules.</li> <li>
+		adding a protective group that prevents functional groups from reacting.</li> <li>
+		manipulating the bonding that occurs between atoms, ions and molecules.</li> <li>
+		</li> </ol>
+		</p>
+
+		<p> ANSWER: B </P>
+	</div> <!-- div for example of question -->
+
+
+<h5> Orientation Effect of Polymers </h5>
+	<p>When synthetic fibres (polymers) are spun they are oriented in only one direction to increase the strength in the tensile strength. In this way we take advantage of the strength and stiffness of carbon-carbon bonds in the backbone chain. This is evident in Kevlar.
+</p>
+
+<h5> Molecular Machines </h5>
+	<p> Scientists see the potential use of molecular motor (nanomotors) in nanomachine that fit inside human cells and deliver medicine or fight cancer.
+<br> <br>
+When scientists aim to synthesize a molecular machine that facilitates a particular reaction, they need to devise ways that ensure the reacting species will associate with the molecule in the correct orientation.
+<br> <br>
+This involves positioning individual molecules close together so stronger chemical attractions can overcome weaker ones in a controlled way.
+</p>
+
+<h5> Nanorobots </h5>
+	<p> <b> Nanorobots</b> are molecules that can automatically carry out nanomechanical tasks.
+	</p>
+	<p> Applications of Nanorobots<ul> <li>
+Transport nano cargo</li> <li>
+Detect and destroy cancer cells</li> <li>
+Detect and remove toxins in the body</li> </ul>
+
+<h5> Carbon Nanotubes </h5>
+	<p> Carbon nanotubes have a long, hollow structure.
+They are 300 times stronger than steel.
+Their strength is derived from the strong carbon-carbon bonds.
+They show extraordinary electrical conductivity (used as wires in miniature electrical circuits).
+Can absorb more gas or impurities than activated charcoal (filters)</p>
+
+
+				</div> <!-- div for mole-->
+
+			</div> <!--unit 4 -->
+	<DIV>
+	<h3> Rationale </h3>
+		<ul>
+			<li> Claim (explicitly) </li>
+			<li> Research question (explicitly) </li>
+			<li> Logically connect claim and research questions </li>
+		</ul>
+		</div> <!--div for everything-->
+
+
+
+		</div> <!--div for structure-->
+  </div>
+</div>
+</div>
+
+
+    </div>
+
+    <div id="div-placeholder">
+
+    </div>
+
+        <script>
+        $(function(){
+          $("#div-placeholder").load("../footer.html");
+        });
+        </script>
+
+
+
+		</body>
+	</html>

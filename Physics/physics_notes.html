@@ -1,0 +1,2064 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Physic Notes </title>
+	<link rel="stylesheet" href="../notescss.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<form>
+	<input type="button" class="back" value=" " onclick="history.back()">
+   </form> 
+<div id="nav-placeholder">
+
+</div>
+
+		<script>
+			$(function(){
+				$("#nav-placeholder").load("../nav.html");
+			});
+		</script>
+
+
+
+
+<div id="nav_elements">
+  <script>
+  // Function to change webpage background color
+      function changeTopNavBg(color){
+  	    document.getElementById("myTopnav").style.background = color;
+
+  	}
+
+     /* // Function to change heading background color
+     function changeTopNavHoover(color){
+          document.getElementByClass("dropdown").getAttribute("hover").style.background = color;
+      }*/
+
+  	function changeStruBg(color){
+          document.getElementById("structure").style.background = color;
+      }
+
+
+
+  	function changeCogverb(color) {
+      var elements = document.getElementsByClassName("cogverb");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+  function changeBox(color) {
+      var elements = document.getElementsByClassName("box");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+  function changeShade(color) {
+      var elements = document.getElementsByClassName("dropbtn");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+
+
+
+  	/*
+  	function changTopNavHoover(color){
+  	document.getElementById("dropbtn").addEventListener("mouseover", mouseOver);
+     document.getElementById("dropbtn").addEventListener("mouseout", mouseOut);
+  	}
+
+     function mouseOver() {
+     document.getElementById("dropbtn").style.color = "red";
+     }
+
+     function mouseOut() {
+      document.getElementById("dropbtn").style.color = "black";
+      }*/
+		</script>
+
+
+	<!--end of Navigation bar--><!--
+	        <div class="dropdown">
+	          <button class="dropbtn" >Top Colours
+	            <i class="fa fa-caret-down"></i>
+	          </button>
+	          <div class="dropdown-content color-changer">
+	            <button type="button" onclick="changeTopNavBg('#79B791');changeCogverb('#79B791')">Green</button>
+	      	  <button type="button" onclick="changeTopNavBg('#111D4A'); changeCogverb('#111D4A')">Dark Blue  </button>
+	      	  <button type="button" onclick="changeTopNavBg('#F4CAE0'); changeCogverb('#F4CAE0')" >Light Pink </button>
+	      	   <button type="button" onclick="changeTopNavBg('#895737'); changeCogverb('#895737')" > Brown  </button>
+	      	    <button type="button" onclick="changeTopNavBg('#FBAF00'); changeCogverb('#FBAF00')" >Honey Yellow </button>
+	      		 <button type="button" onclick="changeTopNavBg('#CF8E80'); changeCogverb('#CF8E80')" >Apricot </button>
+	        </div>
+	        </div>
+	        <div class="dropdown">
+	          <button class="dropbtn">Page Background
+	            <i class="fa fa-caret-down"></i>
+	          </button>
+	          <div class="dropdown-content color-changer">
+	            <button type="button" onclick="changeStruBg('#F4F4ED');changeBox('#F4CAE0');">Skin</button>
+	      	  <button type="button" onclick="changeStruBg('#BCBD8B');changeBox('#D9F21D')">Shit </button>
+	      	  <button type="button" onclick="changeStruBg('#B0D7FF');changeBox('#90A8C3')">Light Blue </button>
+	      	    <button type="button" onclick="changeStruBg('#B0C4B1');changeBox('#B0C4B1')"> Greenish </button>
+	      		  <button type="button" onclick="changeStruBg('#DEDBD2');changeBox('#DEDBD2')">Beige </button>
+	        </div>
+	        </div>
+
+
+    <!---
+
+    <div class="dropdown">
+      <button class="dropbtn">Methods
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="c:\\Users/emman\Documents\Coding\methods/methods_syllabus.html">Syllabus</a>
+        <a href="c:\\Users/emman\Documents\Coding\methods/methods_notes.html">Notes</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Specialist
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="c:\\Users/emman\Documents\Coding\specialist/specialist_syllabus.html">Syllabus</a>
+        <a href="c:\\Users/emman\Documents\Coding\specialist/specialist_notes.html">Notes</a>
+    </div>
+    </div> -->
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("myTopnav").style.top = "0";
+    } else {
+      document.getElementById("myTopnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <script>
+
+  var articles = document.getElementsByTagName('')
+  for (var i = 0; i < articles.length; i ++) {
+      articles[i].parentNode.insertBefore(document.createElement('hr'), articles[i].nextSibling)
+  }
+  </script>
+</div>
+
+
+
+<body>
+
+
+<div class="structure" id="structure">
+<div class="everythink">
+
+
+
+
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="snr_physics_19_formula_data_book.pdf" target="_blank">Formula and Data Booklet</a>
+		<a href=#unit3 >Unit 3</a>
+		<a href=#unit4>Unit 4</a>
+		<a href="#"></a>
+	</div>
+
+
+
+	<script>
+	function openNav() {
+		document.getElementById("mySidebar").style.width = "150px";
+		document.getElementById("main").style.marginLeft = "300px";
+		document.getElementById("main").style.display = "none";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidebar").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+			document.getElementById("main").style.display = "block";
+	}
+	</script>
+
+
+	<div id="main">
+ 	<button id="opensesame" class="openbtn" onclick="openNav()">&rsaquo;</button>
+ </div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+
+<div id="unit3" class="unit"> UNIT 3 </div>  <!-- UNIT 3 starting point is right here -->
+
+<div class="topic">
+	<h1> Topic 1: Gravity and Motion </h1>
+
+</div>
+		<div class="sub-topic">
+		<h2> Vectors </h2>
+	</div>
+		<div class="content">
+		<div class="super-sub-topic">
+		<h3> &#10132; Resolution of Vectors </h3>
+
+			<strong class="cogverb" id="3.1.1A"> Use <span class="tooltiptext">3.1.1A:
+					 use vector analysis to resolve a vector into two perpendicular components</span> </strong>
+					 <p> Decompose a vector into x and y components:
+					$$ x = U \times cos \theta $$
+				 $$ y = U \times sin \theta $$ </p>
+					 <strong class="cogverb" id="3.1.1B"> Solve <span class="tooltiptext"> 3.1.1B: solve vector problems by resolving vectors into components, adding, or subtracting the components and recombining them to determine the resultant vector
+					 </span> </strong>
+		</div>
+		</div>
+	<div class="sub-topic">
+		<h2> Projectile Motion </h2>
+	</div>
+		<div class="content">
+		<div class="super-sub-topic">
+		<h3> &#10132; Motion </h3>
+		<h4> Motion Notation </h4>
+		<strong class="cogverb" id="3.1.2A"> Recall <span class="tooltiptext">3.1.2A: recall that the horizontal and vertical components of a velocity vector are
+independent of each other	</span> </strong>
+			<ul>
+					<li> <i> U </i> &rarr; initial velocity</li>
+					<li> <i> V </i> &rarr; final velocity</li>
+					<li> <i> g </i> &rarr; acceleration due to gravity (9.8)</li>
+					<li> <i> s </i> &rarr; displacement </li>
+			</ul>
+				<p>
+
+
+				 Velocity can be decomposed into horizontal and vertical components of which are independent to each other. Horizontal component of velocity usually has no acceleration; constant velocity.
+				 <br> <br><b>Think:</b> something projected horizontally will hit ground the same time as something just dropped.
+				 </p>
+				 <p> Formula: <br><i> U <sub> x </sub>= V <sub> x </sub> </i>
+				<br> <i> S <sub> x </sub>= U <sub> x </sub> t  </i>
+				 </p>
+
+			<h4> Projection at an Angle </h4>
+			<strong class="cogverb" id="3.1.2B"> apply <span class="tooltiptext"> 3.1.2B: apply vector analysis to determine horizontal and vertical components of
+projectile motion	</span> </strong>
+
+<p> The horizontal and vertical components of motion can be resolved into <i> i </i> and <i> j </i> components.
+	<br>
+	<ul>
+		<li> horizontal: cos&theta; &times; V </li>
+			<li> vertical: sin&theta; &times; V </li>
+		</ul>
+
+<h4> Creating an equation </h4>
+			<strong class="cogverb" id="3.1.2C"> Solve  <span class="tooltiptext"> 3.1.2C: solve problems involving projectile motion.
+			</strong>
+						<img src="phy photos/proj_motion.png" class="left" width=50%>
+							<p><ul> <li>
+							Horizontal speed remains constant. </li> <li> Impact speed= Launch speed.</li> <li>  Vertical Velocity at launch=impact.</li> </ul>
+						<ol>
+							<li>When given launch angle, decompose V into <i> x & y </i>. </li>
+							<li> When creating an equation use launch, land, and stationary point as coordinates. </li>
+							</ol>
+							<br><br>
+							</p>
+							<div class="example">
+									<h5> Example 1.3A </h5>
+
+										<p> 	Bullet fired at 200m/s at 40&deg;. Calculate <i> U <sub> x </sub>, </i> U <sub> y </sub>, max height, time of flight and horizontal range.
+										</p>
+
+
+								<div class="solution">
+
+								$$ U_x = 200 \times cos40 $$
+								$$ U_x = 153.2 m/s $$	<ol>
+									<p>
+									 Create equations:</p>
+											$$ V = -9.8t = 128.6 $$
+											$$ S_y = -4.9t^2 + 128.6t $$
+											<p>  Max height is when V=0, therefore make V=0 and re-arrange for t.</p>
+											$$ t ={{128.6}\over{9.8}} $$
+											$$ t = 13.12s $$
+
+									<p> $$ \text{Double when t when V=0 therefore } t =26.24s. $$ </p>
+									<p>  $$ \text{Alternatively, Solve for when} \, S_y = 0 \, \text{to get the range} $$ </p>
+									$$ U_xt = S_x $$
+									$$ S_x = 4020m $$
+
+
+												</div>
+							</div>
+		</div>
+		</div>
+
+	<div class="sub-topic">
+		<h2> Inclined Planes</h2>
+	</div>
+		<div class="content">
+			<h3> &#10132; Forces in the Plane </h3>
+				<div class="super-sub-topic">
+					<table>
+						<tr>
+							<th> Weight </th>
+							<td> Force of mass due to gravity (w)</td>
+						</tr>
+						<tr>
+							<th> Mass </th>
+							<td> An object's resistance to change in motion </td>
+						</tr>
+						<tr>
+					</table>
+			<p>
+				If mass is known then weight  is mass x gravity (F = ma)
+				<br>
+				<br>
+			<strong class="cogverb" id="3.1.3A"> Solve <span class="tooltiptext"> 3.1.3A: solve problems involving force due to gravity (weight) and mass using the
+mathematical relationship between them	</span> </strong>
+
+				<div class="example">
+				Example 2.1A: Man has mass of 85kg. Find his weight on earth, moon (1.62ms<sup>-2</sup>) and Jupiter (24.8 ms<sup>-2</sup>).
+				<br>
+				$$ F_g = ma $$
+				$$ F_g = 85 \times 9.8 $$
+				$$ F_g = 833N down $$
+
+					</div>
+					<br><br>
+				<strong class="cogverb" id="3.1.3B"> Define <span class="tooltiptext"> 3.1.3B: Define the normal force	</span> </strong>
+				<p><b>Normal force: </b> Force acting perpendicular to the plane.
+			</p>
+
+			<h4> Free Body Diagrams </h4>
+				<strong class="cogverb" style="width:200px;" id="3.1.3C"> Describe and Represent <span class="tooltiptext"> 3.1.3C: describe and represent the forces acting on an object on an inclined plane
+through the use of free-body diagrams	</span> </strong>
+				<img src="phy photos/resolution_of_forces.png" alt="freebodydigram" class="left" width=40%>
+				<br>
+				<p> <ul class="yeet">
+					<li> F<sub>gravity</sub>: is the downwards force
+					</li>
+					<li> F<sub>friction </sub>: is the resistance force, resistance to motion.
+					</li>
+					<li> F<sub>parallel</sub>: is the parallel component of the gravity force.
+					</li>
+					<li> F<sub>perpendicular</sub>: is the perpendicular component of the gravity force.
+					</li>
+					<li> F<sub>normal </sub>: the force opposite to the perpendicular force.
+					</li>
+				</ul>
+
+				Use regular trig to find F<sub>p</sub> or F<sub>&parallel;</sub>.
+				<br>
+					<div class="equation">
+						F<sub>p</sub>=F<sub>g</sub> &#215; sin&theta;
+						<br>
+						F<sub>&parallel;</sub>=F<sub>g</sub> &#215; cos&theta;
+						<br>
+					</div>
+						<br>
+</p>
+						<br>
+						<h4> Inclined Plane scenarios:</h4>
+
+							<ul>
+								<li> The force pulling down on object is only the force perpendicular to the ground, not whole force (hence the use of the trig ratios in equations) </li>
+								<li> To find acceleration with friction you must first find force of the pull down and then use vector addition to find net force. </li>
+							</ul>
+
+							<strong class="cogverb" id="3.1.3D"> Calculate <span class="tooltiptext"> 3.1.3D: calculate the net force acting on an object on an inclined plane through vector
+analysis.</span> </strong>
+
+					<table id="cases" class="bigtable">
+						<tr>
+							<td style="width:60%">
+								<h3 id="3.3A case1"> Case 1: Sliding down-no friction: </h3>
+								<ul>
+									<li> Object will be accelerating &rarr; no friction therefore: F<sub>net</sub>/=0.
+									</li>
+									<li> F<sub>net</sub>=F<sub>p</sub> as no friction. </li>
+								</ul>
+							</td>
+							<td>
+								<img src="phy photos/exp2.3A.png" width=500px>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 id="case2"> Case 2: Sliding down with Friction </h3>
+								<ul>
+									<li> Object may be accelerating or have a constant velocity	</li>
+									<li> The frictional force only can be incorporated into equation after the force down is calculated purely based on the angle of the plane and mass of the object. </li>
+
+								</ul>
+							</td>
+							<td>
+								<img src="phy photos/exp2.3B.png" width=500px>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 id="case3"> Case 3: Dragged up with no Friction </h3>
+								<ul>
+									<li> Applied Pulling force creates tension in cable that overcomes weight acting down the plane. 					</li>								</li>
+									</li>
+								</ul>
+							</td>
+							<td>
+								<img src="phy photos/exp2.3c.png" width=500px>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 id="case4"> Case 4: Dragged up with Friction </h3>
+								<ul>
+									<li> Applied pulling force of rope creates tension in a cable that overcomes weight acting down the plane however also has friction.</li>
+									<li> </li>
+								</ul>
+							</td>
+							<td>
+								<img src="phy photos/case4.png" >
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 id="pulley"> Inclined Planes with a Pulley </h3>
+								<ul>
+									<li> The above scenarios can happen in a pulley system. </li>
+									<li> The acceleration/ Force pulling up the incline in a pulley system is the weight of the hanging mass. For example: if 5kg of wood is on an inclined plane of 45&deg; attached to a pulley of hanging mass of 10kg the force pulling up on the 5kg block is 10x9.8 so 98N of force. The force pulling the block down will be F=mgsin&theta; and hence F=24.5N. The net force &rarr; F=98-24.5=73.5. The trick: to find the acceleration both masses must be considered. So, if F=ma and F=73.5N, then m=(10+5) and so a=<sup>73.5</sup>&frasl;<sub>15</sub>=4.87ms<sup>-2</sup>.
+								</ul>
+							</td>
+							<td>
+								<img src="phy photos/pulley.png" >
+							</td>
+						</tr>
+						</table>
+				</P>
+		</div>
+	</div>
+
+	<div class="sub-topic">
+		<h2> Circular Motion</h2>
+	</div>
+		<div class="content" >
+
+		<div class="super-sub-topic">
+			<p>
+				<strong id="3.1.4A" class="cogverb"> Describe: <span class="tooltiptext"> 3.1.4A: describe uniform circular motion in terms of a force acting on an object in a
+perpendicular direction to the velocity of the object</span> </strong> <b>Uniform Circular Motion:</b> Motion of an object at a constant speed in a circle. Velocity at any point in time is perpendicular to circle.
+			</p>
+			<p>
+				<strong id="3.1.4B" class="cogverb"> Define: <span class="tooltiptext"> 3.1.4B:define the concepts of average speed and period
+			 </span> </strong><b> Average Speed:</b> The rate of change of distance (m/s).
+			</p>
+			<p>
+			 <b>Period:</b> The amount of time taken to complete a full revolution (measured in seconds).
+			</p>
+			<p>
+				<strong id="3.1.4D" class="cogverb"> Define:<span class="tooltiptext"> 3.1.4D: define the terms centripetal acceleration and centripetal force
+			</span> </strong> <b>Centripetal Force:</b>Force acting on an objecting travelling in a circle that constantly pushes or pulls the object towards the centre.
+			</p>
+			<p>
+			<b>Centripetal Acceleration:</b> acceleration experienced by an object moving in a circular path directed towards the centre.
+			</p>
+			<p> In a circle remember that the velocity and acceleration have constant magnitudes but changing directions at all times.
+				</p>
+
+				<h4> Average Speed</h4>
+
+				<strong id="3.1.4C" class="cogverb"> Solve: <span class="tooltiptext"> 3.1.4C: solve problems involving average speed of objects undergoing uniform
+circular motion</span> </strong>
+<div class="formula">
+	$$ average\,speed  = {{distance}\over{time}} \,or\, v = {{2\pi}\over{r}}$$
+</div>
+Where T is the period (s), and r is radius (m)
+<div class="formula">
+$$ T = {{time}\over{no. of revolutions}} $$
+</div>
+
+
+
+			<p>	When solving problems involving circular motion, the physics formulae do not consider the rotational velocity, only the velocity of the object at a specific distance from the centre. 	Do not get this confused.
+
+
+			</p>
+			<p>
+						To check and better understand, use these general formulas you created.
+						<br>
+						<br>
+
+						To find the magnitude for either V or a when
+			</p>
+			<strong id="3.1.4E" class="cogverb"> Solve:<span class="tooltiptext"> 3.1.4E: solve problems involving forces acting on objects in uniform circular motion.
+		</span>  </strong>
+		<h5> Centripetal Force </h5>
+		<p> This force in circular motion is the tension force of the rope or string attached. </P>
+
+ 		<div class="formula">
+		$$	F_c = m \times a_c $$
+		$$ F_{net} = {{mv^2}\over{r}} $$
+
+		</div>
+		<h5> Centripetal Acceleration </h5>
+<div class="formula">
+	$$a_c = {{v^2}\over{r}} $$</div>
+		Net force in circular motion is F<sub>T</sub>
+	</div>
+	</div>
+
+
+
+
+	<div class="sub-topic">
+		<h2> Gravitational Forces and Fields</h2>
+	</div>
+		<div class="content">
+			<p>
+				<div class="super-sub-topic">
+					<h3> &#10132; Newton's Law of Universal Gravitation</h3>
+				<strong class="cogverb" id="3.1.5A"> Recall: <span class="tooltiptext">3.1.5A: recall Newton’s Law of Universal Gravitation
+		 </span> </strong>
+
+				<p> Newton's law of universal attraction states that the force of attraction between each pair of point particles is directly proportional to their mass; inversely proportional to the square of the distance. This is summarised it the formula below:
+				<br>
+				$$ F_g = {{GMm}\over{r^2}}$$
+				<br>
+					<ul>
+						<li> Force of attraction always points inwards </li>
+						<li> Applies to all bodies </li>
+						<li> Large objects (planets) the mass is a point mass in centre </li>
+						<li> An object's radius must be included in 'r'. </li>
+					</ul>
+			</p>
+			<h4> Gravitational force between two objects </h4>
+			<strong class="cogverb" id="3.1.5B">Solve  <span class="tooltiptext"> 3.1.5B: solve problems involving the magnitude of the gravitational force between
+two masses	</span> </strong>
+<br>
+<div class=" cogverb see"> Hover for textbook examples &#10548; <span class="tooltiptext"> <img src="phy photos/4.2B.png" width=100%></span>  </div>
+
+</div>
+
+			<div class="super-sub-topic">
+				<h3> &#10132; Gravitational Fields </h3>
+				<strong class="cogverb" id="3.1.5C">  Define <span class="tooltiptext"> 3.1.5C: define the term gravitational fields
+		</span> </strong>
+
+		<p> <b> Gravitational Field </b> is the region of space surrounding a body in which another body experiences a force of gravitation. </p>
+		<P> The direction of force is inwards </p>
+
+			<h4> Gravitational Field strength at distance </h4>
+				<strong class="cogverb" id="3.1.5D">Solve  <span class="tooltiptext"> 3.1.5D: solve problems involving the gravitational field strength at a distance from
+an object	</span> </strong>
+<p> The field strength of gravity can be calculated by
+</p>
+$$ g = {{GM}\over{r^2}} $$
+<br><br>
+<div class=" cogverb see"> Hover for some textbook examples &#9757; <span class="tooltiptext"> <img src="phy photos/4.3A.png" width=100%></span>  </div>
+			</div>
+	</div>
+
+	<div class="sub-topic">
+		<h2>Orbits </h2>
+	</div>
+		<div class="content">
+			<p>
+				<div class="super-sub-topic">
+					<h3> &#10132; Kepler's Law's</h3>
+				<strong class="cogverb" id="3.1.6A"> Recall: <span class="tooltiptext">3.1.6A: recall Kepler's laws of planetary motion </span> </strong>
+				<img src="phy photos/2ndlaw.png" class="left">
+				<dl>
+					<dt> Kepler's First Law
+					</dt>
+						<dd>states that all planets move about
+the Sun in elliptical orbits that have the Sun as one of the foci.
+
+						</dd>
+						<dt> Kepler's Second Law </dt>
+						<dd>  states that a radius vector
+joining any planet to the Sun sweeps out equal
+areas in equal lengths of time
+<br>
+<br> In other words, the time taken for a planet to move from point R to S will be the same as from L to M because area A and area B are the same. </dd>
+						<dt> Kepler's Third Law </dt>
+						<dd> states that the square of the sidereal periods of a planet is directly proportional to
+the cube of its mean distance from the Sun: T² ∝ r³</dd>
+					</dl>
+<h4> Solving Problems </h4>
+<strong class="cogverb" id="3.1.6B">Solve  <span class="tooltiptext"> 3.1.6B: solve problems involving Kepler’s third law	</span> </strong>
+<br>
+<div class=" cogverb see"> Hover for some textbook examples &#9757; <span class="tooltiptext" style="width:300%;"> <img src="phy photos/5.1A.png" width=43%><img src="phy photos/5.1B.png" width=54%></span>  </div>
+
+<h5> Derivation of Kepler’s Law </h5>
+					<strong class="cogverb" id="3.1.6C">Recall  <span class="tooltiptext"> 3.1.6C: recall that Kepler’s third law can be derived from the relationship between
+Newton’s Law of Universal Gravitation and uniform circular motion.</span> </strong>
+<img src="phy photos/3rdderivation.png">
+
+
+			</div><!--div for Kepler -->
+
+
+		</div> <!--content for orbits -->
+<div class="topic">
+	<h1> Topic 2: Electromagnetism </h1>
+</div>
+		<div class="sub-topic">
+		<h2> Electrostatic Fields </h2>
+		</div>
+				<div class="content">
+					<div class="super-sub-topic">
+						<h3> &#10132; Coulomb's Law </h3>
+					<strong class="cogverb" id="3.2.1A">Solve  <span class="tooltiptext"> 3.2.1A: define Coulomb’s Law and recognise that it describes the force exerted by
+	electrostatically charged objects on other electrostatically charged objects	</span> </strong>
+<p> <b> Coulomb’s Law </b>  states that like
+						electric charges repel
+						and opposite electric
+						charges attract, with
+						a force proportional
+						to the product of the
+						electric charges and
+						inversely proportional
+						to the square of the
+						distance between
+						them, expressed by
+						the formula</p> <img src="phy photos/claw.png" class=" mini" width=30%>
+
+	<strong class="cogverb" id="3.2.1C">Define <span class="tooltiptext"> 3.2.1C: define the terms electric fields, electric field strength and electrical potential
+energy	</span> </strong>
+
+<dl>
+	<dt> Electric Field </dt>
+					<dd> a region of space
+				near an electrically
+				charged particle or
+				object within which
+				a force would be
+				exerted on other
+				electrically charged
+				particles or objects </dd>
+				<dt> Electric Field Strength </dt>
+				<dd> the intensity of an
+				electric field at a
+				particular location
+				(symbol: E; SI unit:
+				newton per coulomb;
+				unit symbol: N per C) </dd>
+				<dt> Electric Potential Energy </dt>
+				<dd> the capacity of
+					electric charge
+					carriers to do work
+					due to their position
+					in an electric field
+					(symbol: W; SI
+					unit: joule; unit
+					symbol: J)</dd>
+
+				</dl>
+
+				<h4> Solving Equations </h4>
+				<strong class="cogverb" id="3.2.1B"> Solve  <span class="tooltiptext"> 3.2.1B: solve problems involving Coulomb's law </span> </strong>
+<br>
+				<div class="cogverb see"> Hover for some textbook examples &#9757; <span style="width:300%;"class="tooltiptext">
+						<img src="phy photos/6.1C.png"width=40%>	<img src="phy photos/6.1E.png" width=50%></span>
+				</div>
+<br><br><br>
+
+
+
+				<strong class="cogverb" id="3.2.1D"> Solve  <span class="tooltiptext"> 3.2.1D: solve problems involving electric field strength
+				</span> </strong>
+<br>
+				<div class="cogverb see"> Hover for some textbook examples &#9757; <span style="width:300%;" class="tooltiptext">
+						<img src="phy photos/6.2B.png" width=52%><img src="phy photos/6.2D.png" width=45%></span>
+				</div>
+<br><br><br>
+
+
+
+				<strong class="cogverb" id="3.2.1E"> Solve  <span class="tooltiptext"> 3.2.1E:solve problems involving the work done when an electric charge is moved in an electric field.
+				</span> </strong><br>	<div class="cogverb see"> Hover for some textbook examples &#9757; <span class="tooltiptext">
+							<img src="phy photos/6.3A.png" id="border"></span>	</div>
+
+<br><br>
+<img src="phy photos/charge in electric field.png" width=70% >
+<br><br>
+
+
+
+</div> <!--div class coulomb’s law -->
+				</div>
+
+		<div class="sub-topic">
+		<h2> Magnetic Fields </h2>
+		</div>
+				<div class="content">
+				<h3> &#10132; Magnets and Magnetic fields</h3>
+
+				<div class="super-sub-topic">
+					<strong class="cogverb" id="3.2.2A"> Define <span class='tooltiptext'> 3.2.2A: define the term magnetic field</strong>
+				<p> A <b>magnetic field </b> is a region of space where a magnetic force is experienced. Produced by the motion of electrons. /Magnetic field is a combination of the charge and velocity of an object.
+</p>
+
+					<strong class="cogverb" id="3.2.2B"> Represent <span class='tooltiptext'> 3.2.2B: recall how to represent magnetic field lines, including sketching magnetic field
+lines due to a moving electric charge, electric currents, and magnets</span> </strong><p>
+					 Magnetic fields can be represented using magnetic field lines. A magnetic field line is the direction an isolated north pole would move in the field. The <b> direction </b> of a field is indicated by directional arrows. The <b> strength </b> of magnetic fields is represented by the closeness of field lines; lines closer together indicate strong magnetic force, whilst further apart are less strong. The (z) direction of magnetic field is represented by the below circles.
+				 </p>
+					<h5> Using Flux Lines </h5>
+					<img src="phy photos/flux_lines.png">
+					</p>
+					<h5> Fields around a wire </h5>
+					<img src="phy photos/elec_wire.png">
+					<h5> Fields out of a Magnet </h5>
+					<img src="phy photos/bar_magnet.png">
+					<p>
+					Note:
+						<ul>
+							<li> Field travels from north to south </li>
+							<li> Filed lines are concentric and circular around wire </li>
+							<li> Strength of field decrease moving away from wire so must draw line gradually further apart </li>
+							<li> The direction of current faces the north pole, and the field will reverse if direction of current is reversed </li>
+						</ul>
+					</p>
+
+					<strong class="cogverb" id="3.2.2C"> Recall: <span class='tooltiptext'>3.2.2C: recall that a moving electric charge generates a magnetic field
+				</span> </strong>
+				<p>
+					Magnetic fields arise from the motion of electric charges. (Iron and copper are good magnets)</p>
+					</div>
+
+
+							<h3>&#10132; Straight Line Wire</h3>
+
+					<div class="super-sub-topic">
+						<strong class="cogverb" id="3.2.2D"> Determine <span class='tooltiptext'> 3.2.2D: determine the magnitude and direction of a magnetic field around electric
+	current-carrying wires and inside solenoids</span> </strong>
+	<a href="physics_syllabus.html#magneticfields">
+								<strong class="cogverb" id="3.2.2E"> Solve <span class='tooltiptext'> 3.2.2E: solve problems involving the magnitude and direction of magnetic fields
+				around a straight electric current-carrying wire and inside a solenoid</span></strong> </a>
+						<p>
+							<h5 id="direction-of-magnetic"> Finding the magnetic field direction around a straight wire </h5>
+								<img src="phy photos/right_hand_rule.png" class="mini" width=30%>
+							<h5 id="magnetic-field-strength"> Finding the magnetic field strength </h5>
+
+							<div class="formula">
+								$$ B = {{\mu_0}\over{2\pi}}\times{1\over{r}} $$
+							</div>
+							<ul class="formula_description">
+								<li>B is the magnetic field strength (Tesla measured in T) </li>
+								<li> from a	distance at point <i> r </i> </li>
+								<li> <i>I </i> is the current flowing through wire (amps) and u0 is a standardized value equal to 4 &pi; x 10<sup>-7</sup>. </li>
+							</ul>
+							For more complex questions vector addition may be required when forces are acting on a point in multiple direction (multiple wires involved). See 7.2 for practice.
+						</p>
+
+
+							<h4> Finding magnetic field given all conditions </h4>
+									<div class="example">
+
+								<p> 	Calculate the magnetic field at point P, which
+is 5 cm directly above a wire carrying a
+current of 20 A to the left.<img src="phy photos/rhrapplied.png" class="left"></p>
+									<br>
+										<div class="solution">
+										<img src="phy photos/exp7.2.png" class="float">
+										*Use right hand for this
+										</div>
+									</div>
+
+,								<h4> Finding Current given field strength </h4>
+									<div class="example">
+										<p>
+											Find the current of the wires placed 10cm apart if they produce a net magnetic filed of 0 in the middle, and 7.58 &times; 10<sup>-5</sup> at 0.5cm away from
+											wire 1
+										</p>
+										<div class="answer">
+											<p> Since the magnetic field is zero when equidistant from both wires, this indicates that the wires have the same electric current </p>
+											$$ {{\mu_0 I }\over{2\pi \times 0.005}} + {{\mu_0 I}\over{2\pi \times 0.095}} = 7.58 \times 10^{-5} $$
+											$$ 10 \mu_0 I = 7.58 \times 10^{-5} \times 2\pi \times 0.095 \times 0.05 $$
+											$$ I = 1.8 A $$
+										</div>
+									</div>
+								</div>
+
+					<h3 id="solenoid"> &#10132; Solenoids</h3>
+					<div class="super-sub-topic">
+						<p> A solenoid is a long straight coil wire used to generate a controlled and (almost) uniform magnetic field. Use (left) hand rule to figure out the polarity of solenoid: have fingers on left hand curl in the direction of electron flow- thumb will point in the direction of the north pole.
+						</p>
+
+<h5> Finding the magnetic field direction around a solenoid </h5>
+						In order to <strong class="cogverb" id="3.2.2D"> determine </strong> the direction of magnetic field around electric current-carrying wires and inside solenoids, use the two below tricks:
+						<br>
+						<br>
+							<table>
+								<tr>
+									<td> For Regular electric wires: </td>
+									<td> For Solenoids:
+									</td>
+								</tr>
+								<tr>
+									<td> Curl fingers on right hand in the direction of electron flow (negative to positive) and thumb will point in the direction of North Pole.
+									</td>
+									<td> Curl fingers on left hand in direction of electron flow: thumb will point to north pole.
+									</td>
+								</tr>
+							</table>
+
+						<br>
+						</p>
+						<p>
+							<h5> Solving equations relating to magnetic field strength in Solenoids </h5>
+							<div class="formula">
+								$$ B = \mu_0 n I $$
+								Where n is the number of turns in the solenoids
+								$$ n = {{number\,of\,turns}\over{length\,of\,solenoid}} $$
+								$$ n = {N\over L} $$
+														</div>
+
+							<br>
+							 <ul class="formula_description">
+								<li> B represent field strength in Tesla (T) </li>
+								<li>u0 is a magnetic field constant (4 &pi; x 10<sup>-7</sup>s </li>
+								<li><i> I </i> is the current in Amps (A) </li>
+								<li> The below formula is useful to find the value of <i> n </i> when the no. of coils over a specific distance is given.
+							</ul>
+						</p>
+
+
+								<div class="example">
+									<h5 id="direction-in-solenoid"> Finding the direction and strength of magnetic field in solenoid </h5>
+								<p>
+									A solenoid has a length of 25 cm and
+contains 600 turns arranged as shown in
+Figure 5. It carries a current of 3.0 A.
+</p> <p>
+									a)Determine the magnetic field strength in
+the centre of the solenoid
+									<br>
+									b) Predict which end will be north Pole.</p>
+										<div class="solution">
+										<img src="phy photos/exp7.3.png" class="float">
+										*Make sure to first calculate n before finding the field strength (B). Use left hand.
+										</div>
+									</div>
+
+
+
+					</div>
+
+								<h3> &#10132; Magnetic Forces </h3>
+								<div class="super-sub-topic">
+									<h4> Forces when Charge or Current is placed in Magnetic Field</h4>
+									<p>
+									<strong class="cogverb" id="3.2.2F"> Recall: <span class='tooltiptext'>3.2.2F: recall that electric current-carrying conductors and moving electric charges
+				experience a force when placed in a magnetic field</span> </strong>
+				<p>  <img src="phy photos/force_on_wire.png" class="left">	<img src="phy photos/left_hand_rule.png" width=30% class="left"> The strength of the field is defined by the size of a force acting on an object in a field.
+				</p> <p>
+									Gravity has a force mass, for electric fields its force on charge, and for a magnetic field its the force on a moving charge.
+									</p>
+									<p> Magnetic field strength can be defined by:
+										<ol type=a>
+											<li> Force on moving charge particle;</li>
+											<li> Force on current carrying wire </li>
+										</ol>
+									</p>
+
+
+									<P> The direction of force is the thumb, which applies to positively charge particles. For negatively charged particles reverse direction of current flow. </p>
+									<br>
+										<br>
+										<strong class="cogverb" id="3.2.2G"> Solve <span class='tooltiptext'>3.2.2G: solve problems involving the magnetic force on an electric current-carrying
+					wire and moving charge in a magnetic field.</span> </strong>
+						<br>
+										<table class="bigtable" width=90%>
+											<tr>
+												<th> Force of a moving particle in magnetic field </th>
+												<th> Force of a wire in a magnetic field </th>
+											</tr>
+											<tr>
+												<td><img src="phy photos/magnetic_force.png">
+												</td>
+												<td>	<img src="phy photos/magnetic_force_wire.png"> </td>
+											</tr>
+											<tr>
+												<td colspan="2">
+																				<p><b> NOTE:</b>
+									<ul> <li> When direction of motion is parallel to field, F=0 </li>
+										<li> if the direction is perpendicular, F is maximum </li>
+
+								</ul>
+
+									<a href=#handrules> Use Fleming’s left-hand rule for direction of force </a>
+									</td>
+
+								</table>
+
+							<p>	<div class="cogverb see"> Hover for some textbook examples &#9757; <span class="tooltiptext"> 	<img src="phy photos/exp7.4B.png" id="border"></span>
+							</div>
+
+
+
+			</div>
+	</div>
+
+		<div class="sub-topic">
+		<h2> Electromagnetic Induction </h2>
+
+		</div>
+				<div class="content">
+				<div class="super-sub-topic">
+				<p> <strong class="cogverb" id="3.2.3A"> Define <span class="tooltiptext"> 3.2.3A: define the terms magnetic flux, magnetic flux density, electromagnetic induction, electromotive force (EMF), faraday's law and Lenz's Law. 	</strong> the terms:
+				<ul> <!-- Definitions of first descriptor -->
+					<li> <b>Magnetic Flux </b> a measurement of the total magnetic field that passes through a given area; a measure of the number of magnetic field lines passing through the given area (symbol, 𝜙; SI unit, Wb)</li>
+					<li> <b> Magnetic Flux Density </b> the strength of a magnetic field or the number of magnetic field lines per unit area (symbol, 𝐵; SI unit, Wb/m 2, or T)</li>
+					<li> <b>Electromagnetic Induction </b> the production of an electromotive force (EMF) or voltage across an electrical conductor due to its dynamic interaction with a magnetic field</li>
+					<li> <b>Electromotive Force </b> a difference in potential that tends to give rise to an electric current, also written as 𝑒 mf </li>
+					<li> <b>Faraday's law: </b> a law stating that when the magnetic flux linking a circuit changes, an electromotive force (𝑒) is induced in the circuit proportional to the rate of change of the flux linkage  </li>
+					<li> <b> Lenz's Law: </b> the direction of an induced electric current is such that it produces a current whose magnetic field opposes the change in the circuit or the magnetic field that produces it.</li>
+				</ul>
+				</p>
+
+				<h4> Problems Involving Magnetic Flux in an electric carrying loop </h4>
+
+			<strong class="cogverb" id="3.2.3B"> Solve<span class="tooltiptext">3.2.3B solve problems involving the magnetic flux in an electric current-carrying loop
+				</span> </strong>
+<h5> Formula for Calculating Magnetic Flux </h5>
+				<div class="formula">
+					$$ \phi = BA $$
+					$$ \phi = \mu_0 n l $$
+	</div>
+	<p>
+					Where &varphi; is the magnetic flux (W), B is the field strength (T), and A is the area (m<sup>2</sup>)
+			</p>
+				<br>
+			<a href=#EMF> For how to find EMF for a loop of wire or single charged particle </a>
+
+				<h5> Flux Straight On </h5>
+				<div class="example"> Calculate the flux threading a circular loop of diameter 24cm with the plane of the
+				loop at right angles to a field of strength 5.0 mT.
+				<div class="answer">
+				<img src="phy photos/8.1A.png">
+				</div>
+				</div>
+
+				<h5 id="angle"> Flux at an angle to Field </h5>
+				<div class="example"> A loop of area 1.0 m2 is placed in a magnetic field of strength 4.0 T, as shown in
+					Figure 3. Calculate the magnetic flux threading the loop when its perpendicular makes
+					an angle to the field of 50 &degree;
+				<div class="answer">
+				<img src="phy photos/8.1B.png">
+				</div>
+				</div>
+
+				<h5 id="solenoid"> Flux in a solenoid </h5>
+				<div class="example"> A 25 cm long solenoid of diameter 5.4cm with 1200 turns of wire carries a current of
+					1.5 A. Determine the flux inside the solenoid.
+				<div class="answer">
+				<p> You must find the field strength of a solenoid, refer to <a href="physics_notes.html#solenoid"> work on solenoid </a> for this. Then find cross sectional area of solenoid. Below shows the working: </p>
+				<img src="phy photos/8.1C.png">
+				</div>
+				</div>
+
+				<p> Magnetic Flux can change depending on incidence angle. Use regular trig to figure out how much flux or formula 𝜙=𝐵A cos&theta;
+				</p>
+				</div>
+				<h3> &#10132; Inducing EMF across moving conductor in Magnetic Field. </h3>
+				<div class="super-sub-topic">
+					<strong class="cogverb" id="3.2.3C"> Describe <span class="tooltiptext"> 3.2.3C: describe the process of inducing an EMF across a moving conductor in a
+magnetic field</span></strong>
+					<p> When a current moves in an out of a solenoid or conductor of some sort, an EMF or voltage is induced in the coil. If coil is apart of a circuit, then induced EMF produces a current. The direction of current flow in coil can be determined and is more closely related to <a href="physics_notes.html#LENZ"> Lenz’s Law </a>
+					</p>
+
+				<h5> Factors Affecting Voltage Production </h5>
+				<table>
+						<tr>
+							<th> Variable</th>
+							<th> Increase in EMF </td>
+						</tr>
+						<tr>
+							<td> Magnetic field strength (B) </td>
+							<td> Use a stronger magnet or two magnets held together with a rubber band (with their like poles side by side)
+and the voltage will increase. </td>
+						</tr>
+						<tr>
+							<td> Time interval (t)
+							</td>
+							<td> Decrease the time taken for one back-and-forth oscillation of the magnet. This means increasing the speed
+							</td>
+						</tr>
+						<tr>
+							<td> Area (A)
+							</td>
+							<td> This is difficult, but a bigger coil area means more lines of flux fit inside and the voltage will be greater.
+							</td>
+						</tr>
+						<tr>
+							<td> Angle (&theta;)
+							</td>
+							<td> As the angle between the direction of the magnet and the axis of the coil decreases, the voltage increases.
+That is, the closer the angle between the perpendicular to the loops of the coil and the direction of the
+incoming magnetic field is to zero, the greater the voltage.
+							</td>
+						</tr>
+						<tr>
+							<td> Number of turns
+(N)
+							</td>
+							<td> The greater the number of turns the greater the voltage. For a coil wound so that the turns are close to
+each other, the change in flux through each turn is the same, and an EMF appears across each turn, so
+for n turns, the total EMF is n times the EMF of one turn.
+							</td>
+						</tr>
+					</table>
+					<br>
+					<h4 id="EMF"> Calculating the EMF </h4>
+					<div class="formula">
+						$$ EMF = {{-n\Delta (BAcos\theta )}\over{\Delta t}} $$
+						$$ EMF = {{-n\Delta ((\phi \times n I )Acos\theta )}\over{\Delta t}} $$
+					</div>
+					<p> <img src="phy photos/emf.png">
+					</p>
+
+					<h5> Force on the wire for induced current </h5>
+					<p> The force of the wire for an induced current requires <a href=#handrules> Fleming’s right-hand rule</a> </p>
+						<img src="phy photos/flem_right.png" width=25%>
+					</div>
+
+					<h3 id="lenz"> &#10132; Lenz's Law </h3>
+					<div class="super-sub-topic">
+					<p> Lenz's Law states that the
+						direction of an
+						induced electric
+						current is such that
+						it produces a current
+						whose magnetic field
+						opposes the change
+						in the circuit or the
+						magnetic field that
+						produces it</p>
+						<strong class="cogverb" id="3.2.3E"> Explain <span class="tooltiptext"> 3.2.3E: explain how Lenz’s Law is consistent with the principle of conservation
+of energy</span></strong> <img src="phy photos/lenz.png" width=30% class="left">
+					<p> When an induced current flows through a solenoid, the magnetic field produced by the solenoid ahs a polarity that repels the incoming permanent magnet pole. It repels the magnet and forces you to do word. In order to overcome this opposing repulsive force, you need to do work (work = force x displacement (joules). If you didn’t you could induce a current, get electricity, for no effort.
+					</p>
+
+
+					<p> If we’re inducing a current in a solenoid, which is how AC power is created in a generator (power plant), we’re producing electrical energy. This energy can’t come out of thin air.
+The energy comes from the work done in overcoming the repulsive magnetic force described by Lenz’s law.
+</P>
+
+<button> <a href="https://www.youtube.com/watch?v=3HyORmBip-w"> Click for Video explaining electromagnetic induction (with conservation of energy included </a></button>
+
+
+</div>
+					<h3> &#10132; Solving Problems Using Lenz's Law and Faraday's Law </h3>
+					<div class="super-sub-topic">
+					<strong class="cogverb" id="3.2.3D"> Solve <span class="tooltiptext"> 3.2.3D: solve problems involving Faraday’s Law and Lenz’s Law</span></strong>
+					<p> This involves calculating the <b> EMF </b> and <b> direction </b> </p>
+					<p> From magnetic induction, we know that an EMF is produced by changing the flux a loop. "𝜙"=𝐵𝐴
+
+					<p> The direction of an induced electric current produces a current whose magnetic field opposes the change in the circuit or the magnetic field that produces it.
+							For example, when an induced current flows through a solenoid, the magnetic field it produces a force that repels the incoming permanent magnet pole.
+							In order to overcome this opposing repulsive force, you need to do work (work = force x displacement (joules). If you didn’t you could induce a current, get electricity, for no effort.
+						</p><p> If we’re inducing a current in a solenoid, which is how AC power is created in a generator (power plant), we’re producing electrical energy. This energy can’t come out of thin air.
+							comes from the work done in overcoming the repulsive magnetic force described by Lenz’s law.</p>
+
+							<div class="example">
+							<p>Calculate the EMF produced when moving from one magnetic field to another in 0.6s </p> <img src="phy photos/3.2.3D.png" class="left" width=40%>
+							<p> <ul>
+								<li>flux is going into page </li>
+								<li> B (field strength) is changing</li>
+								<li>  </li>
+							</ul>
+						</p>
+							</div>
+
+					</div>
+
+			<h3 id="handrules"> &#10132; Hand Rules </h3>
+			<div class="super-sub-topic">
+			<div>
+			<img src="phy photos/left_hand_rule.png" class="right" width=20%>
+
+				<h5> Flemings Left hand rule </h5>
+					<p> 	Used to determine the direction of force acting on a current carrying wire, or a charge particle, where a magnetic field is generated. If particle is negatively charged reverse direction of I.
+					</p>
+					<p> In this hand rule, do not confuse this force with that of an EMF. The emf is the force that gets electrons moving in a wire, inducing a current. </p>
+			</div>
+			<br> <br><br>
+
+			<div>
+				<img src="phy photos/flem_right.png" class="right" width=20%>	<h5> Fleming's Right-Hand Rule </h5>
+					<p>  Used to determine the direction of induced current (thus also EMF in a loop), generated by magnetic field. Relates to electromagnetic induction from last lesson in which current is produced in a wire by changing the flux through the middle of a loop.
+					</p>
+					<p> Describes the process by which generators produced electricity from mechanical energy. </p>
+			<br><br><br><br> <br> <br>	<br> <br></div>
+			</div>
+
+
+
+
+			<h3> &#10132; Transformers and Electromagnetic Induction</h3>
+			<div class="super-sub-topic"> <strong class="cogverb" id="3.2.3F"> Explain <span class="tooltiptext"> 3.2.3F: explain how Lenz’s Law is consistent with the principle of conservation
+of energy</span>  </strong>
+
+			<p> <img src="phy photos/transformer.png" class="right" width=40%>Imagine two solenoids next to each together. In this instance the two solenoids are wrapped around a common soft iron core however the wires remain disconnected from one another.
+				If a current is run through the solenoid on the left, a magnetic field is produced.
+				In this case with the North pole on the right. Flux from the solenoid on the left thread the solenoid on the right.
+				In response the solenoid produces a magnetic field to oppose this change in flux.
+				Thus, a North pole is produced on the left side of the solenoid on the right.
+				An EMF in induced causing current to flow. This type of induction between closely separated coils is called mutual induction.
+				</p><p>
+				In mutual induction the soft iron core concentrates the flux lines threading both coils.
+				As such, the flux is the same for both coils, assuming no energy is lost.
+
+				</p>
+				<br>
+				<br>
+
+				<h5> Step Up Transformers </h5>
+				<img src="phy photos/step-up.png" class="left" width=40%>
+				<p> Step up transformers increase the emf by increasing the number of coils of secondary coil. The Alternating current in primary coil induces an alternating magnetic field which in turn, also induces an electric current (through connect of the rectangular iron ring in which coils are connected) on another coil. (faradays law).
+				</P>
+				<br><br><br><br><br><br><br>
+				<h5> Step Down Transformer </h5>
+					<P> Step down transformers reduce the EMF by decreasing the number of coils on secondary coil. </p>
+
+					<p> To determine the precise voltage change calculations are required using the below formulas :</p>
+					<img src="phy photos/tcalc.png" width=12.5% class="mini">
+
+					<img src="phy photos/tq1.png" width=35%>
+					<img src="phy photos/tcalc2.png" width=36%>
+					</p>
+			</div>
+
+		</div>
+					<div class="sub-topic">
+					<h2> Electromagnetic Radiation </h2>
+
+					</div>
+							<div class="content">
+
+						<h3> &#10132; Electromagnetic Radiation </h3>
+						<div class="super-sub-topic"> <strong class="cogverb" id="3.2.4A"> Define and Explain <span class="tooltiptext"> 3.2.4A: define and explain electromagnetic radiation in terms of electric fields and
+		magnetic fields.
+		</span>  </strong>
+
+		<p> <b> Electromagnetic Radiation: </b> is light which is an electromagnetic waves. These are waves produced by
+an oscillating electric
+charge that radiate
+out at the speed
+of light as mutually
+perpendicular electric
+and magnetic fields
+</p>
+<img src="phy photos/electromagneticradiation.png">
+<h5> Key Features </h5>
+<ul class="yeet">
+	<li> An oscillating electric field E generates an oscillating magnetic field B.
+</li> <li>  An oscillating magnetic field B generates an oscillating electric field E.
+</li> <li>  The planes of two fields are at 90° to each other.
+</li> <li>  The E and B fields, as well as being perpendicular to each other, are perpendicular to the
+direction of travel of the wave, meaning that an electromagnetic wave is a transverse
+wave.
+</li> <li>  The oscillations are in phase and of equal amplitude.
+</li> <li>  The energy of the wave is stored in the electric and magnetic fields.
+</li> <li>  The energy associated with the electric field is equal to the energy associated with the
+magnetic field (represented by equal amplitudes).
+</li> <li>  Electromagnetic waves travel away from the source at the speed of light, c.
+</li> <li>  They do not need a medium for their propagation (they can travel in a vacuum).
+</li> <li>  When the source is turned off, the waves still keep travelling.
+</li></ul>
+
+
+</div>
+</div>
+
+	<div id="unit4" class="unit"> UNIT 4
+	</div>
+
+
+<div class="topic">
+	<h1> Topic 1: Special Relativity </h1>
+</div>
+<div>
+		<div class="sub-topic">
+		<h2> Special Relativity </h2>
+	</div>
+<div class="content">
+			<h3> &#10132; Muon Decay Problem </h3>
+			<div class="super-sub-topic">
+				<strong class="cogverb" id="4.1.1A"> Describe <span class="tooltiptext"> 4.1.1A: describe an example of natural phenomena that cannot be explained by
+			Newtonian physics, such as the presence of muons in the atmosphere</span></strong>
+			<h5> Condensed Answer </h5>
+			<p> </p>
+
+			<h5> Chunky Explanation </h5>
+			<p> A <b> Muon </b> is an elementary particle similar to an electron but with greater mass. They are formed when cosmic ray protons from the sun
+				(particles from the sun) collide with oxygen and nitrogen atoms in the upper atmosphere (therefore not muon until in our atmosphere).
+				They travel fast (>0.99c) but decay into electron and two neutrons in about 2.2microseconds. </p>
+				<p> Muons generated rain down at high speeds, but in time it takes to reach ground (very small because of how fast they are travelling: in micro)
+					 some muons would have decayed. </p>
+					 <p> Therefore, knowing distance from earth to upper atmosphere, the speeds of muons, and rate of decay, prediction of how many reach earth
+						 surface should be accurate.  </p>
+			<p> In 1962, experiment conducted to test this. Equipment was set up on the top of a mountain and measured how many muons were present
+				in the atmosphere by counting the number that passed through their counters in one hour at altitude of 1910m. Their results were 563 per hour. </p>
+			<p> They Travelled down to sea to repeat the count. It should have taken 6.4 micro/nano? seconds to travel the distance from the top of the
+				mountain to sea level, meaning most should have decayed. Using Newtonian calcs, only 27 per hour should have been counted, however, 409 were
+				counted, as predicted by Einstein’s theory of special relativity, which confirmed his theory.
+			To observers, the distance from mountain to top of sea level was 1910m. To muons however, the distance was much shorter-just 183m in the muons 'frame of reference'. This consequence of the theory of special postulate for very high speeds and is called length contraction. Path length contracted from 1910m to 183m as measured in the muon's frame of reference.
+			</p>
+			<p> The muon's lifetime was also changed. The mean lifetime in the muons’ frame of reference is 2.2microseconds but in the scientist frame of reference it became 23us. So, to scientist, the muons took longer to decay. This too is a consequence o relativity and is known as 'time dilation', dilation meaning to enlarge.
+			</p>
+		<!-- describe muon problem -->
+				<ul>
+					<li> The rate of decay of muons in the atmosphere cannot be explained using Newtonian physics.
+					</li><li>It was found that predictions using Newtonian theories of the number of muons remaining after traveling a certain distance over a period of time with respect to an observers frame of reference were incorrect. More were found to reach the earths surface than expected.
+					</li><li>The experimental data can only be explained when considering the effects of length contraction and time dilation with respect to the muons frame of reference as described by the special theory of relativity.
+					</li>
+				</ul>
+
+			</div>
+
+			<h3> &#10132; Special Relativity </h3>
+			<div class="super-sub-topic">
+
+			<strong class="cogverb" id="4.1.1B"> Define <span class="tooltiptext"> 4.1.1B: define the terms frame of reference and inertial frame of reference
+		 </span> </strong> the terms: <!--define frame of reference and inertial frame of reference -->
+				<dl>
+					<dt> Frame of Reference </dt>
+					<dd> The abstract coordinate system that defines location of the observer. e.g., on a stationary chair
+					</dd>
+					<dt> Inertial Frame of Reference </dt>
+					<dd> In general, the frame of reference that is stationary or moving at a constant velocity (not acceleration) is an inertial frame of reference. e.g., on a moving ship
+					</dd>
+				</dl>
+
+				<table>
+					<tr>
+						<th> Inertial reference frames </td>
+						<th> Non-inertial reference frames </td>
+					</tr>
+					<tr>
+						<td> At rest on Earth </td>
+						<td> Acceleration upwards in an elevator </td>
+					</tr>
+					<tr>
+						<td> In a car at constant velocity </td>
+						<td> Going around a corner </td>
+					</tr>
+					<tr>
+					<td> In a spaceship at a constant velocity </td>
+					<td> In free-fall </td>
+					</tr>
+				</table>
+				<p>
+
+			<strong class="cogverb" id="4.1.1C"> Recall <span class="tooltiptext"> 4.1.1C: recall the two postulates of special relativity
+		</strong> <!-- recall two postulates of special relativity -->
+			The theory has two assumptions or ‘postulates’ – the two postulates of special relativity.
+			<ol>
+				<li> The laws of physics are the same in all inertial (uniformly moving) frames of reference.
+				</li> <li>The speed of light in a vacuum has the same value, c, in all inertial frames of reference.
+				</li>
+			</ol>
+		</p>
+			<strong class="cogverb" id="4.1.1D"> Recall <span class="tooltiptext"> 4.1.1D: recall that motion can only be measured relative to an observer
+		</span>  </strong> <!-- recall motion can only be measured relative to an observer -->
+			<p> Motion can be measured relative to an observer. </p>
+			<ol>
+				<li> For Newton there was an absolute inertial frame: a frame that was stationary relative to absolute space.
+				</li><li>This was subsequently shown to be a false assumption, all motion is relative to the observer of that motion.
+				</li>
+			</ol>
+
+			</div>
+			<h3> &#10132; Simultaneity and Relativity of Time </h3>
+			<div class="super-sub-topic">
+
+			<h4> The concept of Simultaneity </h4>
+			<strong class="cogverb" id="4.1.1E"> Explain <span class="tooltiptext"> 4.1.1E: Explain the concept of simultaneity </span> </strong> <!--explain the concept of simultaneity -->
+			<p>According to the relativity of simultaneity, events that are simultaneous in one frame of reference are not necessarily simultaneous in another farm of reference even if both frames are inertial. Provide an example.
+</p>
+				<ul>
+				<li> Events that are simultaneous in one frame of reference are not necessarily simultaneous in another frame of reference, even if both frames are inertial.
+				</li><li>The relative motion of one observer in relation to another can affect the simultaneity of an event. For one observer from their frame of reference an event may be simultaneous however to another it may not be.
+				</li><li>Neither situation can be considered to be false, they are both correct for that frame of reference.
+				</li>
+			</uL>
+				</div>
+
+			<h3> &#10132; Time Dilation </h3>
+			<div class="super-sub-topic">
+
+
+
+			<strong class="cogverb" id="4.1.1F"> Recall <span class="tooltiptext"> 4.1.1F: recall the consequences of the constant speed of light in a vacuum, e.g., time
+dilation and length contraction</span> </strong> <!-- recall the consequences of the constant speed of light in vacuum e.g., time dealation and length contraction. -->
+
+			<strong class="cogverb" id="4.1.1G"> Define<span class="tooltiptext"> 4.1.1G:  define the terms time dilation, proper time interval, relativistic time interval,
+length contraction, proper length, relativistic length, rest mass and relativistic
+momentum </strong> the terms:
+			<dl>
+					<dt> Time dilation
+					</dt><dd>the difference of elapsed time between two events as measured by observers moving relative to each other.
+					</dd><dt>Proper Time Interval
+					</dt><dd> the difference of elapsed time between two events as measured by observers moving relative to each other.
+					</dd><dt> Relativistic Time Interval
+					</dt><dd> the time interval measured in the frame of reference in which the object is in motion, 𝑡
+					</dd><dt>Length Contraction
+					</dt><dd>an observer at rest relative to a moving object would observe the moving object to be shorter along the dimension of motion.
+					</dd><dt> Proper Length
+					</dt><dd>the length measured in the frame of reference in which the object is at rest
+					</dd><dt> Relativistic Length
+					</dt><dd>the length measured in the frame of reference in which the object is in motion)
+					</dd><dt> Rest Mass
+					</dt><dd>defined rest mass (𝒎𝟎) as the mass of an object when measured at rest, that is, in the same reference as the observer.
+					</dd><dt> Relativistic Momentum
+					</dt><dd>the momentum of an object when measured in the frame of reference in which the object is in motion
+
+					</dd></dl>
+
+			<h4> Solving problems involving time dilation. </h4>
+			<p> See chapter 9.4 for examples </p>
+			<p> The equation used for time dilation is
+			<img src="phy photos/time.png" class="left">
+			NOTE: <ul>
+			<li> The proper time (time onboard spaceship) should be less than relativistic time (time back on earth).THINK: you go fast on a spaceship travelling, and people on earth get old faster because you were gone longer according to them.</li>
+			<li> V should also be less than c (nothing can go faster than the speed of light) </li>
+			</ul>
+			</p>
+
+
+		</div>
+
+		<h3> &#10132; Length Contraction </h3>
+			<div class="super-sub-topic">
+	<img src="phy photos/lengthcontraction.png" width=15% class="left">
+			<strong class="cogverb" id="4.1.1H"> Describe <span class="tooltiptext">4.1.1H:  describe the phenomena of time dilation and length contraction, including
+examples of experimental evidence of the phenomena</strong> <!-- describe time dilation and length contraction, including examples-->
+			<p> An object moving at relativistic speeds (>0.1c) will contract along the direction it's travelling.
+			For example, a 1m ruler travelling length wise  at 0.8 will be measured by an observer watching the ruler go by as being only 60cm long. ITs width and height remain the same.
+			</p>
+
+			<p> Length contraction applies not only to distances between heavenly bodies, but also between atoms.
+So, objects shrink as they speed up.
+They only shrink in the same direction as they’re travelling.
+So, a car travelling at high speed would shrink in length but remain the same in height and width.
+</p>
+
+
+		<strong class="cogverb" id="4.1.1I"> Solve <span class="tooltiptext"> 4.1.1I: solve problems involving time dilations, length contraction and
+relativistic momentum</span></strong> <!-- solve problems involving time dealation and length contraction and relativistic momentum -->
+
+	<h4> Solving Problems involving Length Contraction </h4>
+ <img src="phy photos/length.png" width=15% class="right" >	<p>The equation used to solve problems involving length contraction is:
+
+	NOTE:
+	<ul>
+		<li> The proper length is greater than relativistic length </li>
+		<li> v cannot be greater than c </li>
+	</ul>
+	<br> <br> <br>
+	<h4>Mass Equivalence Relationship </h4>
+	<p> </p> <strong class="cogverb" id="4.1.1J"> Recall <span class="tooltiptext"> 4.1.1J: recall mass-equivalence relationship  </span> </strong> </strong> <!--recall mass-equivalence relationship -->
+	<p> The famous equation 𝐸=𝑚𝑐^2 is called ‘Einstein’s mass-energy equivalence relationship’.
+According to this equation, 1kg of mass of any matter is equivalent to 9 ×10^16 𝐽 of energy.
+</p>
+</div>
+		<h3 id="relativistic"> &#10132; Relativistic Momentum </h3>
+		<p> <img src="phy photos/mome.png" class="left"> Relativistic momentum is the momentum of an object as measured by an observer moving relative to the object </p>
+
+		<p> Relativistic momentum will produce a value that is greater than if calculated through Newtonian methods (p=mv). </p>
+
+
+			<div class="super-sub-topic"> <h4> Travelling at the speed of light </h4>
+		<p> <strong class="cogverb" id="4.1.1K"> Explain <span class="tooltiptext"> 4.1.1K: explain why no object can travel at the speed at light in vacuum </span> </strong> <!--explain why no object can travel at the speed at light in vacuum-->
+		From the relativistic momentum equation, we can see that if v = c then 𝑚0 𝑣 will be divided by zero, which means as v approaches c relativistic momentum approaches infinity. </p>
+		<p>
+		As the rest mass is constant, v must approach infinity in order for the relativistic momentum to approach infinity. (see above equation) </p>
+		<p> In order to accelerate an object to the speed of light you would require an infinite amount of energy as demonstrated below.<img src="phy photos/vecl.png">
+		</p>
+
+</div>
+
+		<h3> &#10132; Paradoxical Scenarios </h3>
+			<div class="super-sub-topic">
+				<strong class="cogverb" id="4.1.1L"> Explain <span class="tooltiptext"> 4.1.1L: explain paradoxical scenarios such as the twins’ paradox, flashlights on a train
+and the ladder in the barn paradox.</span>  </strong>
+			<h4> Flashlight on a Train </h4>
+								<P> Imagine an observer sitting on an embankment at the side of a train track.
+					A train is the moving frame of reference, and the embankment is the stationary frame.
+					In the centre of the train there is a person holding a torch that can sent a pulse of light both towards the forward and back of the train at the same time.
+					The front and rear doors open automatically when the pulse reaches them. </p>
+					<p> To the person with the torch on the train, both doors will open simultaneously (same time).
+					To the person on the embankment, the rear door will open before the front. This is because the stationary observer sees the back door moving forwards to meet the light pulse which the front door moves away from the light pulse, so the light gets to the rear door before it gets to the front door.
+					Hence, the opening of the doors may be simultaneous to one observer (on the train) but not simultaneous to another (on the embankment).</p>
+
+								<h4> Twins is Space </h4>
+								<p> <img src="phy photos/twin.png" class="left mini" width=30%> Suppose that there is a pair of 25-year-old twins, and one of them takes off in a spaceship travelling at very high speeds to a distant star and back again, while the other twin remains on Earth.
+					When the travelling twin returns they have aged differently according to the concept of time dilation.
+					The question is: which twin has aged more?
+					In the examples below, assume the travelling twin travelled at an average speed of 0.80c for the journey and had aged 30years aboard the spacecraft before returning.
+					</p>
+					<h6> Scenario 1: Earths FOR </h6>
+					<p> According to the Earth twin (the twin who remained on Earth), the travelling twin will have aged less.
+					Recall, ‘moving clocks run slow’.  𝑡=50 𝑦𝑒𝑎𝑟𝑠 (calculations used for this t=t<sub>0</sub>).
+					Hence, the time elapsed on Earth is 50 years. The twin on Earth would be (25+50)  75 years, and the twin in the ship (25+30) 55 years old.
+					</p>
+
+					<h6> Scenario 2: Spaceship FOR </h6>
+					<p> Recall that motion is relative, thus from the spaceships reference point it is the Earth that is moving away at high speeds.
+Thus, proper time will be measured aboard the ‘moving Earth’ (30 years) and dilated time measured on the ‘stationary ship’ (30 years).
+They can’t both be right, so which is it?
+</p>
+<h6> Resolution </h6>
+	<p> The problem is resolved by deciding who is travelling with uniform motion (not accelerating).
+The twin on the ship must accelerate at the beginning of the trip and when turning around to return.
+Thus, it is the Earth twin who measures ‘proper length’, and the travelling twin measures ‘contracted length’.
+As both twins agree on the relative velocity.
+The traveling twin would also measure a shorter time (to cover a shorter length) and thus returns to Earth having aged less.
+</p>
+
+
+			<h4> Ladder is Barn </h4>
+				<p> <img src="phy photos/barn.png" class="left"> Imagine a barn, 40 m wide, with a door on each end.
+A runner has a pole that is exactly as long as the barn (at rest), as shown in the figure to the right.
+The plan is for the runner to run into the barn and a farmer inside will close both doors for a brief time to demonstrate that the pole fits.
+</P>
+<h6> Scenario 1: Barn FOR </h6>
+	<p> According to relativity, in the reference frame of the barn (and Earth), the pole is moving and experiences length contraction and gets shorter, so it fits easily inside the barn
+At that instant the farmer can shut both doors momentarily.
+From the reference point of the barn, both doors close simultaneously.
+</p> <h6>
+Scenario 2: Pole Reference Point</h6> <p>
+From the pole’s frame of reference, it is the barn that is rushing towards it, so the barn suffers length contraction and gets smaller.
+The pole is too long for the barn.
+There is no way that the farmer can close both doors with the pole inside.
+</p>
+<h6> Resolution </h6>
+<p> This apparent paradox results from the mistaken assumption of absolute simultaneity.
+The paradox is resolved when it is considered that in relativity, simultaneity is relative to each observer, making the answer of whether the pole fits inside the barn also relative to each observer.
+</p>
+<p> From the farmer’s perspective, the pole fits in the barn and both doors close and open simultaneously.
+From the pole vaulter’s perspective, the pole won’t fit, and the doors will not close simultaneously.
+It will appear that the exit door closes before the entry door as the vaulter’s motion is towards the exit door and light from this door will reach the vaulter before it does from the other door.
+<br><br><b> QCCA Hook words for overall response</b>
+<ul> <li> length contraction occurs </li>
+	<li> Show if given values the length of pole from observers perspective- will fit </li>
+	<li> Show if given values the length of the barn from pole perspective- won't fit in </li>
+	<Li> This is a paradox (conflicting conclusions) </li>
+		<li> Concept of simultaneity required to solve </li>
+		<li> Doors are not closed at the same time from pole's perspective </li>
+		<li> Front door will open first, and back door will open at delayed time </li>
+		<li> Therefore, ladder will fit not contact the doors </li>
+	</ul>
+
+
+</p>
+			</div>
+
+		 <!--div for topic 1 partition x -->
+
+		</div> <!--div for End Topic 1 -->
+</div>
+		<div>
+<div class="topic">
+	<h1> Topic 2: The Quantum Theory </h1>
+</div>
+<div>
+		<div class="sub-topic">
+		<h2> Quantum Theory </h2>
+	</div>
+		<div class="content">
+			<h3> &#10132; Wave and light model </h3>
+			<div class="super-sub-topic">
+
+
+	 <strong class="cogverb" id="4.2.1B"> Describe <span class="tooltiptext"> 4.2.1B: describe light as an electromagnetic wave produced by an oscillating electric charge that produces mutually perpendicular oscillating electric fields and magnetic fields</span> </strong>
+		<p><b>	Electromagnetic waves</b> are generated by moving electrons. If the electrons moves, it vibrates back and forth, and its motion will be transferred to the field lines, and they will become wavy as shown in figure b.  In turn, the moving electron generates a magnetic field that will also become wavy from the motion the electron. These combined electrical and magnetic waves reinforce one another.
+		</p>
+	<h4> Wave particle duality </h4>
+
+			<strong class="cogverb" id="4.2.1O"> Describe  <span class="tooltiptext"> 4.2.1O: describe wave–particle duality of light by identifying evidence that supports
+			the wave characteristics of light and evidence that supports the particle characteristics of light </span> </strong>
+
+<h5> Evidence for the particle model </h5>
+
+<h6> Via Photoelectric Effect </h6>
+<img src="phy photos/wave-particle.png" class="left" width=25%>
+<p> <b>Observation 1:</b> By varying frequency of incident light for a particular metal, there is a frequency below which no photoelectrons are observed. This frequency is called threshold frequency, f<sub>0</sub>, where if f.f0 photoelectrons are emitted.
+	if f>f0 the rate at which photoelectrons are produced varies proportionally with intensity, I, while if f< f0 no photoelectrons are emitted no matter how intense the light. The wave model predicated that nay frequency of light, as long as it was intense enough and was shone long enough would liberate photo electrons.
+</p> <p>
+	<b>	Observation 2: </b>Maximum kinetic energy of the photoelectrons id dependent on frequency, and not on the intensity of the light. Increasing intensity of light causes an increase in the current because more photons of light mean more electrons liberated(I-interaction) Increasing the intensity of light does not cause a change in the max KE of the photons. Increasing intensity has no effect on the stopping voltage. The wave model predicted a higher intensity light would liberate photoelectrons with higher KE and hence require a greater stopping voltage. </p>
+</p>
+
+<h6> Via Black-body radiation curve </h6>
+
+<p> The concept of wave-particle duality means that light can exhibit either wave or particle properties depending on the situation. From the graph showing the luminosity and wavelength of light emitted from a black body, we can see that the experimental data is not consistent
+	with the classical model of light which predicts that I is proportional to &lambda; <sup> -4</sup>. Planks suggested a solution to this that electron energy levels are quantised. As particles move from higher energy to lower energy, energy is released as photon. These photon's energies are also quantised (having discrete values)
+</p>
+	<button> <a href=#displacementlaw> See more on Black-body radiation curve </a> </button>  </p>
+
+
+			<h5> Evidence for the wave model </h5>
+	 <strong class="cogverb" id="4.2.1A"> Describe <span class="tooltiptext"> 4.2.1A: explain how Young’s double slit experiment provides evidence for the wave
+model of light</span> </strong>
+	<p>
+		In 1807 Thomas Young performed his famous 'Young's Double Slit' Experiment. In the experiment he shone a point of light through two pinholes.
+		What he observed was a clear <b>interference patterns of bright and dark bands</b>  on a screen. Evidence of <b>constructive and destructive interference.</b>
+		The light bands were caused by constructive interference and the dark bands were caused by destructive interference.
+		Interference patterns such as observed by Youngs Double Slit experiment can only <b>explained by the interaction of waves.</b>
+		<b>Diffraction </b> is when light starts to spread put. This can be seen as the light appears on the whole screen as light and dark bands after passing though the two slits.
+		 This <b> interference and diffraction </b> provides clear evidence of light acting as a wave.
+	</p><br><BR>
+
+			</div> <!-- div for young’s double slit experiment super subtopic -->
+
+
+
+		<h3> &#10132; Black Body Radiation </h3>
+		<div class="super-sub-topic">
+
+																<strong class="cogverb" id="4.2.1C"> Explain  <span class="tooltiptext"> 4.2.1C: explain the concept of black-body radiation</span> </strong>
+																<p> a black body is an object that absorbs all radiation; that is, it doesn't reflect and light shining onto it. </p>
+
+																<p> So as the black body is heated, any light emitted is solely coming from within itself. This is called black body radiation. The sun is another example of a black body. </p>
+<h5> The photon </h5>
+																<strong class="cogverb" id="4.2.1E"> Describe  <span class="tooltiptext"> 4.2.1E: describe the concept of a photon
+																</span> </strong>
+
+																<p> <b> Photon: </b> is the smallest discrete packet of energy of electromagnetic waves, also known as quanta </p>
+
+																<strong class="cogverb" id="4.2.1D"> Identify  <span class="tooltiptext"> 4.2.1D: identify that black-body radiation provides evidence that electromagnetic radiation is quantised into discrete values</span> </strong>
+																<p> A photon is a particle representing a quantum (discrete packet) of light or their electromagnetic radiation. A photo is an example of the particle wave duality of elementary particles (particles at the atomic level).
+Experimental results of the photoelectric effect could only be explained by describing the interaction between light and electrons in terms of conservation of momentum between two object.
+In this care, rather than acting as a wave, electromagnetic radiations acts as discrete particles, photons, that collide with electrons and pass their kinetic energy into them just as two billiard balls would. The energy of a Photon can be calculated using Planck's equation, E=hf.
+</p>
+<strong class="cogverb" id="4.2.1F"> Solve <span class="tooltiptext"> 4.2.1F: solve problems involving the energy, frequency, and wavelength of a photon
+</span> </strong><br>
+	<div class=" cogverb see"> Hover for some textbook examples &#9757; <span class="tooltiptext"> <img src="phy photos/11.4A.png" width=100%></span>  </div>
+<br>
+<br>
+
+<h4> Finding Maximum Energy of Photoelectrons </h4>
+<div class="box">
+	<h5> Neap Question 4a)</h5>
+		 <img src="phy photos/photoelectric.png" width=30% class="left">
+	<p>	Light of wavelength &lambda; = 425nm strikes a clean metallic surface and photoelectrons are emitted. A stopping voltage of 1.25 is required to reduce the current (I) to zero in the circuit.
+	</p>
+	<h6> Calculate the maximum velocity </h6>
+	</p>
+	<div class="answer">
+		$$ \text{Formulas:} V={W\over Q = q} \, \text{and} \, E_k = {1\over2}mv^2 $$
+		<p> Work (W) is a type of energy so formulas can be rearranged and equated </p>
+		$$ qV = {1\over2}mv^2 $$
+		$$ 1.25 \times 1.6 \times 10^{-16} = {{1}\over{2}} \times 9.1 \times 10^{-31}v^2 $$
+		$$ v = 6.6 \times 10^5 ms^{-1}$$
+</div>
+</div>
+	<strong class="cogverb" id="4.2.1J">Recall <span class="tooltiptext"> 4.2.1J:  recall that photons exhibit the characteristics of both waves and particles
+
+	 </span> </strong>
+	 <p> Photons also exhibit characteristics of wave and particles </p>
+
+
+
+
+																		<h5 id="displacementlaw"> Wein's Displacement Law </h5><img src="phy photos/black.png" class="left">
+
+
+																		<p> Features of displacement law
+																			<ul>
+																				<li> Spectrum produced depends on temperature not substance </li>
+																				<li> Making an object hotter produces more radiation (all wavelengths) across the whole spectrum. </li>
+																				<li> The higher the temp, the shorter the wavelength of peak of the spectrum </li>
+
+																		<p> &lambda;<sub>max</sub>=<sup> B</sup>&frasl;<sub>T</sub>
+																		</p>
+																		<p> Lambda is the peak wavelength in nanometres</p>
+
+																<p> Classical theory cannot explain the</p>
+
+														<br> <br> <br> <br><br>
+		</div> <!-- div for black body radiation -->
+
+		<h3> &#10132; The Photoelectric Effect </h3>
+		<div class="super-sub-topic">
+			<strong class="cogverb" id="4.2.1G">Describe <span class="tooltiptext"> 4.2.1G: describe the photoelectric effect in terms of the photon
+
+			 </span> </strong>
+
+			 <P> The <b> Photoelectric effect </b>
+				 is the emission of electrons when light (photons) shine onto a material </p>
+
+														<h4> Planck's Equation </h4>
+														<p> The energy of a photon is calculated using Planck’s equation.</p>
+															<img src="phy photos/plankequ.png">
+
+
+																				<p> The Planck equation can be used for:
+																					<ul class="yeet">
+																						<li> Finding the wavelength/frequency/type of light emitted/absorbed when jumping from energy levels within an atom.
+																						<li> Finding the threshold frequency </li>
+																						<li> Calculating the energy of something</li>
+																					</uL>
+
+
+																					<strong class="cogverb" id="4.2.1H"> Define  <span class="tooltiptext"> 4.2.1H: define the terms threshold frequency, Planck’s constant, and work function
+
+																					 </span> </strong>
+
+																					<dl> <dt> threshold frequency
+															 						</dt> </a><dd>the minimum frequency of a photon that can eject an electron from a surface
+															 						</dd> <dt>Planck’s constant
+															 						</dt><dd>a fundamental constant used in quantum mechanics (symbol, ℎ; SI unit, Js)
+															 						</dd> <dt>work function
+															 						</dt> <dd>the minimum energy required to remove an electron from a solid (symbol, 𝑊; SI unit, J)
+																					</dl>
+
+																					<img src="phy photos/work function.png" width=47%>
+																							<img src="phy photos/kinetic energy.png">
+
+
+																							<h4> Solving Problems with Photoelectric effect </h4>
+																							<strong class="cogverb" id="4.2.1I">Solve <span class="tooltiptext"> 4.2.1I: solve problems involving the photoelectric effect
+
+																							</span> </strong>
+																							<br>
+																							<div class=" cogverb see"> Hover for some textbook examples &#9757; <span class="tooltiptext"> <img src="phy photos/11.5B.png" width=100%></span>  </div>
+
+
+		</div><!-- div for -->
+
+
+		<h3> &#10132; Rutherford Model </h3>
+		<div class="super-sub-topic">
+			<strong class="cogverb" id="4.2.1K">describe <span class="tooltiptext"> 4.2.1K: describe Rutherford’s model of the atom including its limitations
+	</span> </strong>
+
+			<p> <b> Rutherford's model </b> a small, central positively charged nucleus with negatively charged low-mass electrons orbiting around it
+			</p>
+
+			<h4> Limitations of the Rutherford Model </h4>
+			<ul class="yeet">
+				<li> failure to account for the stability of the atom: the positively charge nuclear particles would repel each other</li>
+				<li> failure to account for emission lines in the hydrogen spectrum </li>
+			</ul>
+
+		</div><!-- div for Rutherford vs Bohr -->
+
+		<h3> &#10132; Bohr Model  </h3>
+																					<div class="super-sub-topic">
+																						<strong class="cogverb" id="4.2.1L">Describe <span class="tooltiptext"> 4.2.1L: describe the Bohr model of the atom and how it addresses the limitations of
+																							Rutherford’s model
+
+																						</span> </strong>
+
+																						<h4> The Bohr Model </h4>
+																						<ol>
+																							<li> electrons in an atom exist in stationary states (levels around nucleus)</li>
+																							<li> Transitions between stationary states absorbs or emits electromagnetic radiation </li>
+																							<li> Angular momentum of the electron is quantised </li>
+																						</ol>
+
+
+																						<strong class="cogverb" id="4.2.1M"> Explain <span class="tooltiptext"> 4.2.1M: explain how the Bohr model of the hydrogen atom integrates light quanta and atomic energy states to explain the specific wavelengths in the hydrogen line spectrum</span> </strong>
+
+																			<p> <b>Textbook Response to objective: </b>The Bohr model proposes a number of energy states in an atom, and when an electron transitions between states a quantum of light in the form of a photon is emitted, and the energy of this photon corresponds to the difference in energy between levels.
+																			</p> <p><b> PowerPoint response to objective:</b>
+																				<ul>
+																					<li> The Bohr Model describes the potential energy of an electron in a hydrogen atom as being quantised. Meaning it can’t have any imaginable energy but can only inhabit certain energy levels that are at fixed distances from the nucleus.
+																			</li> <li> Each type of atom has its energy levels at different values due to its unique number of protons in the nucleus.
+																			</li> <li> An electron will transition from one energy level to another when a photon of a very specific energy level is either absorbed or emitted.
+																			</li> <li> The energy of the photon will correspond to the difference between the two energy levels. ∆𝐸<sub>𝑒𝑙𝑒𝑐𝑡𝑟𝑜𝑛</suB>=𝐸<sub>𝑝ℎ𝑜𝑡𝑜𝑛</sub>
+																			</li> <li>From energy of the photon, frequency can be found &lambda; = <sup> hc </sup> &frasl; <sub> E</sub>.
+																			</li> <li> From wavelength we find the colour. This unique combination of energy levels gives the specific wavelengths in the hydrogen line spectrum.
+																			</li> </ul>
+
+
+	</div><!-- div for -->
+
+
+
+		<h3> &#10132; Emission and Absorption Spectra</h3>
+		<div class="super-sub-topic">
+
+
+				<strong class="cogverb" id="4.2.1N">Describe <span class="tooltiptext"> 4.2.1N: solve problems involving the line spectra of simple atoms using atomic energy
+states or atomic energy level diagrams characteristics of light
+</span> </strong>
+<p>When an electron changes energy levels, it either emits or absorbs electromagnetic radiation </li>  </p>
+			<img src="phy photos/energylevel.png" width=30% class="mini">
+			<div class="example">
+		<p> <ol>
+					<li> Determine the energy of an electron in both the fourth and second quantum
+orbitals of the hydrogen atom.
+</li> <li> Calculate the frequency of the energy emitted when an electron jumps between
+these orbitals.
+</li> <li> Calculate the wavelength of this emitted light in:
+<ol type="a"> <li> metres</li> <li> nanometres.</li></ol>
+</li>
+</ul></p>
+<img src="phy photos/12.2B.png">
+<p>
+
+
+
+
+			</div>
+
+
+		</div><!-- div for -->
+
+
+
+		</div> <!-- div for content class -->
+
+		</div> <!--div for topic 2 of Unit 4 -->
+
+
+<div class="topic">
+	<h1> Topic 2: The Standard Model </h1>
+</div>
+<div>
+		<div class="sub-topic">
+		<h2> The Standard Model  </h2>
+	</div>
+		<div class="content">
+			<h3> &#10132; Elementary Particles </h3>
+			<div class="super-sub-topic">
+				<strong class="cogverb" id="4.3.1A"> Define  <span class="tooltiptext"> 4.3.1A: define the concept of an elementary particle and antiparticle
+ </span> </strong>
+<dl>
+	<dt> Elementary Particle </dt>
+		<dd> An elementary particle is a particle whose substructure is unknown.<ul>  <li> The standard model views the truly fundamental particles as consisting of leptons, quarks, and gauge bosons (photon, W and Z, and the gluons) and the Higgs boson.
+ </li></uL> </dd>
+	<dt> Anti-Particle </dt>
+		<dd> An antiparticle is a particle with the same mass and opposite charge and/or spin to a corresponding particle, for example positron and electron.
+		</dd>
+<h4> Quarks </h4>
+ <strong class="cogverb" id="4.3.1B"> Recall <span class="tooltiptext"> 4.3.1B: recall the six types of quarks </span> </strong>
+<p> There are 6 types are quarks (then also 6 types of anti-quarks) </P>
+<img src="phy photos/quarks.png" width=60%>
+</div><!-- div for -->
+
+<h3> &#10132; Baryon and Mesons </h3>
+<div class="super-sub-topic">
+
+
+ <strong class="cogverb" id="4.3.1C"> Define <span class="tooltiptext"> 4.3.1C:  define the terms baryon and meson
+</span> </strong>
+<p> Particles composed of quarks are called hadrons. Hadrons can then be divided into either mesons (made up of two quarks) or baryons (made up of three quarks). All hadrons need to have gluons (strong force carrying particles) to hold the quarks together. </p>
+<dl>
+	<dt> Meson </dt>
+			<dd> Mesons are part of the hadron particle family and are defined as a subatomic particles composed of one quark and one antiquark.
+		</dd> <img src="phy photos/meson.png" width=70%>
+
+
+	<dt> Baryon </dt>
+		<dd> Baryons are composite subatomic particles made up of three quarks or three antiquarks. (e.g., neutron proton)
+		</dd>
+ <img src="phy photos/baryon.png" width=70%>
+ </div><!-- div for -->
+
+
+ <h3> &#10132; Leptons </h3>
+ <div class="super-sub-topic">
+
+
+ <strong class="cogverb" id="4.3.1D"> Recall <span class="tooltiptext"> 4.3.1D:  recall the six types of leptons
+
+ </span> </strong>
+ <p> Leptons are those elementary particles such as the electron that do not form composite particles. For example, a quark is an elementary particle that is not a lepton because it makes up another larger particle (baryons and mesons).
+ </p>
+ <p> There are six leptons in the Standard Model: electron, electron neutrino, muon, muon neutrino, tau, and tau neutrino
+</p>
+<img src="phy photos/lepton.png" width=50%>
+
+</div><!-- div for -->
+
+<h3> &#10132; Fundamental forces </h3>
+<div class="super-sub-topic">
+
+<p> The four fundamental forces in order of strength are
+<ol>
+	<li> strong nuclear force </li>
+	<li> Electromagnetic force </li>
+	<li> The weak force </li>
+	<li> Gravitational force </li>
+</ol>
+
+</p>
+
+</div><!-- div for -->
+
+ <h3>&#10132; Gauge Bosons </h3>
+ <div class="super-sub-topic">
+
+ <strong class="cogverb" id="4.3.1E"> Recall <span class="tooltiptext"> 4.3.1E:  recall the four-gauge bosons
+
+ </span> </strong>
+ <p> The three forces of standard model (-gravitational) operate by exchanging particle between the objects they operate on.  These force carrying particles are gauge bosons.
+ </p>
+ <p> The four gauge bosons are:
+ <ul>
+	<li> photons </li>
+	<li> W Boson </li>
+	<li> Z boson </li>
+	<li> Gluons </li>
+</uL>
+</p>
+ <strong class="cogverb" id="4.3.1F"> Describe <span class="tooltiptext"> 4.3.1F:  describe the strong nuclear, weak nuclear and electromagnetic forces in terms
+of the gauge bosons
+ </span> </strong>
+ <ul> <li>
+ <li> The electrostatic force is mediated by the photon.</li>
+<li> The strong nuclear force is mediated by the gluon.</li>
+<li> The weak force is mediated by the W and Z boson</li>
+</ul>
+ </div><!-- div for -->
+ <div class="super-sub-topic">
+
+ <strong class="cogverb" id="4.3.1G"> Contrast <span class="tooltiptext"> 4.3.1G: contrast the fundamental forces experienced by quarks and leptons
+ </span> </strong>
+
+ <div class="example">
+ <p> The force that quarks experience that leptons do not </p>
+ <ol type="a">
+ <li> weak </li>
+ <li> Strong </li>
+ <li> Normal </li>
+ <li> Electromagnetic </li>
+ </ol>
+ <P> ANSWER: B (this force only acts on nucleons i.e., inside the nucleus </p>
+
+		</div></div><!-- div for -->
+				</div> <!--dice for elementary particles </div> -->
+
+				</div> <!--div for standard model -->
+
+				<div class="sub-topic">
+		<h2> Particle Interactions  </h2>
+	</div>
+		<div class="content">
+			<h3> &#10132; Lepton and Baryon Number </h3>
+			<div class="super-sub-topic">
+				<strong class="cogverb" id="4.3.2A"> Define  <span class="tooltiptext"> 4.3.2A:  define the concept of lepton number and baryon number
+ </span> </strong>
+
+ <dl>
+	<dt> lepton number:</dt>
+		<dd> a conserved quantum number defined by 𝐿 = 𝑛𝑙 − 𝑛𝑙̅, where 𝑛𝑙 is the number of leptons and 𝑛𝑙̅ is the number of antileptons </dd>
+	<dt> baryon number: </dt>
+		<dd> a strictly conserved additive quantum number of a system defined by 𝐵 = <sup>1</sup>&frasl;<sub>3</sub>(𝑛𝑞 − ǹ𝑞), where 𝑛𝑞 is the number of quarks and ǹ𝑞 is the number of antiquarks </dd>
+</dl>
+
+ <p> Protons and neutrons are not leptons. In decay equation lepton numbers have to equal 0. </p>
+
+ <strong class="cogverb" id="4.3.2B"> Recall  <span class="tooltiptext"> 4.3.2B: recall the conservation of lepton number and baryon number in particle interaction
+ </span> </strong>
+ <p> In any interaction, the baryon and lepton number needs to be equal for both sides of the reaction
+ </p>
+ <img src="phy photos/14.1B.png">
+
+
+ </div> <!-- div for leptin and baryon number -->
+
+ <h3> &#10132; Feynman Diagrams </h3>
+			<div class="super-sub-topic">
+ <strong class="cogverb" id="4.3.2C"> Explain  <span class="tooltiptext"> 4.3.2C: explain the following interactions of particles using Feynman diagrams <ul> <li>
+				 electron and electron</li> <li>
+				 electron and positron</li> <li>
+				 a neutron decaying into a proton</li></ul>
+ </span> </strong>
+				<p> In a fenman diagram the y-axis is space and x-axis is time. Used to display particle interaction. </p>
+
+
+				<h4> Electron + electron <img src="phy photos/electron-electron.png" class="left mini" width="20%"> </h4>
+					<p> 	(wave parallel to y-axis). As an electron approaches another electron, they move closer. This is shown by the lines on the left moving closer as time passes. The electrostatic repulsion gets stronger as they approach. At a certain distance they exchange a photon (mediating particle of electrostatic force). This pushes the electrons away from each other.
+This photon is considered a ‘virtual’ photon as it only exists as long as the interaction takes place.
+After the interaction, the two electrons move away from each other, having changed velocities (magnitude and direction).
+<br> <br>
+				</p>
+
+				<h4 style="display:block;"> Electron + positron </h4>
+					<p> <img src="phy photos/bhabha.png" width=20% class="left mini">wave in parallel to x-axis. </p>
+					<h5 style="margin-left:8px; font-size:14px;"> 1. Bhabha Scattering </h5>
+						<p> Here you see the use of the 'time reversed ‘arrow for the positron at the bottom left. IT is approaching the electron at the top left and their lines move closer together. At the moment of interaction, they exchange a virtual photon and scatter off each other with just their velocities changed.
+					</p>
+					<h5 style="margin-left:8px; font-size:14px;"> 2. Electron-positron annihilation </h5>
+					<p><img src="phy photos/electron-positron.png" class="left mini" width="20%"> The electron and positron approach each other.
+As they get closer they do something strange.
+Rather than scatter, they annihilate each other. Actually, they both form a virtual photon.
+Being virtual the photon lives for a very short time but then out of the photon’s energy a new electron-positron pair is created.
+
+</p><br> <br> <br>
+				<h4> Neutron decaying into a proton </h4>
+					<p> <img src="phy photos/neutron-proton.png" width=60% class="left">TIP: Looks funny. Carbon 14 is unstable and has too many neutrons for number of protons. It can shed some of its excess energy by undergoing beta decay in which one of the neutrons turns into a proton. It uses some of its excess energy to form a virtual intermediate particle called the W-boson that disappears by forming an electron and an electron antineutrino.
+					</p>
+					<p> Actually they both form a virtual photon.
+Being virtual the photon lives for a very short time but then out of the photon’s energy a new electron-positron pair is created.
+</p>
+
+
+ <strong class="cogverb" id="4.3.2D"> Describe  <span class="tooltiptext"> 4.3.2D: describe the significance of symmetry in particle interactions
+ </span> </strong>
+
+
+	<ul> <li> Three important symmetries in particle interaction are charge-reversal, time reversal and crossing. </li>
+	<li> Symmetry operations are upheld by nature and enables physicists to predict new reactions although the probability of the new interaction may be unknown </li>
+	<li> In any symmetry operation momentum and energy must be conserved </li>
+	<li> Violation of symmetry provides physicists with additional data with which to investigate interactions further </li>
+	</ul>
+
+	<dl>
+		<dt> Charge-reversal </dt>
+			<dd> The interaction is not affected if the charges are swapped </dd>
+		<dt> Time-reversal </dt>
+			<dd> An interaction looks the same if the flow of time is reserved </dd>
+		<dt> Crossing </dt>
+			<dd> If a particle in an interaction is observed to occur, any of the particles can be replaced by its antiparticle on the other side on the interaction. </dd>
+	</dl>
+
+ </div> <!--div for feyman diagrams -->
+
+ </div> <!-- div for particle interactions -->
+		</div> <!--div for End Unit 4 -->
+
+
+		<div>
+			<H1 id="definitions"> Definitions </h1>
+				<div class="super-sub-topic">
+					<h2> Unit 3 </h2>
+					<dl>
+						<a href=#3.1.3B><dt>Normal force
+						</dt></a> <dd>the force acting along an imaginary line drawn perpendicular to the surface
+						</dd> <a href=#3.1.4B><dt>Average speed
+						</dt> </a><dd>the rate of change of distance calculated by the formula: <math> <sup>distance</sup> &frasl; <sub> time</sub> </math>
+						</dd> <a href=#3.1.4B><dt>Period
+						</dt> </a><dd>the amount of time one cycle or one event takes to occur; the length of time taken for one wavelength to pass a given point; in circular motion, period refers to the time taken to complete one revolution (symbol, 𝑇; SI unit, s)
+						</dd> <a href=#3.1.4D><dt>Centripedal acceleration
+						</dt> </a><dd>the acceleration experienced by any object moving in a circular path directed towards the centre of motion (symbol, 𝑎𝑐; SI unit is m/s2 )
+						</dd> <a href=#3.1.4D><dt>Centripedal force
+						</dt> </a><dd>the force acting on an object travelling in a circle that constantly either pulls or pushes the object in towards the centre of motion (symbol, 𝐹net ; SI unit is N)
+						</dd> <a href=#3.1.5A><dt>Newton’s Law of Universal Gravitation
+						</dt> </a><dd>the force of attraction between each pair of point particles that is directly proportional to the product of their masses and inversely proportional to the square of the distance3 between them
+						</dd> <a href=#3.1.5C><dt>gravitational fields
+						</dt> </a><dd>the region of space surrounding a body in which another body experiences a force of gravitational attraction
+						</dd> <a href=#3.1.6A><dt>Kepler’s laws of planetary motion
+						</dt> </a><dd>the first law states that all planets move about the Sun in elliptical orbits, having the Sun as one of the foci; the second law states that a radius vector joining any planet to the Sun sweeps out equal areas in equal lengths of time; the third law states that the squares of the sidereal periods of the planets are directly proportional to the cubes of their mean distance from the Sun
+						</dd> <a href=#3.2.1A><dt> Coulomb's Law
+						</dt> </a><dd>a law stating that like electric charges repel and opposite electric charges attract, with a force proportional to the product of the electric charges and inversely proportional to the square of the distance between them, expressed by the formula F=1/(4πε_0 )  Qq/r^2
+						</dd> <a href=#3.2.1C><dt>Electric Fields
+						</dt> </a><dd>regions around an electrically charged particle or object within which a force would be exerted on other electrically charged particles or objects
+						</dd> <a href=#3.2.1C><dt>Electric Field Strength
+						</dt> </a><dd>the intensity of an electric field at a particular location
+						</dd> <a href=#3.2.1C><dt>Electrical Potential energy
+						</dt> </a><dd>the capacity of electric charge carriers to do work due to their position in an electric circuit
+						</dd> <a href=#3.2.2A><dt>Magnetic-feild
+						</dt> </a><dd>a region of space near a magnet, electric current or moving electrically charged particle in which a magnetic force acts on any other magnet, electric current or moving electrically charged particle
+						</dd> <a href=#3.2.3A><dt>Magnetic Flux
+						</dt> </a><dd>a measurement of the total magnetic field that passes through a given area; a measure of the number of magnetic field lines passing through the given area (symbol, 𝜙; SI unit, Wb)
+						</dd> <a href=#3.2.3A><dt>Magnetic Flux Density
+						</dt> </a><dd>the strength of a magnetic field or the number of magnetic field lines per unit area (symbol, 𝐵; SI unit, Wb/m2 or T)
+						</dd> <a href=#3.2.3A><dt> Electromagnetic Induction
+						</dt> </a><dd>the production of an electromotive force (EMF) or voltage across an electrical conductor due to its dynamic interaction with a magnetic field
+						</dd> <a href=#3.2.3A><dt>Electromotive Force
+						</dt> </a><dd>a difference in potential that tends to give rise to an electric current, also written as 𝑒mf
+						</dd> <a href=#3.2.3A><dt> Faraday's Law
+						</dt> </a><dd>a law stating that when the magnetic flux linking a circuit changes, an electromotive force (𝑒) is induced in the circuit proportional to the rate of change of the flux linkage
+						</dd> <a href=#3.2.3E><dt> Lenz's Law
+						</dt> </a><dd>states that the direction of an induced electric current always opposes the change in the circuit or the magnetic field that produces it
+						</dd> <a href=#3.2.3A><dt> Electromagnetic Radiation
+						</dt> </a><dd>radiant energy consisting of synchronised oscillations of electric and magnetic fields, or electromagnetic waves, propagated at the speed of light in a vacuum
+						</dd>
+					</dl>
+<h2> Unit 4</h2>
+					<dl>
+						<a href=#4.1.1B><dt> Frame of reference
+						</dt> </a><dd>the abstract coordinate system that defines location of the observer
+						</dd> <a href=#4.1.1B><dt>Inertial Frame of reference
+						</dt> </a><dd>any frame of reference with respect to which the acceleration of the object of observation remains zero
+						</dd> <a href=#4.1.1C><dt>the two postulates of special relativity
+						</dt> </a><dd><ul><li> The laws of physics are the same in all inertial frames of reference </li> <li> The speed of light in a vacuum has the same value c in all inertial frames of reference.</li> </ul>
+						</dd> <a href=#4.1.1G><dt>time dilation
+						</dt> </a><dd>the difference of elapsed time between two events as measured by observers moving relative to each other
+						</dd> <a href=#4.1.1G><dt>proper time interval
+						</dt> </a><dd>the time interval measured in the frame of reference in which the object is at rest
+						</dd> <a href=#4.1.1G><dt>relativistic time interval
+						</dt> </a><dd>the time interval measured in the frame of reference in which the object is in motion (symbol, 𝑡; SI unit, s)
+						</dd> <a href=#4.1.1G><dt>length contraction
+						</dt> </a><dd>an observer at rest relative to a moving object would observe the moving object to be shorter along the dimension of motion
+						</dd> <a href=#4.1.1G><dt>proper length
+						</dt> </a><dd>the length measured in the frame of reference in which the object is at rest
+						</dd> <a href=#4.1.1G><dt>relativistic length
+						</dt> </a><dd>the length measured in the frame of reference in which the object is in motion (symbol, 𝐿; SI unit, m)
+						</dd> <a href=#4.1.1G><dt>rest mass
+						</dt> </a><dd>the mass of an object when measured in the same reference frame as the observer
+						</dd> <a href=#4.1.1G><dt>relativistic momentum
+						</dt> </a><dd>the momentum of an object when measured in the frame of reference in which the object is in motion (symbol, 𝑝𝑣; SI unit, Ns)
+						</dd> <a href=#4.2.1D><dt>blackbody radiation
+						</dt> </a><dd>the radiation emitted by a black body from the conversion of thermal energy; a black body is a perfect absorber or emitter of radiation
+						</dd> <a href=#4.2.1E><dt>photon
+						</dt> </a><dd>a quantum of all forms of electromagnetic radiation; a gauge boson responsible for mediating the electromagnetic force
+						</dd> <a href=#4.2.1H><dt>threshold frequency
+						</dt> </a><dd>the minimum frequency of a photon that can eject an electron from a surface
+						</dd> <a href=#4.2.1H><dt>Planck’s constant
+						</dt> </a><dd>a fundamental constant used in quantum mechanics (symbol, ℎ; SI unit, Js)
+						</dd> <a href=#4.2.1H><dt>work function
+						</dt> </a><dd>the minimum energy required to remove an electron from a solid (symbol, 𝑊; SI unit, J)
+						</dd> <a href=#4.3.1A><dt>elementary particle
+						</dt> </a><dd>a particle whose substructure is unknown
+						</dd> <a href=#4.3.1A><dt>antiparticle
+						</dt> </a><dd>a particle with the same mass and opposite charge and/or spin to a corresponding particle, for example positron and electron
+						</dd> <a href=#4.3.1A><dt>quark
+						</dt> </a><dd>subatomic particles governed by the strong nuclear force that constitute hadrons. There are six quarks in the Standard Model: the up, down, charm, strange, top, and bottom quark
+						</dd> <a href=#4.3.1C><dt>baryon
+						</dt> </a><dd>composite subatomic particles made up of three quarks
+						</dd> <a href=#4.3.1C><dt>meson
+						</dt> </a><dd>subatomic particles composed of one quark and one antiquark
+						</dd> <a href=#4.3.1D><dt>leptons
+						</dt> </a><dd>particles that are governed by the weak nuclear force and, since they have charge, are also influenced by electromagnetism. There are six leptons in the Standard Model: electron, electron neutrino, muon, muon neutrino, tau, and tau neutrino
+						</dd> <a href=#4.3.1E><dt>gauge bosons
+						</dt> </a><dd>carrier or exchange particles that govern particle interaction and the mediation of the four fundamental forces. There are four gauge bosons in the Standard Model: the gluon, photon, Z boson and W boson
+						</dd> <a href=#4.3.2A><dt>lepton number
+						</dt> </a><dd>a conserved quantum number defined by 𝐿 = 𝑛𝑙 − 𝑛𝑙̅, where 𝑛𝑙 is the number of leptons and 𝑛𝑙̅ is the number of antileptons
+						</dd> <a href=#4.3.2A><dt>baryon number
+						</dt> </a><dd>a strictly conserved additive quantum number of a system defined by 𝐵 = 1/3 (𝑛𝑞 − ǹ𝑞), where 𝑛𝑞 is the number of quarks and ǹ𝑞 is the number of antiquarks
+						</dd>
+						</dl>
+
+
+
+				</di>
+		</div>
+		</div> <!--div for everythink-->
+		</div> <!--div for structure -->
+</div>
+
+		</div>
+
+
+		<div id="div-placeholder">
+
+		</div>
+
+		    <script>
+		    $(function(){
+		      $("#div-placeholder").load("../footer.html");
+		    });
+		    </script>
+
+</body>
+</html>

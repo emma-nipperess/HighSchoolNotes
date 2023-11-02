@@ -1,0 +1,150 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Privacy Policy </title>
+	<link rel="stylesheet" href="notescss.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+</script>
+
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+	$("#nav-placeholder").load("nav.html");
+});
+</script>
+
+
+<div id="nav_elements">
+  <script>
+  // Function to change webpage background color
+      function changeTopNavBg(color){
+  	    document.getElementById("myTopnav").style.background = color;
+
+  	}
+
+     /* // Function to change heading background color
+     function changeTopNavHoover(color){
+          document.getElementByClass("dropdown").getAttribute("hover").style.background = color;
+      }*/
+
+  	function changeStruBg(color){
+          document.getElementById("structure").style.background = color;
+      }
+
+
+
+  	function changeCogverb(color) {
+      var elements = document.getElementsByClassName("cogverb");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+  function changeBox(color) {
+      var elements = document.getElementsByClassName("box");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+  function changeShade(color) {
+      var elements = document.getElementsByClassName("dropbtn");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+
+
+
+  	/*
+  	function changTopNavHoover(color){
+  	document.getElementById("dropbtn").addEventListener("mouseover", mouseOver);
+     document.getElementById("dropbtn").addEventListener("mouseout", mouseOut);
+  	}
+
+     function mouseOver() {
+     document.getElementById("dropbtn").style.color = "red";
+     }
+
+     function mouseOut() {
+      document.getElementById("dropbtn").style.color = "black";
+      }*/
+  </script>
+
+
+<!--end of Navigation bar-->
+    <!--
+
+    <div class="dropdown">
+      <button class="dropbtn">Methods
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="c:\\Users/emman\Documents\Coding\methods/methods_syllabus.html">Syllabus</a>
+        <a href="c:\\Users/emman\Documents\Coding\methods/methods_notes.html">Notes</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Specialist
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="c:\\Users/emman\Documents\Coding\specialist/specialist_syllabus.html">Syllabus</a>
+        <a href="c:\\Users/emman\Documents\Coding\specialist/specialist_notes.html">Notes</a>
+    </div>
+    </div> -->
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("myTopnav").style.top = "0";
+    } else {
+      document.getElementById("myTopnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <script>
+
+  var articles = document.getElementsByTagName('')
+  for (var i = 0; i < articles.length; i ++) {
+      articles[i].parentNode.insertBefore(document.createElement('hr'), articles[i].nextSibling)
+  }
+  </script>
+</div>
+
+<body>
+<div class="structure" id="structure">
+<div class="everythink">
+ <!-- UNIT 3 starting point is right here -->
+
+<div class="topic">
+	<h1> PRIVACY POLICY </h1>
+
+</div>
+		<div class="sub-topic">
+		<h2> Rules: </h2>
+	</div>
+		<div class="content">
+		<div class="super-sub-topic">
+	<p>There are no rules in my world HEHEHEHE</p>
