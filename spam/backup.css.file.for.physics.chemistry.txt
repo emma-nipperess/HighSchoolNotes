@@ -1,0 +1,911 @@
+//-*Physics CSS is below -//
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #808080;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.sub-topic {
+text-decoration: underline;
+padding-left: 20px;
+}
+
+.cogverb {
+color: red;
+font-style: italic;
+}
+
+table {
+border-c;
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse:collapse;
+padding: 3px;
+
+}
+
+th {
+font-style: italic;
+font-weight: normal;
+
+}
+
+td {
+vertical-align:top;
+}
+
+h2{
+text-decoration:underline;
+}
+
+h5 {
+margin-left: -30px;
+text-decoration: underline;
+color: purple;
+}
+
+
+.equation {
+padding-left: 30px;
+}
+
+.content {
+padding-left:30px;
+}
+
+#cases {
+Width: 80%;
+margin-left:10%;
+}
+
+.example {
+margin-top: 30px;
+padding: 25px;
+background-color:#b3e6ff;
+border:5px solid #004466;
+}
+
+.solution {
+padding: 10px 0px 170px 20px;
+border-top: 5px solid #004466;
+border-collapse: collapse
+}
+
+.float {
+float: right;
+max-width: 100%;
+display: block;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+}
+
+ul.formula_description }
+list_style-type: circle;
+}
+
+br {
+line-height: 30px;
+}
+
+#border {
+border: 1px solid black;
+}
+
+.super-sub-topic {
+padding-left: 50px;
+}
+
+#myTopnav {
+position: fixed;
+transition: top 0.3s;
+width: 100%;
+z-index:1 ;
+}
+
+/* End of Physics CSS
+
+Nice little break right now this is just filler
+below chemistry
+above is physics
+try ot fix style sheeet frist though
+
+CHemistry CSS is below */
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #808080;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.sub-topic {
+text-decoration: underline;
+padding-left: 20px;
+}
+
+
+.equation {
+padding-left: 30px;
+}
+
+.content {
+padding-left:30px;
+}
+
+h2 {
+text-decoration: underline;
+}
+
+.super-sub-topic {
+padding-left: 50px;
+}
+
+h4 {
+margin-left: -30px;
+margin-top: 50px;
+margin-bottom: -10px;
+
+}
+
+body {
+width: 100%;
+}
+
+li b {
+color: orange;
+}
+
+ol b {
+color: #00e64d;
+text-decoration: underline;
+}
+
+ol li {
+line-height: 20px;
+margin-top: 10px;
+} 
+
+ol ol b {
+color: orange;
+text-decoration: none;
+}
+
+ol ol li {
+line-height: 15px;
+
+}
+
+h5 {
+margin-bottom: -10px;
+color: navy;
+margin-left: -20px;
+}
+
+dt {
+color:  #9999ff;
+font-weight: 600;
+margin: 15px 0px 5px 0px;
+
+}
+
+
+
+.table-list {
+margin-top: 15px;
+border: 1.5px solid black;
+margin-right: 20px;
+border-collapse: collapse;
+}
+
+table th {
+vertical-align: top;
+border: 3px solid #00b300;
+background-color: #ccffcc;
+color: black;
+border-collapse: collapse;
+}
+
+table td {
+vertical-align: top;
+border: 3px solid #00b300;
+padding: 5px 10px;
+border-collapse: collapse;
+}
+
+td li {
+margin-top: 5px;
+}
+
+br + table td {
+border-collapase: collapse;
+border: 1px solid black;
+}
+
+br + table {
+border-collapse: collapse;
+}
+
+br + table th {
+background-color: #99ccff;
+border: 3px solid #0059b3;
+border-collapase: collapse;
+color: #004080;
+}
+
+p img {
+border: 1px solid black;
+border-collapse: collapse;
+
+}
+
+.everythink {
+margin: 50px 80px 40px 40px;
+padding-right: 30px;
+float: center;
+}
+
+p b {
+color: #66ccff;
+}
+
+li dd {
+margin-bottom: 20px;
+}
+
+.cogverb {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted #666699;
+	color: white;
+	font-style: italic;
+	padding-bottom:-7px;
+	background-color: #666699;
+	margin-right: 3px;
+	padding: 0px 3px 0px 3px;
+}
+
+.cogverb .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: #666699;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+	
+.cogverb .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+.cogverb:hover .tooltiptext {
+  visibility: visible;
+}
+
+.float-right {
+ float: right;
+ display: block;
+ background-color: orange;
+ margin-right: 600px;
+ padding: 5px; 3px;
+
+ font-size: 25px;
+ }
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+
+#myDV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+
+#myIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+
+#mDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+
+#myTopnav {
+position: fixed;
+transition: top 0.3s;
+width: 100%;
+z-index: 1;
+}
+
+h3 + img {
+margin-top: 3px;
+}
+
+h4 + img {
+margin-top: 30px;
+}
+
+h5 + img {
+margin-top: 30px;
+}
+
+
+h3 + .float-right {
+margin-right: 100px;
+}
+
+ul img {
+display: in-line;
+}
+
+.box {
+border: 1px solid black;
+margin-top:30px;
+background-color:#ffcccc;
+padding-left: 40px;
+padding-bottom:10px;
+}
+
+.example {
+background-color: #baeff7;
+margin-top: 20px;
+padding: 10px, 30px:
+padding-left: 50px;
+}
+
+.example img {
+margin-left: 30px;
+}
+
+/** biology back up is below 
+
+
+adjfaksdjfa
+dfkadjsfnkajsd
+adga
+dd
+dd
+ddd
+ddd
+
+
+*/
+
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #808080;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#myTopnav {
+position: fixed;
+transition: top 0.3s;
+width: 100%;
+z-index: 1;
+}
+
+.sub-topic {
+text-decoration: underline;
+padding-left: 20px;
+}
+
+
+.equation {
+padding-left: 30px;
+}
+
+.content {
+padding-left:30px;
+}
+
+h2 {
+text-decoration: underline;
+}
+
+.super-sub-topic {
+padding-left: 50px;
+}
+
+h4 {
+margin-left: -30px;
+text-decoration: underline;
+}
+
+body {
+width: 100%;
+}
+
+li b {
+color: orange;
+}
+
+ol b {
+color: #00e64d;
+text-decoration: underline;
+}
+
+ol li {
+line-height: 25px;
+margin-top: 20px;
+} 
+
+ol ol b {
+color: orange;
+text-decoration: none;
+}
+
+ol ol li {
+line-height: 20px;
+
+}
+
+h5 {
+margin-bottom: -10px;
+color: navy;
+margin-left: -20px;
+}
+
+dt {
+color:  #9999ff;
+font-weight: 600;
+margin: 15px 0px 5px 0px;
+
+}
+
+
+
+.table-list {
+margin-top: 15px;
+border: 1.5px solid black;
+margin-right: 20px;
+border-collapse: collapse;
+}
+
+table th {
+vertical-align: top;
+border: 3px solid #00b300;
+background-color: #ccffcc;
+color: black;
+border-collapse: collapse;
+}
+
+table td {
+vertical-align: top;
+border: 3px solid #00b300;
+padding: 5px 10px;
+border-collapse: collapse;
+}
+
+td li {
+margin-top: 5px;
+}
+
+br + table td {
+border-collapase: collapse;
+border: 1px solid black;
+}
+
+br + table {
+border-collapse: collapse;
+}
+
+br + table th {
+background-color: #99ccff;
+border: 3px solid #0059b3;
+border-collapase: collapse;
+color: #004080;
+}
+
+p img {
+border: 1px solid black;
+border-collapse: collapse;
+
+}
+
+.everythink {
+margin: 50px 200px 40px 100px;
+float: center;
+}
+
+p b {
+color: #46cf8d;
+}
+
+li dd {
+margin-bottom: 20px;
+}
+
+.cogverb {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted #666699;
+	color: white;
+	font-style: italic;
+	padding-bottom:-7px;
+	background-color: #7177de;
+	margin-right: 3px;
+	padding: 0px 3px 0px 3px;
+	border-radius: 30px;
+	font-size: 17px;
+}
+
+.cogverb .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #666699;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+	
+.cogverb .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+.cogverb:hover .tooltiptext {
+  visibility: visible;
+}
+
+button {
+text-decoration: none;
+font-size: 20px;
+
+color: black;
+background-color: yellow;
+}
+
+button a {
+text-decoration: none;
+color: black;
+}
+</style>

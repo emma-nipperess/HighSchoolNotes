@@ -1,0 +1,423 @@
+<html>
+<head>
+<meta name="viewport"  content="width=device-width, initial-scale=1">
+<title> Home </title>
+<link rel="stylesheet" href="notescss.css">
+<!--
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #808080;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+table, th, td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+padding: 3px;
+}
+
+.sub {
+font-size: 16px;
+font-weight: bold;
+padding: 3px 0px;
+
+}
+
+ th{
+font-size: 17px;
+background-color: #808080;
+color: #ffffff;
+text-align: left;
+border-bottom:3px solid red ;
+
+}
+
+table.center {
+  margin-left: 50px;
+
+width: 1000px;
+}
+
+.extp {
+padding-left: 18px;
+}
+
+a {
+text-decoration: none;
+color: black;
+
+}
+
+
+.everything{
+font-family: arial;
+font-weight: 500;
+
+}
+
+.topic {
+margin-left: 50px;
+}
+
+.list {
+   padding: 3px 0px;
+   padding-left: 20px;
+ line-height: 20px;
+margin: -2px 0px;
+}
+
+
+#myTopnav {
+position: fixed;
+transition: top 0.3s;
+width: 100%;
+z-index: 1;
+}
+
+h1 {
+padding-top: 100px;
+}
+
+
+.everythink {
+margin-left: 30px;
+}
+
+.lefty {
+float: float-left;
+z-index: 2;
+}
+
+.text {
+text-align: left;
+padding-left: 50px;
+z-index: 1;
+}
+
+.yeet {
+border: none;
+}
+
+.yeet tr {
+border: none;
+}
+
+td {
+border: none;
+}
+
+
+</style>-->
+</head>
+<body>
+
+
+  <script>
+  // Function to change webpage background color
+      function changeTopNavBg(color){
+  	    document.getElementById("myTopnav").style.background = color;
+
+  	}
+
+     /* // Function to change heading background color
+     function changeTopNavHoover(color){
+          document.getElementByClass("dropdown").getAttribute("hover").style.background = color;
+      }*/
+
+  	function changeStruBg(color){
+          document.getElementById("structure").style.background = color;
+      }
+
+
+
+  	function changeCogverb(color) {
+      var elements = document.getElementsByClassName("cogverb");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+  function changeBox(color) {
+      var elements = document.getElementsByClassName("box");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+  function changeShade(color) {
+      var elements = document.getElementsByClassName("dropbtn");
+  	for(var i = 0; i < elements.length; i++){
+  		elements[i].style.background = color;
+  		}
+  }
+
+
+
+
+  	/*
+  	function changTopNavHoover(color){
+  	document.getElementById("dropbtn").addEventListener("mouseover", mouseOver);
+     document.getElementById("dropbtn").addEventListener("mouseout", mouseOut);
+  	}
+
+     function mouseOver() {
+     document.getElementById("dropbtn").style.color = "red";
+     }
+
+     function mouseOut() {
+      document.getElementById("dropbtn").style.color = "black";
+      }*/
+  </script>
+
+            </div>
+    <!--
+
+    <div class="dropdown">
+      <button class="dropbtn">Methods
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="c:\\Users/emman\Documents\Coding\methods/methods_syllabus.html">Syllabus</a>
+        <a href="c:\\Users/emman\Documents\Coding\methods/methods_notes.html">Notes</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Specialist
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="c:\\Users/emman\Documents\Coding\specialist/specialist_syllabus.html">Syllabus</a>
+        <a href="c:\\Users/emman\Documents\Coding\specialist/specialist_notes.html">Notes</a>
+    </div>
+    </div> -->
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("myTopnav").style.top = "0";
+    } else {
+      document.getElementById("myTopnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <script>
+
+  var articles = document.getElementsByTagName('')
+  for (var i = 0; i < articles.length; i ++) {
+      articles[i].parentNode.insertBefore(document.createElement('hr'), articles[i].nextSibling)
+  }
+  </script>
+
+<div class="structure" id="structure">
+<div class="everythink">
+
+<div class="home">
+<table width=95% class="yeet HPTITLE bigtable">
+
+<script>  //For Firefox we have to handle it in JavaScript
+  var vids = $("video");
+  $.each(vids, function(){
+         this.controls = false;
+  });
+  //Loop though all Video tags and set Controls as false,
+  </script>
+
+  <tr>
+  <td>
+      Harry Potter and the Philisophers Stone
+  <video height=100% controls="false" class="lefty" poster="meme/hp1.png">
+    <source src="meme\Harry Potter 1 and the Philosophers Stone.mkv" type="video/mp4">
+  </video>
+  </td>
+
+<td>
+    Harry Potter and the Chamber of Secrets
+<video  height=280 controls class="lefty" poster="meme/hp2.jpg">
+  <source src="meme\Harry Potter 2 and the Chamber of secrets.mkv" type="video/mp4">
+</video>
+
+
+</td>
+</tr>
+
+<tr>
+<td>
+    Harry Potter and the Prinsoner of askiban
+<video width=500 controls class="lefty" poster="meme/hp3.jpg">
+  <source src="meme\Harry Potter 3 and the prisoner of askiban.mkv" type="video/mp4">
+</video>
+
+</td>
+
+<td>
+    Harry Potter and the Goblet of fire
+<video width=500 controls class="lefty" poster="meme/hp4.png">
+  <source src="meme\Harry Potter 4 and the Goblet of Fire.mkv" type="video/mp4">
+</video>
+
+</td>
+</tr>
+
+<tr>
+<td>
+    Harry Potter and the Order of  Phoenix
+<video width=500 controls class="lefty" poster="meme/hp5.png">
+  <source src="meme\Harry Potter 5 and the Order of Phoenix.mkv" type="video/mp4">
+</video>
+</td>
+
+<td>
+    Harry Potter and the half blood prince
+<video width=500 controls class="lefty" poster="meme/h6.jpg">
+  <source src="meme\Harry Potter 6 and the half blood prince.mkv" type="video/mp4">
+</video>
+</td>
+
+</tr>
+
+<tr>
+<td>
+  Harry Potter and the Deathly Hallows part 1
+<video width=500 controls class="lefty" poster="meme/hp7.jpg">
+  <source src="meme\Harry Potter 7 and the Deathly Hallows P1.mkv" type="video/mp4">
+</video>
+</td>
+
+<td>
+    Harry Potter and the Deathly Hallows part 2
+<video width=500 controls class="lefty" poster="meme/hp8.jpg">
+  <source src="meme\Harry Potter 8 and the Deathly Hallows P2.mp4" type="video/mp4">
+</video>
+</td>
+
+</tr>
+
+</table>
+</div> <!--div rom home-->
+</div>
+</div>
+
+<div class="sidenote">
+
+  <p> Copyright &#169; 2021 Emma Inc. All rights are not reserved.
+
+
+<a href="...\privacy_policy.html">  Privacy Policy </a>
+<a href="...\privacy_policy.html">  Terms of use </a>
+</p>
+</div>
+</body>
+</html>
